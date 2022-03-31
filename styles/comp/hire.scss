@@ -1,0 +1,223 @@
+.hire-header {
+  --max-width: 600px;
+}
+
+.hire-header-h1 {
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+.hire-header-p {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.hirec-main-sec1 {
+  background-color: #F8F8F8;
+  font-size: 13px;
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  select {
+    margin: 0;
+  }
+}
+
+.hire-serach-box {
+  padding-left: 5px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  gap: 0;
+
+  input {
+    margin: 0;
+    border: none;
+    outline: none;
+  }
+
+  input:focus {
+    box-shadow: none;
+  }
+}
+
+.w-remote {
+  min-width: 85px;
+}
+
+.hire-card {
+  margin-bottom: 2.5rem;
+}
+
+.hire-card-title {
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  p {
+    font-size: 22px;
+  }
+
+  p:last-child {
+    padding: 4px 10px;
+    background-color: #E6E6E6;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-right: 5.5rem;
+  }
+}
+
+.hire-card-info {
+  padding: 0 4rem;
+  font-size: 14px;
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .df {
+    gap: 2rem;
+  }
+
+  .flex1 {
+    max-width: 900px;
+    margin-right: auto;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  svg path {
+    stroke: #000;
+  }
+}
+
+.hire-card-info-sec~.hire-card-info-sec {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hire-header {
+    --max-width: 400px;
+  }
+
+  .hire-header-h1 {
+    font-size: 50px;
+  }
+
+  .hire-header-p {
+    font-size: 20px;
+  }
+
+  .hirec-main-sec1 {
+    h2 {
+      font-size: 25px;
+    }
+
+    .df.mb-16 {
+      flex-wrap: wrap;
+    }
+
+    .hire-selec1 {
+      width: 48%;
+    }
+
+    .hire-selec2 {
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hire-card-info {
+    padding: 0;
+  }
+}
+
+@media (max-width: 411px) {
+
+  .hirec-main-sec1.pad-main-3,
+  .hirec-main-sec2.pad-main-3 {
+    padding: 2rem;
+  }
+
+  .hire-header-h1 {
+    font-size: 35px;
+  }
+
+  .hire-header-p {
+    font-size: 15px;
+  }
+
+  .hirec-main-sec1 {
+
+    .hire-selec1,
+    .hire-selec2 {
+      width: 100%;
+    }
+  }
+
+  .hire-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .hire-card-title {
+    justify-content: initial;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .hire-card-info {
+    h1 {
+      font-size: 18px;
+    }
+
+    .df {
+      flex-wrap: wrap;
+      gap: .5rem;
+
+      .flex1 {
+        min-width: 100%;
+      }
+
+      div:last-child {
+        margin-left: auto;
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .hire-card-info-sec~.hire-card-info-sec {
+    margin-top: 1rem;
+  }
+
+  .hire-card-info-sec h1 {
+    margin-bottom: .7rem;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .hire-header-h1 {
+    font-size: 18px;
+  }
+
+  .hire-header-p {
+    font-size: 12px;
+  }
+
+  .hire-card-info {
+    font-size: 12px;
+  }
+}

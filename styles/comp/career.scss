@@ -1,0 +1,144 @@
+.career-header-h1 {
+  font-size: 65px;
+  line-height: 1.2;
+}
+
+.career-header-p {
+  font-size: 20px;
+}
+
+#career-big-img {
+  width: 300px;
+}
+
+.car-sub-header-h1 {
+  font-size: 55px;
+}
+
+.car-sub-header-p {
+  font-size: 40px;
+}
+
+.car-sub-h3 {
+  font-size: 30px;
+}
+
+.carre-ben-h1,
+.carrer-team-h1 {
+  font-size: 50px;
+}
+
+.career-stack-item {
+  h4 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.career-stack-list {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.car-stack-item img {
+  width: 100px;
+  height: 100px;
+  margin: .5rem auto;
+}
+
+.carrer-team-img {
+  height: 50px;
+  width: 50px;
+}
+
+.career-team {
+  background-color: #F9F9FA;
+}
+
+.career-final {
+  --max-width: 750px;
+  color: #000;
+}
+
+.career-final h1 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.career-final p {
+  font-size: 20px;
+}
+
+.career-final a {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  .career-stack-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .career-stack-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sub-career-1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 411px) {
+  .career-header-h1 {
+    font-size: 30px;
+  }
+
+  .career-header-p {
+    font-size: 12px;
+  }
+
+  #career-big-img {
+    width: 100px;
+  }
+
+  .car-sub-header,
+  .carrer-team-h1 {
+    text-align: center;
+  }
+
+  .car-sub-header-h1 {
+    font-size: 25px;
+  }
+
+  .car-sub-header-p {
+    font-size: 15px;
+  }
+
+  .car-sub-h3 {
+    font-size: 23px;
+  }
+
+  .car-sub-p {
+    font-size: 13px;
+  }
+
+  .carre-ben-h1,
+  .carrer-team-h1 {
+    font-size: 28px;
+  }
+
+  .career-final h1 {
+    font-size: 45px;
+  }
+
+  .career-final p {
+    font-size: 18px;
+  }
+}

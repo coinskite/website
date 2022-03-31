@@ -1,0 +1,189 @@
+.blog-main-header {
+  height: 70vh;
+}
+
+.blog-main-header-content {
+  h1 {
+    padding-right: 8rem;
+    line-height: 1.2;
+    font-size: 32px;
+  }
+
+  &>span {
+    font-size: 12px;
+  }
+
+  p.df {
+    font-size: 14px;
+    color: #8B8B8B;
+  }
+}
+
+.blog-m-h {
+  p {
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+}
+
+.blog-head-bg {
+  height: 80%;
+  width: 90%;
+}
+
+.blog-tab {
+  font-size: 13px;
+
+  &>div:not(.active) {
+    color: #8B8B8B;
+  }
+}
+
+.reselect-tab {
+  display: none;
+  font-size: 13px;
+}
+
+.blog-main-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.in-blog {
+  height: 200px;
+}
+
+.in-blog-pink {
+  color: #F80066;
+  font-size: 12px;
+}
+
+.in-blg-h3 {
+  font-size: 19px;
+}
+
+.in-blog-info {
+  color: #8B8B8B;
+  font-size: 14px;
+}
+
+.in-blog-num {
+  margin-top: 1.5rem;
+
+  p {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  svg path {
+    stroke: $primary;
+  }
+}
+
+.blog-main-final {
+  height: 60vh;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .df {
+    background-color: #fff;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .blog-main-header-content {
+    h1 {
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-main-header-content {
+    h1 {
+      padding-right: 0;
+      font-size: 28px;
+    }
+  }
+
+  .blog-main-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .in-blog-num {
+    p {
+      padding: 8px;
+    }
+  }
+
+  .blog-main-final {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 411px) {
+  .blog-head-bg {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .blog-main-header.grid-2,
+  .blog-main-lists {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-main-lists>div:nth-child(n+6) {
+    display: none;
+  }
+
+  .blog-main-header-content {
+    h1 {
+      font-size: 20px;
+      margin-bottom: .5rem;
+    }
+  }
+
+  .blog-tab {
+    display: none;
+  }
+
+  .reselect-tab {
+    display: initial;
+  }
+
+  .blog-main-final {
+    h1 {
+      font-size: 28px;
+    }
+
+    .df.p-8,
+    input {
+      padding: 4px;
+    }
+
+    button {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .blog-main-final {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}

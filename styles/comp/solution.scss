@@ -1,0 +1,41 @@
+.solution-header {
+  .dfc {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 65px;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 23px;
+    padding: 6px 2.6rem;
+  }
+}
+
+.solution-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.sol-main-grid {
+  h5 {
+    margin: 8px 0 5px;
+    line-height: 1;
+    font-size: 25px;
+  }
+
+  p:first-child {
+    min-height: 150px;
+  }
+
+  p {
+    color: #5B5B5B;
+  }
+}

@@ -1,0 +1,84 @@
+.about-header {
+  height: 60vh;
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.about-sub-headr {
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+.about-final {
+  background-color: #F7F7F7;
+  --max-width: 800px;
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.about-final-cb {
+  font-size: 26px;
+  color: #707070;
+}
+
+.about-final-cent {
+  p:first-child {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 30px;
+    padding-left: 2rem;
+  }
+
+  p:last-child {
+    font-size: 25px;
+    color: #707070;
+    padding-left: 2rem;
+  }
+}
+
+.about-share {
+  align-items: center;
+  height: 60vh;
+  gap: 1.6rem;
+
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 25px;
+    min-width: 200px;
+  }
+
+  img {
+    width: 2rem;
+  }
+}
+
+#son {
+  font-size: 30px;
+}
+
+#Share-Email {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  min-width: 280px;
+}

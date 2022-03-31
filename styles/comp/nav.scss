@@ -1,0 +1,253 @@
+nav {
+  background-color: $primary;
+  padding: 1.5rem 3rem 1rem;
+  color: #fff;
+  gap: 1rem;
+  z-index: 2;
+
+  position: sticky;
+  top: 0;
+
+  transition: .2s ease-in-out;
+  font-size: 18px;
+
+  a {
+    color: inherit;
+  }
+
+  .logo-black {
+    display: none;
+  }
+}
+
+nav.change {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  color: #000;
+
+  .logo-black {
+    display: block;
+  }
+
+  .logo-white {
+    display: none;
+  }
+
+  .navArrowSvg path,
+  .hamburger-svg line {
+    stroke: #000;
+  }
+
+  .nav-btn {
+    background-color: $primary;
+  }
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
+.navArrowSvg {
+  width: 8px;
+  height: 8px;
+  margin-top: 3px;
+}
+
+.navArrowSvg path {
+  stroke: #fff;
+}
+
+.links {
+  --gap: 1.5rem;
+  padding-left: 3rem;
+  font-size: 16px;
+  font-weight: 550;
+  font-family: 'DM Sans';
+}
+
+.nav-btn {
+  background-color: #fff;
+  color: #000;
+
+  margin-left: auto;
+  font-size: 14px;
+}
+
+#hamburger {
+  display: none;
+}
+
+.nav-dd-parent {
+  position: relative;
+
+  &:hover .nav-dd,
+  &:hover .nav-tri {
+    display: block;
+  }
+}
+
+.nav-dd {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  min-width: 10rem;
+  left: 50%;
+  top: 130%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(10 23 73 / 10%);
+}
+
+.nav-tri {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-bottom-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  // pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-dd-pad {
+  padding: .3rem;
+}
+
+.nav-min-w {
+  min-width: 400px;
+}
+
+.nav-info-line {
+  font-family: "DM sans";
+  font-weight: 500;
+  line-height: 1.1;
+  padding: .5rem;
+  margin-bottom: .2rem;
+}
+
+.nav-info-line:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.nav-info-line img {
+  width: 2rem;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .links {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .links {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav {
+    color: #000;
+
+    .navArrowSvg path {
+      stroke: #000;
+    }
+  }
+
+  .links.open,
+  #hamburger {
+    display: block;
+  }
+
+  .links,
+  .nav-tri {
+    display: none;
+  }
+
+  .nav-btn {
+    background-color: $primary;
+    margin: .5rem auto;
+    display: block;
+    width: 80%;
+  }
+
+  .links {
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 4rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #fff;
+    transition: all 1s ease;
+    z-index: 1;
+    transform-origin: top;
+    animation: scaleDrop .2s linear;
+  }
+
+  .links .df {
+    width: 100%;
+  }
+
+  .nav-dd {
+    position: relative;
+    display: none !important;
+    box-shadow: none;
+
+    &.open {
+      display: block !important;
+    }
+  }
+
+  .nav-dd-pad {
+    padding: .6rem 0 0;
+  }
+}
+
+@keyframes scaleDrop {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 540px) {
+  .links {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav .grid-2 {
+    display: block;
+  }
+}
