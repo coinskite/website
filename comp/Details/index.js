@@ -17,14 +17,14 @@ function Details({ data }) {
     <div className='pad-main-3 detail-job max-w'>
       <div className='df'>
         <Arrow className="detail-arr" onClick={() => router.push("/hire")} />
-        <p>{data.category}</p>
+        <p>{data?.category}</p>
       </div>
 
       <div className='p-16'>
-        <h1>{data.title} ({data.location})</h1>
-        <p className='detail-job-type'>{data.location} | {data.workType}</p>
+        <h1>{data?.title} ({data?.location})</h1>
+        <p className='detail-job-type'>{data?.location} | {data?.workType}</p>
 
-        <h5>{data.title}</h5>
+        <h5>{data?.title}</h5>
         {/* <p>{data.description}</p> */}
 
         <h5>What is Coinskite?</h5>
@@ -35,7 +35,7 @@ function Details({ data }) {
         <p>You will have the opportunity to work with a community of young, vibrant and enthusiastic minds who passionately own and love what they do. You will have complete freedom to chase down your goals without inhibitions and have a front seat view of the crypto revolution as we make our way to the pages of history.</p>
 
         {
-          data.points.map(p => (
+          data?.points?.map(p => (
             <Fragment key={p._id}>
               <h5>{p.heading}</h5>
               <ul>

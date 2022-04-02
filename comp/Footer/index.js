@@ -13,10 +13,10 @@ function Footer() {
     }
   }
 
-  const gotoTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  // const gotoTop = () => {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
 
   return (
     <>
