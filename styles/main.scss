@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
 @import './main/var.scss';
 @import './main/reset.scss';
 @import './main/util.scss';
@@ -6,6 +8,7 @@
 
 @import './ui/switch.scss';
 
+// @import './comp/nav2.scss';
 @import './comp/nav.scss';
 @import './comp/home.scss';
 @import './comp/footer.scss';

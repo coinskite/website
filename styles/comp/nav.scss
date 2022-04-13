@@ -34,8 +34,9 @@ nav.change {
   }
 
   .navArrowSvg path,
-  .hamburger-svg line {
-    stroke: #000;
+  .hamburger-svg line, 
+  .hamburger-svg path {
+    stroke: #000 !important;
   }
 
   .nav-btn {

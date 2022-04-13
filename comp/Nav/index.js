@@ -151,7 +151,7 @@ function Nav() {
         </div>
 
         <div id="hamburger" onClick={onClickfn}>
-          <Lines />
+          <Lines className="hamburger-svg" />
         </div>
       </nav>
     </>

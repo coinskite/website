@@ -1,4 +1,4 @@
-import Footer from '../Footer';
+import Footer from '../Footer2';
 import Nav from '../Nav';
 
 function Layout({ children }) {

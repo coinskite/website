@@ -1,4 +1,4 @@
-import Home from '../comp/Home2';
+import Home from '../comp/Home';
 
 function Comp() {
   return (
