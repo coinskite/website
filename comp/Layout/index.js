@@ -1,5 +1,5 @@
 import Footer from '../Footer2';
-import Nav from '../Nav';
+import Nav from '../Nav2';
 
 function Layout({ children }) {
   return (

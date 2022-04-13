@@ -80,8 +80,9 @@
 
 .offer-right {
   padding: 1rem;
-  border-radius: 10px;
   background-color: #F5F5F5;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .offer-right img.tick {
@@ -210,7 +211,6 @@
 .blog-img {
   height: 150px;
   background-color: var(--primar-clr);
-  border-radius: 8px;
 }
 
 .read-more {
@@ -237,6 +237,7 @@
 
 // final
 .home-final {
+  justify-content: space-evenly;
   color: rgba(26, 26, 26);
 }
 

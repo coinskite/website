@@ -7,11 +7,11 @@ function TabVal({ active, title, vals = [] }) {
     <div className={`dfc gap1 offer-right ${active === title ? "active" : ""}`}>
       <div className="df">
         <img
-          src={title === "StartUp" ? "./img/home/sec1/startup.png" : "./img/home/sec1/enterprises.png"}
+          src={title === "Startup" ? "./img/home/sec1/startup.png" : "./img/home/sec1/enterprises.png"}
           alt={title}
           className="offer-right-img"
         />
-        <h3 className="tab-heade-h3 flex1 caps">Blockchain For {title}</h3>
+        <h3 className="tab-heade-h3 flex1">Blockchain For {title}</h3>
         <Arrow className="arrow-in-tabval" />
       </div>
 
@@ -26,14 +26,14 @@ function TabVal({ active, title, vals = [] }) {
       </div>
 
       <p className="center">
-        <button className="br5 theme-sec">Explore the possibilities</button>
+        <button className="theme-sec">Explore the possibilities</button>
       </p>
     </div>
   )
 }
 
 function Products() {
-  const [active, setActive] = useState("StartUp")
+  const [active, setActive] = useState("Startup")
 
   const clk = val => setActive(val)
 
@@ -44,7 +44,7 @@ function Products() {
 
       <div className="max-w home-offer">
         <TabVal
-          title="StartUp"
+          title="Startup"
           active={active}
           vals={startupPoints}
         />
@@ -58,8 +58,8 @@ function Products() {
 
       <div className="df jcc tab-ind gap1">
         <div
-          className={`tab-indicator cp ${active === "StartUp" ? "active" : ""}`}
-          onClick={() => clk("StartUp")}
+          className={`tab-indicator cp ${active === "Startup" ? "active" : ""}`}
+          onClick={() => clk("Startup")}
         ></div>
         <div
           className={`tab-indicator cp ${active === "Enterprises" ? "active" : ""}`}
