@@ -32,14 +32,56 @@ nav {
   justify-content: space-evenly;
 }
 
+#hamburger {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   nav {
     padding: 1rem 2rem;
   }
 }
 
-  @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   nav {
     padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
   }
+
+  #hamburger,
+  .nav-links.open {
+    display: block;
+  }  
+
+  .nav-links {
+    display: none;
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 4rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #000;
+    transition: all 1s ease;
+    transform-origin: top;
+    z-index: 1;
+
+    & > * {
+      text-align: center;
+      margin: .5rem 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+   .nav-btn{
+     display: none;
+   }
+
+   #hamburger {
+     margin-top: .1rem;
+     margin-left: auto;
+   }
 }

@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useRouter } from 'next/router';
+import Lines from '../../svg/lines.svg';
 import Link from 'next/link';
 
 function Nav() {
@@ -7,6 +8,10 @@ function Nav() {
   const hamRef = useRef()
 
   const navigate = to => router.push(to)
+
+  const onClickfn = () => {
+    hamRef.current.classList.toggle("open")
+  }
 
   return (
     <>
@@ -34,6 +39,10 @@ function Nav() {
         >
           Contact
         </button>
+
+        <div id="hamburger" onClick={onClickfn}>
+          <Lines className="hamburger-svg" />
+        </div>
       </nav>
     </>
   )
