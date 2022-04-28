@@ -1,13 +1,16 @@
-import Header from "./Header";
-import Final from "./Final";
-import Main from "./Main";
+// import Header from "./Header";
+// import Final from "./Final";
+// import Main from "./Main";
+
+import Header2 from "./Header2";
 
 function Contact() {
   return (
     <>
-      <Header />
-      <Main />
-      <Final />
+      <Header2 />
+      {/* <Header /> */}
+      {/* <Main /> */}
+      {/* <Final /> */}
     </>
   )
 }

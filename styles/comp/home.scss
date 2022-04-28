@@ -15,7 +15,7 @@
 
 .cube-img {
   position: absolute;
-  width: 500px;
+  width: min(40%, 500px);
   bottom: 0;
   left: 0;
   transform: translate(-40%, 48px);
@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .offer-right-img{

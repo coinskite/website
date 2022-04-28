@@ -1,222 +1,410 @@
-.contact-header {
-  --max-width: 75%;
-  margin-bottom: 10rem;
+.contact-main-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-.contact-header-h1 {
-  font-size: 65px;
+.contact-main-div1 {
+  max-width: 660px;
 }
 
-.contact-header-p {
-  font-size: 20px;
+.contact-m-h1 {
+  letter-spacing: 80;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.1;
 }
 
-.contacts-main {
-  --max-width: 900px;
-  --g2-gap: 1rem;
+.contact-m-ul li {
+  margin-left: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+  list-style: disc;
 }
 
-.contact-main-h1 {
-  font-size: 50px;
+.contact-m-h2 {
+  font-size: 24px;
 }
 
-.contact-main-p {
+.contact-m-p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.contact-main-form {
+  margin-left: auto;
+  max-width: 420px;
+
+  h2 {
+    background-color: #EBFEF1;
+    font-weight: 700;
+    font-size: 26px;
+    padding: .5rem 1rem;
+    color: #031B4E;
+  }
+
+  div {
+    background-color: #FFF;
+    padding: 1rem 2rem;
+  }
+
+  input {
+    font-size: 15px;
+    border: 1px solid #E5E8ED;
+
+    &::placeholder {
+      color: #C9C9C9;
+    }
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 11px;
+    color: #C9C9C9;
+  }
+
+  button {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+.contact-footer {
   font-size: 18px;
+
+  img {
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
 }
 
-.contacts-input label,
-.contacts-main h1 {
-  margin-bottom: .5rem;
-}
-
-.contacts-input label {
-  font-size: 14px;
-}
-
-.contacts-main textarea {
-  resize: none;
-  margin-top: .5rem;
-  min-height: 200px;
-}
-
-.contact-textarea {
-  margin: 1rem 0;
-}
-
-.contacts-main button {
-  background-color: $primary;
-  border-radius: 4px;
-  min-width: 160px;
-}
-
-.contacts-main svg {
-  height: 10px;
-  width: 10px;
-}
-
-.contacts-main svg path {
-  fill: $primary;
-}
-
-// final
-.contact-final {
-  background-color: var(--primar-clr);
-  min-height: 50vh;
-}
-
-.contact-final div {
-  --max-width: 900px;
-}
-
-.contact-final div>* {
-  margin: 1rem 0;
-}
-
-.contact-final button {
-  background-color: #000;
-  color: var(--primar-clr);
-  border-radius: 4px;
-  max-width: 220px;
-  font-size: 15px;
-}
-
-.contact-final svg path {
-  stroke: var(--primar-clr);
-}
-
-.contact-final-h1 {
-  font-size: 55px;
-}
-
-.contact-final-p {
-  font-size: 22px;
+@media (max-width: 1200px) {
+  .contact-m-h1 {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 768px) {
-  .contact-header {
-    --max-width: 100%;
-  }
-
-  .contact-header-h1 {
+  .contact-m-h1 {
     font-size: 35px;
   }
-
-  .contact-header-p {
+  
+  .contact-m-h2 {
+    font-size: 22px;
+  }
+  
+  .contact-m-p {
     font-size: 18px;
   }
-
-  .contact-main-h1 {
-    font-size: 30px;
-  }
-
-  .contact-main-p {
-    font-size: 15px;
-  }
-
-  .contact-final-h1 {
-    font-size: 35px;
-  }
-
-  .contact-final-p {
+  
+  .contact-m-ul {
     font-size: 12px;
+  }
+  
+  .contact-main-form {
+    h2 {
+      font-size: 20px;
+    }
+
+    div {
+      padding: 1rem;
+    }  
+    
+    p {
+      font-size: 10px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  
+  .contact-footer {
+    font-size: 16px;
+
+    img {
+      width: 12rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
-@media (max-width: 540px) {
-  .contact-header-h1 {
-    font-size: 30px;
+@media (max-width: 600px) {
+  .contact-main-header {
+    grid-template-columns: repeat(1, 1fr);
   }
-
-  .contact-header-p {
-    font-size: 15px;
-  }
-
-  .contacts-main .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-main-h1 {
-    font-size: 25px;
-  }
-
-  .contact-final-h1 {
-    font-size: 30px;
-    line-height: 1.1;
-  }
+  .contact-main-form {
+    margin-left: 0;
+    max-width: 100%;
+  }  
 }
 
 @media (max-width: 411px) {
-  .contact-header-h1 {
-    font-size: 23px;
+  .contact-m-h1 {
+    font-size: 30px;
   }
-
-  .contact-header-p {
-    font-size: 12px;
+  
+  .contact-m-h2 {
+    font-size: 20px;
   }
-
-  .contact-main-h1 {
-    font-size: 24px;
+  
+  .contact-m-p {
+    font-size: 22px;
   }
-
-  .contact-main-p {
-    font-size: 13px;
+  
+  .contact-m-ul {
+    font-size: 16px;
   }
-
-  .contacts-input label {
-    font-size: 11px;
+  
+  .contact-main-form {
+    h2 {
+      font-size: 26px;
+    }
+  
+    input,
+    p {
+      font-size: 12px;
+    }
   }
+  
+  .contact-footer {
+    font-size: 18px;
 
-  .contact-final-h1 {
-    font-size: 35px;
-  }
-
-  .contact-final-p {
-    font-size: 15px;
+    img {
+      width: 10rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
 @media (max-width: 375px) {
-  .contact-header-h1 {
-    font-size: 22px;
-  }
-
-  .contact-header-p {
-    font-size: 10px;
-  }
-
-  .contact-final-h1 {
-    font-size: 30px;
-  }
-
-  .contact-final-p {
-    font-size: 14px;
+  .contact-m-h1 {
+    font-size: 26px;
   }
 }
 
-// @media (max-width: 360px) {}
 
-@media (max-width: 280px) {
-  .contact-header-h1 {
-    font-size: 18px;
-  }
 
-  .contact-header-p {
-    font-size: 9px;
-  }
 
-  .contact-main-h1 {
-    font-size: 18px;
-  }
+// .contact-header {
+//   --max-width: 75%;
+//   margin-bottom: 10rem;
+// }
 
-  .contact-main-p {
-    font-size: 10px;
-  }
+// .contact-header-h1 {
+//   font-size: 65px;
+// }
 
-  .contact-final-h1 {
-    font-size: 25px;
-  }
+// .contact-header-p {
+//   font-size: 20px;
+// }
 
-  .contact-final-p {
-    font-size: 12px;
-  }
-}
+// .contacts-main {
+//   --max-width: 900px;
+//   --g2-gap: 1rem;
+// }
+
+// .contact-main-h1 {
+//   font-size: 50px;
+// }
+
+// .contact-main-p {
+//   font-size: 18px;
+// }
+
+// .contacts-input label,
+// .contacts-main h1 {
+//   margin-bottom: .5rem;
+// }
+
+// .contacts-input label {
+//   font-size: 14px;
+// }
+
+// .contacts-main textarea {
+//   resize: none;
+//   margin-top: .5rem;
+//   min-height: 200px;
+// }
+
+// .contact-textarea {
+//   margin: 1rem 0;
+// }
+
+// .contacts-main button {
+//   background-color: $primary;
+//   border-radius: 4px;
+//   min-width: 160px;
+// }
+
+// .contacts-main svg {
+//   height: 10px;
+//   width: 10px;
+// }
+
+// .contacts-main svg path {
+//   fill: $primary;
+// }
+
+// // final
+// .contact-final {
+//   background-color: var(--primar-clr);
+//   min-height: 50vh;
+// }
+
+// .contact-final div {
+//   --max-width: 900px;
+// }
+
+// .contact-final div>* {
+//   margin: 1rem 0;
+// }
+
+// .contact-final button {
+//   background-color: #000;
+//   color: var(--primar-clr);
+//   border-radius: 4px;
+//   max-width: 220px;
+//   font-size: 15px;
+// }
+
+// .contact-final svg path {
+//   stroke: var(--primar-clr);
+// }
+
+// .contact-final-h1 {
+//   font-size: 55px;
+// }
+
+// .contact-final-p {
+//   font-size: 22px;
+// }
+
+// @media (max-width: 768px) {
+//   .contact-header {
+//     --max-width: 100%;
+//   }
+
+//   .contact-header-h1 {
+//     font-size: 35px;
+//   }
+
+//   .contact-header-p {
+//     font-size: 18px;
+//   }
+
+//   .contact-main-h1 {
+//     font-size: 30px;
+//   }
+
+//   .contact-main-p {
+//     font-size: 15px;
+//   }
+
+//   .contact-final-h1 {
+//     font-size: 35px;
+//   }
+
+//   .contact-final-p {
+//     font-size: 12px;
+//   }
+// }
+
+// @media (max-width: 540px) {
+//   .contact-header-h1 {
+//     font-size: 30px;
+//   }
+
+//   .contact-header-p {
+//     font-size: 15px;
+//   }
+
+//   .contacts-main .grid-2 {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .contact-main-h1 {
+//     font-size: 25px;
+//   }
+
+//   .contact-final-h1 {
+//     font-size: 30px;
+//     line-height: 1.1;
+//   }
+// }
+
+// @media (max-width: 411px) {
+//   .contact-header-h1 {
+//     font-size: 23px;
+//   }
+
+//   .contact-header-p {
+//     font-size: 12px;
+//   }
+
+//   .contact-main-h1 {
+//     font-size: 24px;
+//   }
+
+//   .contact-main-p {
+//     font-size: 13px;
+//   }
+
+//   .contacts-input label {
+//     font-size: 11px;
+//   }
+
+//   .contact-final-h1 {
+//     font-size: 35px;
+//   }
+
+//   .contact-final-p {
+//     font-size: 15px;
+//   }
+// }
+
+// @media (max-width: 375px) {
+//   .contact-header-h1 {
+//     font-size: 22px;
+//   }
+
+//   .contact-header-p {
+//     font-size: 10px;
+//   }
+
+//   .contact-final-h1 {
+//     font-size: 30px;
+//   }
+
+//   .contact-final-p {
+//     font-size: 14px;
+//   }
+// }
+
+// @media (max-width: 280px) {
+//   .contact-header-h1 {
+//     font-size: 18px;
+//   }
+
+//   .contact-header-p {
+//     font-size: 9px;
+//   }
+
+//   .contact-main-h1 {
+//     font-size: 18px;
+//   }
+
+//   .contact-main-p {
+//     font-size: 10px;
+//   }
+
+//   .contact-final-h1 {
+//     font-size: 25px;
+//   }
+
+//   .contact-final-p {
+//     font-size: 12px;
+//   }
+// }
