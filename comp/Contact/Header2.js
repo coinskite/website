@@ -99,14 +99,15 @@ function Header2() {
               <option value="100-200 employess">100-200 employess</option>
             </select>
 
-            <input
+            <textarea
               className='input-box'
               placeholder='What are you looking for?'
               type="text"
               name="looking"
               value={details.looking}
               onChange={onChange}
-            />
+              style={{ minHeight: '100px' }}
+            ></textarea>
 
             <p>Provide details to help us personalize the consultation by better understanding your unique business challenges.</p>
             <button className='theme-sec'>Submit</button>
