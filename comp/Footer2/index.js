@@ -16,41 +16,10 @@ function Footer() {
   return (
     <>
       <footer className="black-bg">
-        <div className="dfc gap1 footer-1 mb-16">
-          <div>
-            <img src="./img/home/logo.png" alt="coinskite" id="footer-logo" />
-            <p className="footer-first-p hide-600">Delivering Blockchain solutions to drive business outcomes for startups and enterprises</p>
-          </div>
-
-          <div className='hide-600'>
-            <div className='mb-8 getweek'>Get weekly insights and facts right in your inbox</div>
-
-            <div className='df'>
-              <div className='df flex1 footer-input'>
-                <input type="text" placeholder='Email Address' />
-              </div>
-              <button className='theme-bg' style={{ color: "white" }}>Subscribe</button>
-            </div>
-          </div>
-
-          <div className='connect-us-1'>
-            <strong>Connect us</strong>
-
-            <div className="df footer-social-img hide-600">
-              <a href="https://www.instagram.com/coinskite" rel="noreferrer" target="_blank">
-                <img src="./img/footer/insta.png" alt="instagram" />
-              </a>
-              <a href="https://www.linkedin.com/in/coins-kite" rel="noreferrer" target="_blank">
-                <img src="./img/footer/linkedin.png" alt="linkedin" />
-              </a>
-              <a href="https://twitter.com/coinskite?s=08" rel="noreferrer" target="_blank">
-                <img src="./img/footer/twit.png" alt="twiter" />
-              </a>
-              <a href="https://m.facebook.com/coinskite.coinskite" rel="noreferrer" target="_blank">
-                <img src="./img/footer/fb.png" alt="facebook" />
-              </a>
-            </div>
-          </div>
+        <div>
+          <img src="./img/logo/white.png" alt="logo" />
+          <p className='mt-8 mb-8'>Delivering blockchain solutions solutions to drive business outcomes for startups and enterprises</p>
+          <button>Join Newsletter</button>
         </div>
 
         <div className="row-footer">
@@ -234,46 +203,30 @@ function Footer() {
                   <Link href="/"><a>API & Docs</a></Link>
                 </li>
               </ul>
-
-              <div className='connect-us-2'>
-                <strong>Connect us</strong>
-
-                <div className="df footer-social-img hide-600">
-                  <a href="https://www.instagram.com/coinskite" rel="noreferrer" target="_blank">
-                    <img src="./img/footer/insta.png" alt="instagram" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/coins-kite" rel="noreferrer" target="_blank">
-                    <img src="./img/footer/linkedin.png" alt="linkedin" />
-                  </a>
-                  <a href="https://twitter.com/coinskite?s=08" rel="noreferrer" target="_blank">
-                    <img src="./img/footer/twit.png" alt="twiter" />
-                  </a>
-                  <a href="https://m.facebook.com/coinskite.coinskite" rel="noreferrer" target="_blank">
-                    <img src="./img/footer/fb.png" alt="facebook" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
-        <div className='connect-us-3'>
-          <strong>Connect us</strong>
-
-          <div className="df footer-social-img">
-            <a href="https://www.instagram.com/coinskite" rel="noreferrer" target="_blank">
-              <img src="./img/footer/insta.png" alt="instagram" />
-            </a>
-            <a href="https://www.linkedin.com/in/coins-kite" rel="noreferrer" target="_blank">
-              <img src="./img/footer/linkedin.png" alt="linkedin" />
-            </a>
-            <a href="https://twitter.com/coinskite?s=08" rel="noreferrer" target="_blank">
-              <img src="./img/footer/twit.png" alt="twiter" />
-            </a>
-            <a href="https://m.facebook.com/coinskite.coinskite" rel="noreferrer" target="_blank">
-              <img src="./img/footer/fb.png" alt="facebook" />
-            </a>
-          </div>
+        <div className='df gap1 footer-final'>
+          <p>@Copyright 2022,Coinskite Pvt. Ltd.All rights reserved</p>
+          <a href="https://twitter.com/coinskite?s=08" rel="noreferrer" target="_blank">
+            <img src="./img/footer/twitter.png" alt="twiter" />
+          </a>
+          <a href="https://www.linkedin.com/in/coins-kite" rel="noreferrer" target="_blank">
+            <img src="./img/footer/ln.png" alt="linkedin" />
+          </a>
+          <a href="https://m.facebook.com/coinskite.coinskite" rel="noreferrer" target="_blank">
+            <img src="./img/footer/fb.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/coinskite" rel="noreferrer" target="_blank">
+            <img src="./img/footer/insta.png" alt="instagram" />
+          </a>
+          <a href="/" rel="noreferrer" target="_blank">
+            <img src="./img/footer/Whatsapp.png" alt="Whatsapp" />
+          </a>
+          <a href="/" rel="noreferrer" target="_blank">
+            <img src="./img/footer/medium.png" alt="Medium" />
+          </a>
         </div>
       </footer>
     </>

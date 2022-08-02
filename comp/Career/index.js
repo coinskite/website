@@ -1,17 +1,17 @@
-import SubHeader from "./SubHeader";
-import Header from "./Header";
-import Final from "./Final";
-import Sect3 from "./Sect3";
-import Team from "./Team";
+import Decentralised from "./Decentralised";
+import SubHeader from "./SubHeader2";
+import Location from "./Location";
+import Header from "./Header1";
+import Values from "./Values";
 
 function Career() {
   return (
     <>
       <Header />
       <SubHeader />
-      <Sect3 />
-      <Team />
-      <Final />
+      <Decentralised />
+      <Values />
+      <Location />
     </>
   )
 }

@@ -1,3 +1,209 @@
+.career-header-1 {
+  color:  #223764;
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 70px;
+  }
+  
+  p {
+    font-weight: 500;
+    font-size: 35px;
+  }
+
+  button {
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 43px;
+    color:  #223764;
+    margin-block: 3rem;
+  }
+}
+
+.career-2-sb {
+  background-color: #0F161B;
+  color: #F5F5F5;
+
+  h1 {
+    font-weight: 700;
+    font-size: 76px;
+  }
+
+  p {  
+    font-weight: 500;
+  }
+
+  .cs-p1 {
+    font-size: 30px;
+  }
+
+  .cs-p2 {
+    font-size: 45px;
+  }
+  
+  .cs-p3 {
+    font-size: 35px;
+  }
+
+  .care-group {
+    padding: 2rem 0;
+    gap: 4rem;
+  }
+
+  strong {
+    color: #22C954;
+  }
+
+  .cs-head{
+    text-align: left;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fff;
+  }
+  
+  .cs-para{
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+.career-2-decent {
+  background-color: #0F161B;
+  color: #F5F5F5;
+
+  h1 {
+    color: #22C954;
+    font-weight: 800;
+    font-size: 80px;
+  }
+
+  .cs-des {
+    font-weight: 500;
+    font-size: 45px;
+  }
+
+  .cs-grid {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 5rem;
+  }
+}
+
+.cs-grid-box {
+  width: 417px;
+  height: 424px;
+  border-radius: 18px;
+  border: 2px solid #22C954;
+
+  img {
+    width: 250px;
+  }
+
+  .head {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .para {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.career-2-values {
+  background-color: #22C954;
+  color: #fff;
+
+  h1 {
+    font-weight: 700;
+    font-size: 70px;
+  }
+  
+  .para {
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
+
+.career-val-tabs {
+  margin: 4rem 0;
+  .bord {
+    border-left: 1px solid #fff;
+  }
+
+  p {
+    padding: 1rem;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .selected {
+    border-left: 2px solid #fff;
+  }
+
+  .ddtd {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+.career-val-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.caree-location {
+  background-color: #0F161B;
+  color: #F5F5F5;
+
+  h1 {
+    font-weight: 700;
+    font-size: 80px;
+    color: #22C954;
+  }
+
+  .center-loc {
+    background-color: #22C954;
+    max-width: 1050px;
+    margin: 3rem auto;
+    border-radius: 40px;
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+
+    p {
+      text-align: left;
+    }
+
+    p:first-child {
+      font-weight: 700;
+      font-size: 40px;
+    }
+    
+    p:last-child {
+      font-weight: 500;
+      font-size: 22px;
+    }
+    
+    button {
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+  }
+}
+
 .career-header-h1 {
   font-size: 65px;
   line-height: 1.2;
