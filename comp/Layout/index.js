@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Footer from '../Footer2';
-import Nav from '../Nav2';
+import Nav from '../Nav3';
 
 function Layout({ children }) {
   const router = useRouter()

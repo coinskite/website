@@ -1,11 +1,7 @@
-import Home from '../comp/Home2';
+import Home from '../comp/Home3';
 
 function Comp() {
-  return (
-    <>
-      <Home />
-    </>
-  )
+  return <Home />
 }
 
 export default Comp

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background: linear-gradient(to bottom, #22C954, #000 140%);
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-col-full {
+  grid-column: 1 / -1;
+}
+
+footer li {
+  line-height: 2;
+}
+
+.head-arr {
+  transform: rotateZ(90deg);
+}
+
+@media (max-width: 768px) {
+  .head-arr {
+    display: initial;
+  }
+
+  .active .head-arr {
+    transform: rotateZ(270deg);
+  }
+
+  .need {
+    display: none;
+  }
+
+  .active .need {
+    display: block;
+  }
+}
