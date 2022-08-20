@@ -1,20 +1,22 @@
 import { startupPoints, enterprisePoints } from './constants';
 import Arrow from '../../svg/arrows/white.svg';
+import Tick from '../../svg/tick.svg';
 
 function TabVal({ title, vals = [] }) {
   return (
     <div className='dfc p-4 bg-[#363B41] rounded-[5px]'>
       <img
-        src={title === "Startup" ? "./img/home/sec1/startup.png" : "./img/home/sec1/enterprises.png"}
+        src={title === "Startup" ? "./img/home/Startup.png" : "./img/home/Enterprise.png"}
         alt={title}
-        className="offer-right-img"
+        className="w-14 xl:w-16"
       />
       <h3 className="text-[25px] lg:text-[40px]">{title}</h3>
 
       <div className="dfc">
         {
           vals.map(val => (
-            <div key={val} className="df">
+            <div key={val} className="df gap-4">
+              <Tick className='w-5 h-5' />
               <p className="text-lg lg:text-[25px] lg:font-normal">{val}</p>
             </div>
           ))

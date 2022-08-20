@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="dfc jcc gap-4 md:gap-8 pad-main-1-3 h-[80vh]">
+    <div className="dfc home-header-bg jcc gap-4 md:gap-8 pad-main-1-3 h-[40vh] sm:h-[60vh] md:h-[80vh] relative">
       <h1 className="text-xl sm:text-[27px] md:text-[35px] lg:text-[50px] leading-6 sm:leading-8 md:leading-10 lg:leading-[60px] font-semibold">
         Blockchain <br />
         Development Company
@@ -17,6 +17,12 @@ function Header() {
           Contact Us
         </button>
       </p>
+
+      <img
+        className="hidden xs:block xs:w-60 sm:w-72 md:w-96 xl:w-auto absolute bottom-8 xs:bottom-0 right-4 lg:right-8"
+        src="./img/home/HeaderBox.png"
+        alt="box"
+      />
     </div>
   )
 }

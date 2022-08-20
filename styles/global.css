@@ -12,13 +12,24 @@
   grid-column: 1 / -1;
 }
 
+/* Nav */
+.head-arr {
+  transform: rotateZ(90deg);
+}
+
+
+/* Home */
+.blog-bg {
+  background-image: url(../public/img/home/Net.png);
+}
+
+
+/* Footer */
 footer li {
   line-height: 2;
 }
 
-.head-arr {
-  transform: rotateZ(90deg);
-}
+
 
 @media (max-width: 768px) {
   .head-arr {
