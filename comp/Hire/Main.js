@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import Search from '../../svg/search.svg'
-import Switch from '../../ui/Switch'
+import Switch from '../ui/Switch'
 import Card from './Card'
 
 const WorkType = ["Full Time", "Part Time", "Internship"]
