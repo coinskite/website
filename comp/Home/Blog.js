@@ -1,41 +1,15 @@
-import Chatbot from '../../svg/chatbot.svg';
-import See from '../../svg/arrows/white.svg';
-
-function Sect({ info }) {
-  return (
-    <div className="p-16 dfc center">
-      <p className="blog-img"></p>
-      <p className="flex1 blog-sec-p">{info}</p>
-      <p className="df jcc read-more">
-        Read more
-        <img src="./img/blog/Readmore.png" alt="Readmore" />
-      </p>
-    </div>
-  )
-}
 
 function Blog() {
   return (
-    <div className="pad-main-3">
-      <h1 className="blog-h1 center">What’s new at Coinskite</h1>
+    <div className="pad-main-3 2xl:py-14 blog-bg text-center bg-no-repeat bg-cover">
+      <h1 className="gradient-text text-[15px] sm:text-xl md:text-[23px] lg:text-[40px] xl:text-[45px] leading-[18px] sm:leading-6 md:leading-7 lg:leading-[48px] xl:leading-[54px] md:font-bold">
+        WHAT’s NEW AT COINSKITE
+      </h1>
 
-      <div className="homeblog-cont">
-        <div className="home-blog-list">
-          <Sect info="Senegalese locals left disillusioned by lack of progress on Akon City" />
-          <Sect info="Australia, Singapore, Malaysia, and South Africa launch joint CBDC pilot" />
-          <Sect info="Ethereum traders expect volatility ahead of Friday’s $820M options expiry" />
-        </div>
-      </div>
-
-      <div className="df blog-continue">
-        <button className="df">
-          See All blogs
-          <See />
-        </button>
-
-        <p className="chat-bot">
-          <Chatbot />
-        </p>
+      <div className="grid grid-cols-3 justify-center gap-8 pad-main-3">
+        <img src="./img/home/web3.png" alt="blog" />
+        <img src="./img/home/NFTs.png" alt="blog" />
+        <img src="./img/home/Game.png" alt="blog" />
       </div>
     </div>
   )

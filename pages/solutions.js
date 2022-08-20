@@ -1,12 +1,7 @@
-import React from 'react';
-import Solutions from '../comp/Solutions'
+import Solutions from '../comp/Solutions';
 
 function Comp() {
-  return (
-    <>
-      <Solutions />
-    </>
-  )
+  return <Solutions />
 }
 
 export default Comp

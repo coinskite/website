@@ -1,12 +1,7 @@
-import React from 'react'
-import Application from '../comp/Application'
+import Application from '../comp/Application';
 
 function application() {
-  return (
-    <>
-      <Application />
-    </>
-  )
+  return <Application />
 }
 
 export default application

@@ -14,7 +14,7 @@
 
 # production
 /build
-/dropped
+/a-dropped
 
 # misc
 .DS_Store

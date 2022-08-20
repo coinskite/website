@@ -1,12 +1,7 @@
-import React from 'react';
-import Guide from '../comp/Guide'
+import Guide from '../comp/Guide';
 
 function Comp() {
-  return (
-    <>
-      <Guide />
-    </>
-  )
+  return <Guide />
 }
 
 export default Comp

@@ -1,12 +1,7 @@
-import React from 'react';
-import Blog from '../comp/Blog'
+import Blog from '../comp/Blog';
 
 function Comp() {
-  return (
-    <>
-      <Blog />
-    </>
-  )
+  return <Blog />
 }
 
 export default Comp

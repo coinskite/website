@@ -1,18 +1,18 @@
-import Platform from "./Platform";
-import Header from "./Header";
-import Offer from "./Offer";
-import Blog from "./Blog";
-import Final from "./Final";
+import Blog from './Blog';
+import Header from './Header';
+import Stacks from './Stacks';
+import Products from './Products';
+import Final from './Final';
 
 function Home() {
   return (
-    <>
+    <div className='text-white bg-[#222531]'>
       <Header />
-      <Offer />
-      <Platform />
+      <Products />
+      <Stacks />
       <Blog />
       <Final />
-    </>
+    </div>
   )
 }
 

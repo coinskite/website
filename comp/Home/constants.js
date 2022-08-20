@@ -1,12 +1,15 @@
 const startupPoints = [
-  "Product design workshop", "Permissioned and Permissionless blockchain development", "Blockchain technology consulting", "Smart Contracts development and audit within a project scope",
-  "Public blockchain network intergration", "Hybrid centralized systems development", "Distributed applications (DApps) development", "Blockchain components"
+  "Product Design",
+  "DAPP Development",
+  "Smart Contract",
+  "Blockchain Consulting"
 ]
 
 const enterprisePoints = [
-  "Consortium networks", "Proof of Concept development", "Blockchain technology consulting",
-  "Proof of Concept design workshop", "Migrating to blockchain infrastructure", "Public blockchain networks integration",
-  "Integrating blockchain into legacy infrastructure", "Private and permissioned blockchain development"
+  "Consortium networks",
+  "Private blockchain",
+  "Migration",
+  "Proof of Concept"
 ]
 
 export {
