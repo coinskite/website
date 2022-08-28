@@ -19,8 +19,12 @@
 
 
 /* Home */
+.home-header-bg {
+  background-image: url(../public/img/home/HeaderBlocks.png);
+}
+
 .blog-bg {
-  background-image: url(../public/img/home/Net.png);
+  background-image: url(../public/img/home/blog/net1.png);
 }
 
 

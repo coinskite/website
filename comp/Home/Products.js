@@ -6,7 +6,7 @@ function TabVal({ title, vals = [] }) {
   return (
     <div className='dfc p-4 bg-[#363B41] rounded-[5px]'>
       <img
-        src={title === "Startup" ? "./img/home/Startup.png" : "./img/home/Enterprise.png"}
+        src={title === "Startup" ? "./img/home/sec1/Startup.png" : "./img/home/sec1/Enterprise.png"}
         alt={title}
         className="w-14 xl:w-16"
       />

@@ -7,9 +7,9 @@ function Blog() {
       </h1>
 
       <div className="grid grid-cols-3 justify-center gap-8 pad-main-3">
-        <img src="./img/home/web3.png" alt="blog" />
-        <img src="./img/home/NFTs.png" alt="blog" />
-        <img src="./img/home/Game.png" alt="blog" />
+        <img src="./img/home/blog/web3.png" alt="blog" />
+        <img src="./img/home/blog/NFTs.png" alt="blog" />
+        <img src="./img/home/blog/Game.png" alt="blog" />
       </div>
     </div>
   )

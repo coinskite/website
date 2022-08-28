@@ -22,7 +22,7 @@ function Nav() {
       <div className="nav-logo">
         <Link href="/">
           <a>
-            <img className='w-40' src='./img/home/logo.png' alt="logo" />
+            <img className='w-40' src='./img/logo/logo.png' alt="logo" />
           </a>
         </Link>
       </div>
@@ -31,7 +31,7 @@ function Nav() {
         <Lines />
       </div>
 
-      <div className="hidden md:flex md:items-center md:gap-4 py-4 px-6 md:p-0 md:ml-auto fixed md:static top-14 inset-x-0 bg-white md:bg-inherit md:text-white z-[1]" ref={hamRef}>
+      <div className="hidden md:flex md:items-center md:gap-4 py-4 px-6 md:p-0 md:ml-auto fixed md:static inset-0 top-14 bg-white text-[#222531] md:bg-inherit md:text-white z-[1]" ref={hamRef}>
         {
           list.map(l => (
             <div
@@ -39,7 +39,7 @@ function Nav() {
               onClick={() => onClk(l.title)}
               className='mb-2 relative group'
             >
-              <div className='df cursor-pointer'>
+              <div className='df cursor-pointer font-bold'>
                 {l.title}
                 <Arrow
                   className={`ml-auto md:hidden ${active === l.title ? ' rotate-180' : ''}`}
@@ -59,8 +59,13 @@ function Nav() {
                     l.list.map(sl => (
                       <div
                         key={sl.name}
-                        className='my-1'
+                        className='df my-1'
                       >
+                        <img
+                          src={sl.img}
+                          alt={sl.name}
+                          className='hidden md:block w-6 h-6'
+                        />
                         {sl.name}
                       </div>
                     ))
