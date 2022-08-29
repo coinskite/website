@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=DM+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=DM+Sans&display=swap');
 
 :root {
   --primar-clr: hsl(138, 71%, 46%);
@@ -8,15 +8,15 @@
 $primary: var(--primar-clr);
 $black: var(--black-clr);
 
-body {
-  font-family: "Montserrat";
-}
+// body {
+//   font-family: "Montserrat";
+// }
 
-h1,
-h2 {
-  font-family: "Roboto";
-}
+// h1,
+// h2 {
+//   font-family: "Roboto";
+// }
 
-input:focus {
-  outline: none;
-}
+// input:focus {
+//   outline: none;
+// }

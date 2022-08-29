@@ -10,20 +10,20 @@ function TabVal({ title, vals = [] }) {
         alt={title}
         className="w-14 xl:w-16"
       />
-      <h3 className="text-[25px] lg:text-[40px]">{title}</h3>
+      <h3 className="text-[30px] lg:text-[40px]">{title}</h3>
 
       <div className="dfc">
         {
           vals.map(val => (
             <div key={val} className="df gap-4">
               <Tick className='w-5 h-5' />
-              <p className="text-lg lg:text-[25px] lg:font-normal">{val}</p>
+              <p className="text-[19px] lg:text-[25px] font-normal">{val}</p>
             </div>
           ))
         }
       </div>
 
-      <button className="df text-lg lg:text-[25px] lg:font-normal">
+      <button className="df text-lg lg:text-[25px] font-normal">
         Learn more <Arrow />
       </button>
     </div>
@@ -33,8 +33,8 @@ function TabVal({ title, vals = [] }) {
 function Products() {
   return (
     <div className="pad-main-1-3 font-semibold">
-      <h1 className="gradient-text text-[15px] sm:text-xl md:text-[23px] lg:text-[25px]">WE BRING INCREDIBLE IDEAS TO REALITY</h1>
-      <div className="text-[22px] sm:text-[28px] md:text-[30px] lg:text-[35px] xl:text-[40px] leading-[30px] sm:leading-[38px] md:leading-[40px] lg:leading-[47px] xl:leading-[54px]">
+      <h1 className="gradient-text sm:text-xl md:text-[23px] lg:text-[25px]">WE BRING INCREDIBLE IDEAS TO REALITY</h1>
+      <div className=" mt-[9px] text-[13px] sm:text-[28px] md:text-[30px] lg:text-[35px] xl:text-[40px]">
         Holistic Support During the Entire <br /> Product Development Lifecycle
       </div>
 

@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primar-clr: hsl(138, 71%, 46%);
+  --black-clr: hsl(0, 0%, 10%);
+}
+
+@layer components {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+    
+  input:focus {
+    outline: none;
+  }
+}
+
 
 .gradient-text {
   background: linear-gradient(to bottom, #22C954, #000 140%);
@@ -36,6 +54,7 @@ footer li {
 
 
 @media (max-width: 768px) {
+  /* Nav */
   .head-arr {
     display: initial;
   }
@@ -51,4 +70,10 @@ footer li {
   .active .need {
     display: block;
   }
+
+
+  /* Footer */
+  footer li {
+    line-height: 1;
+  }  
 }

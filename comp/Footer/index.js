@@ -10,23 +10,23 @@ function Footer() {
   const onClk = val => setActive(pr => val === pr ? "" : val)
 
   return (
-    <footer className="md:grid md:grid-cols-4 py-6 px-4 md:px-12 bg-[#222531]">
+    <footer className="md:grid md:grid-cols-4 md:gap-6 py-6 px-4 md:px-12 bg-[#222531]">
       <div className='mb-2'>
         <img src="./img/logo/white.png" alt="logo" />
       </div>
 
       {
         list.map(l => (
-          <div key={l.key} className="dfc">
+          <div key={l.key} className="dfc gap-0">
             {
               l.data.map(d => (
                 <div
                   key={d.str}
-                  className='mb-1 border-b border-white md:border-none'
+                  className='mb-1 pb-1.5 border-b border-white md:border-none'
                 >
                   <ul className={active === d.str ? "active" : ""}>
                     <li onClick={() => onClk(d.str)}>
-                      <strong className='df text-[22px] sm:text-[25px] lg:text-[30px] xl:text-[35px] text-[#F5F5F5] cursor-pointer'>
+                      <strong className='df text-sm sm:text-[25px] lg:text-[30px] xl:text-[35px] text-[#F5F5F5] cursor-pointer'>
                         {d.str}
                         <Arrow className="head-arr ml-auto md:hidden" />
                       </strong>
@@ -38,7 +38,7 @@ function Footer() {
                           className="need"
                         >
                           <Link href={li.link}>
-                            <a className='text-xs lg:text-lg xl:text-[22px] text-white opacity-50 hover:opacity-100'>
+                            <a className='text-[10px] lg:text-lg xl:text-[22px] text-white opacity-50 hover:opacity-100'>
                               {li.title}
                             </a>
                           </Link>

@@ -10,9 +10,9 @@ function Final() {
           />
 
           <div className="text-xl sm:text-[25px] md:text-[30px] lg:text-[48px] font-semibold">
-            <p className="leading-6 sm:leading-[30px] md:leading-[36px] lg:leading-[48px] xl:leading-[58px]">Interested in</p>
-            <p className="gradient-text leading-6 sm:leading-[30px] md:leading-[36px] lg:leading-[48px] xl:leading-[58px]">Blockchain</p>
-            <p className="leading-6 sm:leading-[30px] md:leading-[36px] lg:leading-[48px] xl:leading-[58px]">For your industry?</p>
+            <p>Interested in</p>
+            <p className="gradient-text ">Blockchain</p>
+            <p>For your industry?</p>
 
             <p className="my-2 text-[8px] sm:text-[10px] lg:text-[25px] font-medium">
               Get in touch with our Blockchain specialists.

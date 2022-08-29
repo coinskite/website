@@ -18,7 +18,7 @@ function Nav() {
   }
 
   return (
-    <nav className="df gap-4 py-4 px-6 xl:px-8 2xl:px-12 sticky top-0 z-[2] bg-[#13111B]">
+    <nav className="df gap-4 py-4 px-4 xl:px-8 2xl:px-12 sticky top-0 z-[2] bg-[#13111B]">
       <div className="nav-logo">
         <Link href="/">
           <a>

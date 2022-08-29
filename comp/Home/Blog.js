@@ -2,7 +2,7 @@
 function Blog() {
   return (
     <div className="pad-main-3 2xl:py-14 blog-bg text-center bg-no-repeat bg-cover">
-      <h1 className="gradient-text text-[15px] sm:text-xl md:text-[23px] lg:text-[40px] xl:text-[45px] leading-[18px] sm:leading-6 md:leading-7 lg:leading-[48px] xl:leading-[54px] md:font-bold">
+      <h1 className="gradient-text text-[15px] sm:text-xl md:text-[23px] lg:text-[40px] xl:text-[45px] md:font-bold">
         WHAT’s NEW AT COINSKITE
       </h1>
 
