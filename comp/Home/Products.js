@@ -8,7 +8,7 @@ function TabVal({ title, vals = [] }) {
       <img
         src={title === "Startup" ? "./img/home/sec1/Startup.png" : "./img/home/sec1/Enterprise.png"}
         alt={title}
-        className="w-14 xl:w-16"
+        className="w-14 xl:w-16 ml-auto"
       />
       <h3 className="text-[30px] lg:text-[40px]">{title}</h3>
 

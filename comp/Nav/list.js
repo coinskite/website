@@ -99,7 +99,7 @@ const list = [
         name: 'About'
       },
       {
-        img: './img/nav/Company/Careers.png',
+        img: './img/nav/Company/Career.png',
         name: 'Careers'
       },
       {

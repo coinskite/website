@@ -26,7 +26,7 @@ function Footer() {
                 >
                   <ul className={active === d.str ? "active" : ""}>
                     <li onClick={() => onClk(d.str)}>
-                      <strong className='df text-sm sm:text-[25px] lg:text-[30px] xl:text-[35px] text-[#F5F5F5] cursor-pointer'>
+                      <strong className='df text-sm sm:text-xl lg:text-[22px] xl:text-2xl lg:font-semibold text-[#F5F5F5] cursor-pointer'>
                         {d.str}
                         <Arrow className="head-arr ml-auto md:hidden" />
                       </strong>
@@ -35,10 +35,10 @@ function Footer() {
                       d.links.map(li => (
                         <li
                           key={li.title}
-                          className="need"
+                          className="need my-1"
                         >
                           <Link href={li.link}>
-                            <a className='text-[10px] lg:text-lg xl:text-[22px] text-white opacity-50 hover:opacity-100'>
+                            <a className='text-[10px] sm:text-[13px] md:text-xs lg:text-sm xl:text-base text-[#C4C4C4] hover:text-white'>
                               {li.title}
                             </a>
                           </Link>
@@ -54,7 +54,7 @@ function Footer() {
       }
 
       <div className='grid-col-full hidden md:flex items-center gap-4 mt-4 pr-12 pt-4 border-t-2 border-primary-900'>
-        <p className='flex-1 text-white opacity-50'>@Copyright 2022,Coinskite Pvt. Ltd.All rights reserved</p>
+        <p className='flex-1 md:text-xs lg:text-sm xl:text-base text-[#C4C4C4]'>@Copyright 2022,Coinskite Pvt. Ltd.All rights reserved</p>
         <a href="https://twitter.com/coinskite?s=08" rel="noreferrer" target="_blank">
           <img
             className='w-10 h-10'

@@ -20,6 +20,10 @@
 }
 
 
+.gradient-bg {
+  background: linear-gradient(to bottom, #22C954, #000 140%);
+}
+
 .gradient-text {
   background: linear-gradient(to bottom, #22C954, #000 140%);
   background-clip: text;
