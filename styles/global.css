@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,21 +11,20 @@
 
 @layer components {
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
-    
+
   input:focus {
     outline: none;
   }
 }
 
-
 .gradient-bg {
-  background: linear-gradient(to bottom, #22C954, #000 140%);
+  background: linear-gradient(to bottom, #22c954, #000 140%);
 }
 
 .gradient-text {
-  background: linear-gradient(to bottom, #22C954, #000 140%);
+  background: linear-gradient(to bottom, #22c954, #000 140%);
   background-clip: text;
   color: transparent;
 }
@@ -39,7 +38,6 @@
   transform: rotateZ(90deg);
 }
 
-
 /* Home */
 .home-header-bg {
   background-image: url(../public/img/home/HeaderBlocks.png);
@@ -49,13 +47,10 @@
   background-image: url(../public/img/home/blog/net1.png);
 }
 
-
 /* Footer */
 footer li {
   line-height: 2;
 }
-
-
 
 @media (max-width: 768px) {
   /* Nav */
@@ -75,9 +70,8 @@ footer li {
     display: block;
   }
 
-
   /* Footer */
   footer li {
     line-height: 1;
-  }  
+  }
 }

@@ -12,7 +12,7 @@ function SubHeader2() {
           prosperity for people and companies anywhere.
         </p>
 
-        <img src="./img/logo/icononly.png" alt="logo" />
+        <img src="./img/logo/icononly.png" className='mx-auto' alt="logo" />
         <p className='cs-p2 mb-16 mt-16'>
           "<strong>Our mission</strong> is to raise global economic <br />
           prosperity through the frictionless <br />
@@ -20,23 +20,34 @@ function SubHeader2() {
         </p>
         <p className='cs-p3'>-Ganeshan,CEO of Coinskite</p>
       </div>
+      <h1 className='cs-header lg:text-[80px] md:text-[70px] sm:text-[40px] mb-35 mt-20'>Life at Coinskite</h1>
 
-      <div className='df care-group'>
+      <div className='df care-group mb-20'>
         <img
-          width={450}
+          width={451}
           src="./img/career/groupofpeople.png"
           alt="group"
         />
         <div>
-          <p className='cs-head'>Love what you Do</p>
-          <p className='cs-para'>At Coinskite, everyone is passionate about <br /> transforming startups and enterprises by <br /> integrating blockchain solutions into everyday <br /> operations.</p>
+          <p className='cs-head'>Builders at Coinskite </p>
+          <p className='cs-para'>We are a group of passionate blockchain
+            <br /> developers, strategists, and content creators <br />
+            who deeply believe in the potential of<br />
+            blockchain technology to transform startups<br /> and enterprises from ground zero.</p>
         </div>
+
+
       </div>
+
 
       <div className='df' style={{ justifyContent: 'space-between' }}>
         <div>
-          <p className='cs-head'>#insideDO</p>
-          <p className='cs-para'>At Coinskite, everyone is passionate about <br /> transforming startups and <br /> enterprises by integrating blockchain <br /> solutions into everyday operations.</p>
+          <p className='cs-head'>#KITEHIGH</p>
+          <p className='cs-para'>We facilitate business transformation by<br />
+            offering 360-degree blockchain solutions like<br />
+            smart contract development, decentralized<br />
+            data management, single-layer reconciliation<br />
+            , and more.</p>
         </div>
         <img
           width={450}
