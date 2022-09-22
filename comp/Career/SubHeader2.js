@@ -1,5 +1,3 @@
-import React from 'react'
-
 function SubHeader2() {
   return (
     <section className='pad-main-3 career-2-sb center'>

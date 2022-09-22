@@ -1,10 +1,8 @@
-import React from 'react'
-
 function Location() {
   return (
     <div className='pad-main-3 caree-location center'>
       <h1 className='mb-16'>Hiring by Location</h1>
-      <img style={{ width: '100 %' }} className="m-auto" src="./img/career/map.png" alt="location" />
+      <img style={{ width: '100%' }} className="m-auto" src="./img/career/map.png" alt="location" />
 
       <div className='df center-loc'>
         <div className='flex1'>
