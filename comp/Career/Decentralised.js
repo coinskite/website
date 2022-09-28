@@ -39,19 +39,20 @@ const list = [
 
 function Decentralised() {
   return (
-    <div className='pad-main-3 career-2-decent center'>
-      <h1> Perks and Benefits</h1>
-      <div className='cs-des'>We work in a way that favours mutual growth and <br />respect for everyone involved.</div>
+    <div className='pad-main-3 text-center text-white bg-[#222531]'>
+      <h1 className="sm:mt-4 text-3xl sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[80px] font-semibold text-[#22C954]"> Perks and Benefits</h1>
+      <div className='mb-4 sm:mb-8 text-[11px] sm:text-[15px] md:text-xl lg:text-[26px] xl:text-[23px] font-medium'>We work in a way that favours mutual growth and <br />respect for everyone involved.</div>
 
-      <div className='cs-grid'>
+      <div className='grid grid-cols-2 gap-2 xs:gap-6 sm:gap-12 md:gap-14 lg:gap-16 xl:gap-20 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl mx-auto'>
         {
           list.map(l => (
-            <div className='cs-grid-box' key={l.key}>
-              <div className='cs-img'>
-                <img src={l.img} alt={l.head} />
-              </div>
-              <p className='head'>{l.head}</p>
-              <p className='para'>{l.para}</p>
+            <div
+              key={l.key}
+              className='dfc items-center p-2 pb-6 sm:pb-8 md:pb-10 bg-[#0F161B] border border-[#22C954] rounded'
+            >
+              <img className="w-20 h-20 md:w-40 md:h-40" src={l.img} alt={l.head} />
+              <p className='text-[10px] sm:text-[13px] md:text-[17px] lg:text-[21px] xl:text-2xl font-semibold'>{l.head}</p>
+              <p className='text-[7px] sm:text-[9px] md:text-xs lg:text-sm xl:text-[19px] font-semibold'>{l.para}</p>
             </div>
           ))
         }
