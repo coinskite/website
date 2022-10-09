@@ -1,15 +1,17 @@
-import SubHeader from "./SubHeader";
+import Pillars from "./Pillars";
+import Glance from "./Glance";
 import Header from "./Header";
-import Final from "./Final";
-import Share from "./Share";
+import Office from "./Office";
+import Trust from "./Trust";
 
 function About() {
   return (
     <>
       <Header />
-      <SubHeader />
-      <Final />
-      <Share />
+      <Trust />
+      <Glance />
+      <Pillars />
+      <Office />
     </>
   )
 }

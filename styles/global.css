@@ -52,6 +52,15 @@ footer li {
   line-height: 2;
 }
 
+/* About */
+.about-glance {
+  background-image: url(../public/img/about/circle.png);
+}
+
+.about-pillar {
+  background-image: url(../public/img/about/cube.png);
+}
+
 @media (max-width: 768px) {
   /* Nav */
   .head-arr {
