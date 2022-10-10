@@ -4,11 +4,13 @@ const list = [
     list: [
       {
         img: './img/nav/Product/Marketplace.png',
-        name: 'Marketplace'
+        name: 'Marketplace',
+        to: "/"
       },
       {
         img: './img/nav/Product/KiteZa.png',
-        name: 'KiteZa'
+        name: 'KiteZa',
+        to: "/"
       },
     ]
   },
@@ -17,11 +19,13 @@ const list = [
     list: [
       {
         img: './img/nav/Services/Startup.png',
-        name: 'Startup'
+        name: 'Startup',
+        to: "/startup"
       },
       {
         img: './img/nav/Services/Enterprise.png',
-        name: 'Enterprise'
+        name: 'Enterprise',
+        to: "/"
       },
     ]
   },
@@ -30,51 +34,63 @@ const list = [
     list: [
       {
         img: './img/nav/Solutions/Finance.png',
-        name: 'Finance'
+        name: 'Finance',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Media.png',
-        name: 'Media'
+        name: 'Media',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Sports.png',
-        name: 'Sports'
+        name: 'Sports',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Law.png',
-        name: 'Law'
+        name: 'Law',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Healthcare.png',
-        name: 'Healthcare'
+        name: 'Healthcare',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Digital Identidy.png',
-        name: 'Digital Identity'
+        name: 'Digital Identity',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Social Media.png',
-        name: 'Social Media'
+        name: 'Social Media',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Supplchain.png',
-        name: 'Supplychain'
+        name: 'Supplychain',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Insurance.png',
-        name: 'Insurance'
+        name: 'Insurance',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Real Estate.png',
-        name: 'Real Estate'
+        name: 'Real Estate',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Logistics.png',
-        name: 'Logistics'
+        name: 'Logistics',
+        to: "/solutions"
       },
       {
         img: './img/nav/Solutions/Gover.png',
-        name: 'Government'
+        name: 'Government',
+        to: "/solutions"
       },
     ]
   },
@@ -83,11 +99,13 @@ const list = [
     list: [
       {
         img: './img/nav/Partner/Become.png',
-        name: 'Become a Partner'
+        name: 'Become a Partner',
+        to: "/"
       },
       {
         img: './img/nav/Partner/Terms.png',
-        name: 'Partner terms and Conditions'
+        name: 'Partner terms and Conditions',
+        to: "/"
       },
     ]
   },
@@ -96,27 +114,33 @@ const list = [
     list: [
       {
         img: './img/nav/Company/About.png',
-        name: 'About'
+        name: 'About',
+        to: "/about"
       },
       {
         img: './img/nav/Company/Career.png',
-        name: 'Careers'
+        name: 'Careers',
+        to: "/career"
       },
       {
         img: './img/nav/Company/Blog.png',
-        name: 'Blog'
+        name: 'Blog',
+        to: "/blog"
       },
       {
         img: './img/nav/Company/Work.png',
-        name: 'Work'
+        name: 'Work',
+        to: "/"
       },
       {
         img: './img/nav/Company/Insights.png',
-        name: 'Insights'
+        name: 'Insights',
+        to: "/"
       },
       {
         img: './img/nav/Company/terms.png',
-        name: 'Terms & Conditions'
+        name: 'Terms & Conditions',
+        to: "/"
       },
     ]
   },
@@ -125,15 +149,18 @@ const list = [
     list: [
       {
         img: './img/nav/Resources/Resource Librar.png',
-        name: 'Resource Library'
+        name: 'Resource Library',
+        to: "/"
       },
       {
         img: './img/nav/Resources/Events.png',
-        name: 'Events'
+        name: 'Events',
+        to: "/"
       },
       {
         img: './img/nav/Resources/Interview.png',
-        name: 'Interview'
+        name: 'Interview',
+        to: "/"
       },
     ]
   },

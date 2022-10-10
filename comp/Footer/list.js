@@ -73,7 +73,7 @@ const list = [
         str: 'Customers',
         links: [
           {
-            link: '/',
+            link: '/startup',
             title: 'Startup'
           },
           {

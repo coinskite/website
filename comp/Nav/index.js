@@ -71,7 +71,8 @@ function Nav() {
                     l.list.map(sl => (
                       <div
                         key={sl.name}
-                        className='df gap-4 md:px-2 my-2 text-xl cursor-pointer'
+                        className='df gap-4 md:px-2 my-2 text-xl cursor-pointer hover:text-primary-900'
+                        onClick={() => navigate(sl.to)}
                       >
                         <img
                           src={sl.img}
@@ -86,7 +87,10 @@ function Nav() {
 
                 {
                   l.title === 'Solutions' &&
-                  <div className='gradient-text hidden md:flex md:items-center md:gap-2 mt-2 pt-2 relative'>
+                  <div
+                    className='gradient-text hidden md:flex md:items-center md:gap-2 mt-2 pt-2 relative cursor-pointer'
+                    onClick={() => navigate("/solutions")}
+                  >
                     <div className='gradient-bg h-px absolute -inset-x-4 top-0'></div>
                     See all solutions
                     <img
