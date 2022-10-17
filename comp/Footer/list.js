@@ -188,6 +188,10 @@ const list = [
             link: '/',
             title: 'API & Docs'
           },
+          {
+            link: '/press',
+            title: 'Press'
+          },
         ]
       },
     ]
