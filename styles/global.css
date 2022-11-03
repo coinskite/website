@@ -50,11 +50,11 @@ footer li {
 
 /* About */
 .about-glance {
-  background-image: url(../public/img/about/circle.png);
+  background-image: url(../public/img/about/r-circle.png);
 }
 
 .about-pillar {
-  background-image: url(../public/img/about/cube.png);
+  background-image: url(../public/img/about/r-cube.png);
 }
 
 @media (max-width: 768px) {

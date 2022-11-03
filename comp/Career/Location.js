@@ -4,7 +4,7 @@ function Location() {
       <h1 className="sm:mt-4 mb-4 sm:mb-8 md:mb-10 lg:mb-12 text-3xl sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[80px] font-semibold text-[#22C954] text-center">
         Hiring by Location
       </h1>
-      <img className="m-auto" src="./img/career/map.png" alt="location" />
+      <img className="m-auto" src="./img/career/Map.png" alt="location" />
 
       <div className='df px-4 py-3 lg:px-5 lg:py-4 max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto border border-[#22C954] rounded-md'>
         <div className='flex1'>
