@@ -29,10 +29,10 @@ function SubHeader2() {
       </h1>
 
       <div className="max-w-7xl mx-auto">
-        <div className='flex gap-2 xs:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mb-8 md:mb-12 lg:mb-16 xl:mb-20 text-left'>
+        <div className='df gap-2 xs:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mb-8 md:mb-12 lg:mb-16 xl:mb-20 text-left'>
           <img
             className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[320px] xl:w-[470px]"
-            src="./img/career/groupofpeople.png"
+            src="./img/career/r1.jpeg"
             alt="group"
           />
           <div>
@@ -43,7 +43,7 @@ function SubHeader2() {
           </div>
         </div>
 
-        <div className='flex gap-2 xs:gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-between text-left'>
+        <div className='df gap-2 xs:gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-between text-left'>
           <div>
             <p className='mb-3 leading-none text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-[35px] font-bold'>#KITEHIGH</p>
             <p className='text-[6px] xs:text-[9px] sm:text-[13px] md:text-[15px] lg:text-lg xl:text-xl xl:leading-8 font-medium'>
@@ -52,7 +52,7 @@ function SubHeader2() {
           </div>
           <img
             className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[320px] xl:w-[470px]"
-            src="./img/career/groupofpeople.png"
+            src="./img/career/r2.jpeg"
             alt="group"
           />
         </div>

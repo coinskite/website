@@ -43,11 +43,6 @@
   background-image: url(../public/img/home/blog/net1.png);
 }
 
-/* Footer */
-footer li {
-  line-height: 2;
-}
-
 /* About */
 .about-glance {
   background-image: url(../public/img/about/cir.jpeg);
