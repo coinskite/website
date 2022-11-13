@@ -33,7 +33,7 @@ function Choose() {
         Why do  startups choose Coinskite?
       </h2>
 
-      <div className="my-6 md:my-12 xl:my-16 grid grid-cols-3 gap-4">
+      <div className="my-6 md:my-12 xl:my-16 max-w-7xl mx-auto grid grid-cols-3 gap-4">
         {
           data.map(d => (
             <Card
@@ -44,7 +44,7 @@ function Choose() {
         }
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 max-w-7xl mx-auto">
         <div>
           <h3 className="w-fit mb-4 text-[15px] sm:text-xl md:text-[25px] lg:text-3xl xl:text-[40px] font-bold">
             How Startups Partnered <br />

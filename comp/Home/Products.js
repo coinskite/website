@@ -32,22 +32,24 @@ function TabVal({ title, vals = [] }) {
 
 function Products() {
   return (
-    <div className="pad-main-1-3 font-semibold">
-      <h1 className="text-primary-900 sm:text-xl md:text-[38px] lg:text-[48px]">WE BRING INCREDIBLE IDEAS TO REALITY</h1>
-      <div className=" mt-[9px] text-[13px] sm:text-[20px] md:text-[23px] lg:text-[35px] xl:text-[30px]">
-        Holistic Support During the Entire <br /> Product Development Lifecycle
-      </div>
+    <div className='pad-main-1-3'>
+      <div className="max-w-7xl mx-auto font-semibold">
+        <h1 className="text-primary-900 sm:text-xl md:text-[38px] lg:text-[48px]">WE BRING INCREDIBLE IDEAS TO REALITY</h1>
+        <div className=" mt-[9px] text-[13px] sm:text-[20px] md:text-[23px] lg:text-[35px] xl:text-[30px]">
+          Holistic Support During the Entire <br /> Product Development Lifecycle
+        </div>
 
-      <div className="grid justify-center md:grid-cols-2 md:justify-items-center gap-4 my-6 mx-auto max-w-4xl">
-        <TabVal
-          title="Startup"
-          vals={startupPoints}
-        />
+        <div className="grid justify-center md:grid-cols-2 md:justify-items-center gap-4 my-6 mx-auto max-w-4xl">
+          <TabVal
+            title="Startup"
+            vals={startupPoints}
+          />
 
-        <TabVal
-          title="Enterprises"
-          vals={enterprisePoints}
-        />
+          <TabVal
+            title="Enterprises"
+            vals={enterprisePoints}
+          />
+        </div>
       </div>
     </div>
   )

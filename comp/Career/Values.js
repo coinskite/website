@@ -44,14 +44,14 @@ function Values() {
 
   return (
     <div className='pad-main-3 text-white bg-[#22C954]'>
-      <h1 className='mb-1 md:mb-2 text-[22px] sm:text-[28px] md:text-[35px] lg:text-[48px] xl:text-[55px] font-bold text-center'>Our values</h1>
-      <div className='mb-4 sm:mb-6 lg:mb-8 text-[10px] sm:text-[15px] md:text-xl lg:text-[23px] xl:text-[27px] font-medium text-center'>
+      <h1 className='mb-1 md:mb-2 text-[15px] xs:text-xl sm:text-3xl lg:text-[40px] font-bold text-center'>Our values</h1>
+      <div className='mb-4 sm:mb-6 lg:mb-8 text-[10px] xs:text-[13px] sm:text-[15px] md:text-xl lg:text-[23px] xl:text-[28px] font-medium text-center'>
         We abide by values that inspire work, <br />
         promote growth and drive change.
       </div>
 
-      <div className='grid gap-4 grid-cols-3'>
-        <div className='border-l border-white relative text-xs sm:text-base md:text-xl lg:text-2xl xl:text-[27px] font-medium'>
+      <div className='grid gap-4 grid-cols-3 max-w-7xl mx-auto'>
+        <div className='border-l border-white relative text-[8px] xs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-[28px] font-medium'>
           {
             list.map(l => (
               <p
@@ -65,7 +65,7 @@ function Values() {
           }
         </div>
 
-        <div className='col-span-2 text-[10px] sm:text-xs md:text-[15px] lg:text-xl xl:text-[27px]'>
+        <div className='col-span-2 text-[6px] xs:text-[8px] sm:text-[13px] md:text-sm lg:text-lg xl:text-xl'>
           {
             list?.find(l => l.key === selected)?.para
           }

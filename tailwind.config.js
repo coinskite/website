@@ -15,8 +15,10 @@ module.exports = {
       }
     },
     screens: {
-      xs: '450px',
+      ts: "360px",
+      xs: '480px',
       ...defaultTheme.screens,
+      "2xl": "1920",
     },
     fontSize: {
       'xs': ['12px', '1.4'],

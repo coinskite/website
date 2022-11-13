@@ -40,8 +40,8 @@ const list = [
 function Decentralised() {
   return (
     <div className='pad-main-3 text-center text-white bg-[#222531]'>
-      <h1 className="sm:mt-4 text-3xl sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[80px] font-semibold text-[#22C954]"> Perks and Benefits</h1>
-      <div className='mb-4 sm:mb-8 text-[11px] sm:text-[15px] md:text-xl lg:text-[26px] xl:text-[23px] font-medium'>We work in a way that favours mutual growth and <br />respect for everyone involved.</div>
+      <h1 className="sm:mt-4 text-[15px] xs:text-xl sm:text-[25px] md:text-3xl lg:text-[40px] font-semibold text-[#22C954]">Perks and Benefits</h1>
+      <div className='mb-4 sm:mb-8 text-[8px] xs:text-[13px] sm:text-[15px] md:text-xl lg:text-[25px] xl:text-[28px] font-medium'>We work in a way that favours mutual growth and <br />respect for everyone involved.</div>
 
       <div className='grid grid-cols-2 gap-2 xs:gap-6 sm:gap-12 md:gap-14 lg:gap-16 xl:gap-20 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl mx-auto'>
         {
@@ -51,8 +51,8 @@ function Decentralised() {
               className='dfc items-center p-2 pb-6 sm:pb-8 md:pb-10 bg-[#0F161B] border border-[#22C954] rounded'
             >
               <img className="w-20 h-20 md:w-40 md:h-40" src={l.img} alt={l.head} />
-              <p className='text-[10px] sm:text-[13px] md:text-[17px] lg:text-[21px] xl:text-2xl font-semibold'>{l.head}</p>
-              <p className='text-[7px] sm:text-[9px] md:text-xs lg:text-sm xl:text-[19px] font-semibold'>{l.para}</p>
+              <p className='text-[8px] xs:text-xs sm:text-base md:text-xl lg:text-[25px] xl:text-[28px] font-semibold'>{l.head}</p>
+              <p className='text-[6px] xs:text-[7.5px] sm:text-[10px] md:text-sm lg:text-lg xl:text-xl font-semibold'>{l.para}</p>
             </div>
           ))
         }
