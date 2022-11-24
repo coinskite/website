@@ -106,7 +106,7 @@ function Application({ jobId = "" }) {
 
       <div className='df'>
         <div className='flex1'>
-          <label htmlFor="firstName">First Name <Star /></label>
+          <label className='df' htmlFor="firstName">First Name <Star /></label>
           <input
             value={details.firstName}
             onChange={onChange}
@@ -118,7 +118,7 @@ function Application({ jobId = "" }) {
         </div>
 
         <div className='flex1'>
-          <label htmlFor="lastName">Last Name <Star /></label>
+          <label className='df' htmlFor="lastName">Last Name <Star /></label>
           <input
             value={details.lastName}
             onChange={onChange}
@@ -131,7 +131,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <div>
-        <label htmlFor="email">Email <Star /></label>
+        <label className='df' htmlFor="email">Email <Star /></label>
         <input
           value={details.email}
           onChange={onChange}
@@ -143,7 +143,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <div>
-        <label htmlFor="mobile">Mobile <Star /></label>
+        <label className='df' htmlFor="mobile">Mobile <Star /></label>
         <input
           value={details.mobile}
           onChange={onChange}
@@ -157,7 +157,7 @@ function Application({ jobId = "" }) {
       <div id='wiil-cont'>The Hiring team may use this number to contact you about this job</div>
 
       <div>
-        <label htmlFor="current_CTC">Current CTC <Star /></label>
+        <label className='df' htmlFor="current_CTC">Current CTC <Star /></label>
         <input
           value={details.current_CTC}
           onChange={onChange}
@@ -169,7 +169,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <div>
-        <label htmlFor="expected_CTC">Expected CTC <Star /></label>
+        <label className='df' htmlFor="expected_CTC">Expected CTC <Star /></label>
         <input
           value={details.expected_CTC}
           onChange={onChange}
@@ -181,7 +181,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <div>
-        <label htmlFor="noticePeriod">Notice period <Star /></label>
+        <label className='df' htmlFor="noticePeriod">Notice period <Star /></label>
         <input
           value={details.noticePeriod}
           onChange={onChange}
@@ -219,7 +219,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <div>
-        <label htmlFor="coverLetter">Why are you a great fit for this job?(Cover letter) <Star /></label>
+        <label className='df' htmlFor="coverLetter">Why are you a great fit for this job?(Cover letter) <Star /></label>
         <textarea
           className='input-box'
           onChange={onChange}
@@ -230,7 +230,7 @@ function Application({ jobId = "" }) {
       </div>
 
       <button
-        className='theme-sec'
+        className='theme-sec px-4 py-2'
         onClick={onSubmit}
         // disabled={loading}
         disabled

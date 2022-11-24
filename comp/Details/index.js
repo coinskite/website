@@ -50,7 +50,12 @@ function Details({ data }) {
         }
 
         <div className='df jcc'>
-          <button onClick={push} className='theme-sec'>Apply Now</button>
+          <button
+            onClick={push}
+            className='theme-sec px-2 py-1'
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>
