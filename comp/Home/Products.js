@@ -1,6 +1,6 @@
 import { startupPoints, enterprisePoints } from './constants';
 import Arrow from '../../svg/arrows/white.svg';
-import Tick from '../../svg/tick.svg';
+// import Tick from '../../svg/tick.svg';
 
 function TabVal({ title, vals = [] }) {
   return (

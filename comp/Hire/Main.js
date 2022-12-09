@@ -50,87 +50,82 @@ function Main({ data }) {
   }
 
   return (
-    <>
-      <div className='hirec-main-sec1 pad-main-3'>
-        <div className='max-w'>
-          <h2>Open Positions</h2>
-
-          <div className='df mb-16'>
-            <select
-              className='input-box hire-selec1'
-              value={department}
-              onChange={e => setDepartment(e.target.value)}
-            >
-              <option value="" disabled>Choose Department</option>
-              {
-                data.map(p => (
-                  <option
-                    key={p.title}
-                    value={p.title}
-                  >
-                    {p.title}
-                  </option>
-                ))
-              }
-            </select>
-
-            <select
-              className='input-box hire-selec1'
-              value={workType}
-              onChange={e => setWorkType(e.target.value)}
-            >
-              <option value="" disabled>Choose Work Type</option>
-              {
-                WorkType.map(type => (
-                  <option
-                    key={type}
-                    value={type}
-                  >
-                    {type}
-                  </option>
-                ))
-              }
-            </select>
-
+    <div className='pad-main-3 bg-[#222531] text-[#C4C4C4]'>
+      <div className='max-w-7xl mx-auto'>
+        <div className='grid gap-4 mb-8'>
+          <h2 className='text-[10px] xs:text-xs sm:text-xl md:ext-[25px] lg:text-3xl xl:text-[35px] font-semibold text-primary-900'>Open Positions</h2>
+          <select
+            className='text-[10px] xl:text-base font-medium bg-[#152A39] border-primary-900 rounded-sm'
+            value={department}
+            onChange={e => setDepartment(e.target.value)}
+          >
+            <option value="" disabled>Choose Department</option>
             {
-              !(location === "Remote") &&
-              <select
-                className='input-box hire-selec2'
-                value={location}
-                onChange={e => setLocation(e.target.value)}
-              >
-                <option value="" disabled>Choose Location</option>
-                <option value="Remote">Remote</option>
-              </select>
+              data.map(p => (
+                <option
+                  key={p.title}
+                  value={p.title}
+                >
+                  {p.title}
+                </option>
+              ))
             }
+          </select>
 
-            <div className='w-remote'>Remote Only</div>
-            <div>
-              <Switch
-                active={location === "Remote"}
-                onClick={() => setLocation(location === "Remote" ? "" : "Remote")}
-              />
-            </div>
-
+          <select
+            className='text-[10px] xl:text-base font-medium bg-[#152A39] border-primary-900 rounded-sm'
+            value={workType}
+            onChange={e => setWorkType(e.target.value)}
+          >
+            <option value="" disabled>Choose Work Type</option>
             {
-              (department || workType || location || searchBy) &&
-              <button onClick={clear} className='br5 p-8-16'>Clear</button>
+              WorkType.map(type => (
+                <option
+                  key={type}
+                  value={type}
+                >
+                  {type}
+                </option>
+              ))
             }
+          </select>
+
+          {
+            !(location === "Remote") &&
+            <select
+              className='text-[10px] xl:text-base font-medium bg-[#152A39] border-primary-900 rounded-sm'
+              value={location}
+              onChange={e => setLocation(e.target.value)}
+            >
+              <option value="" disabled>Choose Location</option>
+              <option value="Remote">Remote</option>
+            </select>
+          }
+
+          <div className='df'>
+            <div className='text-xs lg:text-[15px] xl:text-lg font-medium text-primary-900'>Remote Only</div>
+            <Switch
+              active={location === "Remote"}
+              onClick={() => setLocation(location === "Remote" ? "" : "Remote")}
+            />
           </div>
 
-          <div className='df hire-serach-box'>
-            <Search />
+          {
+            (department || workType || location || searchBy) &&
+            <button onClick={clear} className=''>Clear</button>
+          }
+
+          <div className='df pl-1 bg-[#152A39] border border-primary-900 rounded-sm'>
+            <Search className="fill-white" />
             <input
               type="text"
               value={searchBy}
-              className='input-box'
+              className='pl-0 text-[10px] xl:text-base font-medium bg-inherit border-none text-[#C4C4C4]'
               onChange={e => setSearchBy(e.target.value)}
             />
           </div>
         </div>
-      </div>
 
-      <div className='hirec-main-sec2 pad-main-3 max-w'>
         {
           roles.map(r => (
             <Card
@@ -141,7 +136,7 @@ function Main({ data }) {
           ))
         }
       </div>
-    </>
+    </div>
   )
 }
 

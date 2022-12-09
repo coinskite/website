@@ -17,6 +17,22 @@
   input:focus {
     outline: none;
   }
+
+  input,
+  textarea {
+    @apply block w-full px-3 py-2 text-sm text-gray-900 rounded focus:outline-none border border-gray-300;
+  }
+
+  select {
+    @apply w-full pl-4 pr-8 py-2 border appearance-none rounded focus:outline-none
+    bg-no-repeat bg-[url('../public/img/dropdown-arrow.png')] border-gray-300;
+    background-position: 98%;
+    background-size: 24px;
+  }
+
+  button {
+    @apply inline-block cursor-pointer rounded-md px-4 py-1 w-fit;
+  }
 }
 
 .gradient-bg {
@@ -50,6 +66,10 @@
 
 .about-pillar {
   background-image: url(../public/img/about/r-cube.png);
+}
+
+svg.hire-details-arrow path {
+  stroke: #fff;
 }
 
 @media (max-width: 768px) {

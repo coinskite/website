@@ -5,6 +5,7 @@ import { successNotify, errorNotify } from '../../helper/tostifyHelp'
 import mainUrl from '../../constants/url'
 import Cross from '../../svg/cross.svg'
 import Star from './astriek.svg'
+import InputBox from './InputBox'
 
 function Application({ jobId = "" }) {
   const [details, setDetails] = useState({
@@ -101,142 +102,114 @@ function Application({ jobId = "" }) {
   }
 
   return (
-    <div className='pad-main-3 apply-wrapper max-w'>
-      <h1>Submit Your Application</h1>
+    <div className='pad-main-3 bg-[#222531] text-[#C4C4C4]'>
+      <div className='max-w-xl mx-auto'>
+        <h1 className='mb-4 xl:mb-8 text-[15px] xs:text-xl sm:text-[25px] md:text-3xl lg:text-[40px] font-medium text-primary-900 text-center'>Submit Your Application</h1>
 
-      <div className='df'>
-        <div className='flex1'>
-          <label className='df' htmlFor="firstName">First Name <Star /></label>
-          <input
+        <div className='df gap-4 mb-4 xl:mb-8'>
+          <InputBox
+            name="firstName"
+            lable="First Name"
+            wrapperCls='flex1'
             value={details.firstName}
             onChange={onChange}
-            className='input-box'
-            type="text"
-            name="firstName"
-            id="firstName"
           />
-        </div>
-
-        <div className='flex1'>
-          <label className='df' htmlFor="lastName">Last Name <Star /></label>
-          <input
+          <InputBox
+            name="lastName"
+            lable="Last Name"
+            wrapperCls='flex1'
             value={details.lastName}
             onChange={onChange}
-            className='input-box'
-            type="text"
-            name="lastName"
-            id="lastName"
           />
         </div>
-      </div>
 
-      <div>
-        <label className='df' htmlFor="email">Email <Star /></label>
-        <input
+        <InputBox
+          name="email"
+          lable="Email"
           value={details.email}
           onChange={onChange}
-          className='input-box'
-          type="email"
-          name="email"
-          id="email"
         />
-      </div>
 
-      <div>
-        <label className='df' htmlFor="mobile">Mobile <Star /></label>
-        <input
+        <InputBox
+          name="mobile"
+          lable="Mobile"
+          wrapperCls='mb-1'
           value={details.mobile}
           onChange={onChange}
-          className='input-box'
-          type="tel"
-          name="mobile"
-          id="mobile"
         />
-      </div>
+        <div
+          className='mb-4 xl:mb-8 text-[10px] xs:text-xs sm:text-sm lg:text-lg font-medium text-[#C4C4C4]'
+          id='wiil-cont'
+        >
+          The Hiring team may use this number to contact you about this job
+        </div>
 
-      <div id='wiil-cont'>The Hiring team may use this number to contact you about this job</div>
-
-      <div>
-        <label className='df' htmlFor="current_CTC">Current CTC <Star /></label>
-        <input
+        <InputBox
+          name="current_CTC"
+          lable="Current CTC"
           value={details.current_CTC}
           onChange={onChange}
-          className='input-box'
-          type="text"
-          name="current_CTC"
-          id="current_CTC"
         />
-      </div>
 
-      <div>
-        <label className='df' htmlFor="expected_CTC">Expected CTC <Star /></label>
-        <input
+        <InputBox
+          name="expected_CTC"
+          lable="Expected CTC"
           value={details.expected_CTC}
           onChange={onChange}
-          className='input-box'
-          type="text"
-          name="expected_CTC"
-          id="expected_CTC"
         />
-      </div>
 
-      <div>
-        <label className='df' htmlFor="noticePeriod">Notice period <Star /></label>
-        <input
+        <InputBox
+          name="noticePeriod"
+          lable="Notice period"
           value={details.noticePeriod}
           onChange={onChange}
-          className='input-box'
-          type="text"
-          name="noticePeriod"
-          id="noticePeriod"
         />
-      </div>
 
-      <div className='upload-apply'>
-        {
-          fileName &&
-          <div className='df progress-bar-wrapper pb-16'>
-            <p className='progress-bar' style={{ width: `${progress}%` }}></p>
-            <p>{fileName}</p>
-            <Cross className='cross-apply' onClick={onCloseFile} />
+        <div className='df jcc h-20 mb-4 xl:mb-8 bg-[#152A39] border border-primary-900 text-[#C4C4C4] rounded-sm'>
+          {
+            fileName &&
+            <div className='df'>
+              <p style={{ width: `${progress}%` }}></p>
+              <p>{fileName}</p>
+              <Cross className='cross-apply' onClick={onCloseFile} />
+            </div>
+          }
+
+          <div className='df jcc cursor-pointer' onClick={() => fileInputRef.current.click()}>
+            <p className='text-[10px] xs:text-xs sm:text-base lg:text-lg font-medium'>
+              <span className='text-primary-900'>{fileName ? "Replace" : "Upload"} a file</span> or drag and drop here
+            </p>
+            <input
+              onClickCapture={onInputClick}
+              onChange={onFileChange}
+              multiple={false}
+              accept=".pdf, .doc, .docx"
+              style={{ display: 'none' }}
+              type="file"
+              ref={fileInputRef}
+            />
           </div>
-        }
+        </div>
 
-        <div className='df jcc cp' onClick={() => fileInputRef.current.click()}>
-          <p>
-            <span className='theme-clr'>{fileName ? "Replace" : "Upload"} a file</span> or drag and drop here
-          </p>
-          <input
-            onClickCapture={onInputClick}
-            onChange={onFileChange}
-            multiple={false}
-            accept=".pdf, .doc, .docx"
-            style={{ display: 'none' }}
-            type="file"
-            ref={fileInputRef}
+        <div className='mb-4 xl:mb-8'>
+          <label className='df mb-1 xl:mb-2 text-[10px] xs:text-xs sm:text-sm lg:text-lg font-medium text-[#C4C4C4]' htmlFor="coverLetter">Why are you a great fit for this job?(Cover letter) <Star /></label>
+          <textarea
+            className='bg-[#152A39] border-primary-900 text-[#C4C4C4] rounded-sm'
+            onChange={onChange}
+            value={details.coverLetter}
+            name="coverLetter"
+            id="coverLetter"
           />
         </div>
-      </div>
 
-      <div>
-        <label className='df' htmlFor="coverLetter">Why are you a great fit for this job?(Cover letter) <Star /></label>
-        <textarea
-          className='input-box'
-          onChange={onChange}
-          value={details.coverLetter}
-          name="coverLetter"
-          id="coverLetter"
-        />
+        <button
+          className='block w-4/5 mb-8 px-4 py-2 mx-auto text-sm xs:text-lg sm:text-xl lg:text-2xl font-medium text-white bg-primary-900'
+          onClick={onSubmit}
+          disabled={loading}
+        >
+          Submit Application
+        </button>
       </div>
-
-      <button
-        className='theme-sec px-4 py-2'
-        onClick={onSubmit}
-        // disabled={loading}
-        disabled
-      >
-        Submit Application
-      </button>
     </div>
   )
 }

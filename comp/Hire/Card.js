@@ -7,41 +7,32 @@ function Card({ title, roles = [] }) {
   const push = id => router.push(`/hire/${id}`)
 
   return (
-    <div className='hire-card'>
-      <div className='df hire-card-title'>
-        <p>{title}</p>
-        <p>{roles.length} Open Roles</p>
+    <>
+      <div className='df justify-between mb-2'>
+        <p className='text-[6px] xs:text-xs sm:text-lg md:text-xl lg:text-[25px] xl:text-3xl font-semibold text-primary-900'>{title}</p>
+        <button className='text-[6px] xs:text-[8px] xl:text-base font-medium bg-[#152A39] border border-primary-900 rounded-sm'>
+          {roles.length} Open Roles
+        </button>
       </div>
 
-      <div className='cp hire-card-info'>
+      <div className='mb-4'>
         {
           roles.map(role => (
             <div
               key={role._id}
-              className="hire-card-info-sec"
+              className="p-2 lg:p-4 bg-[#152A39] border border-primary-900 rounded-sm cursor-pointer relative"
               onClick={() => push(role._id)}
             >
-              <h1>{role.title}</h1>
-
-              <div className='df'>
-                <div className='flex1 ellipsis2'>
-                  {role.description}
-                </div>
-
-                <div className='theme-clr'>
-                  <p>{role.location}</p>
-                  <p>{role.workType}</p>
-                </div>
-
-                <div>
-                  <Arrow />
-                </div>
-              </div>
+              <p className='mb-1 text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-semibold'>{role.title}</p>
+              <p className='df lg:mb-2 justify-between text-[6px] xs:text-[7px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-lg font-medium'>
+                {role.location} {role.workType}
+              </p>
+              <Arrow className="absolute top-1/2 right-1 lg:right-4 -translate-y-1/2" />
             </div>
           ))
         }
       </div>
-    </div>
+    </>
   )
 }
 
