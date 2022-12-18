@@ -30,9 +30,9 @@ function Header() {
 
   return (
     <>
-      <div className="grid lg:flex lg:items-center pad-main-3 max-w-7xl mx-auto text-center text-[#0F0450]">
+      <div className="grid lg:flex lg:items-center lg:justify-center lg:gap-12 pad-main-3 max-w-7xl mx-auto text-center text-[#0F0450]">
         <img
-          className="mx-auto w-[133px] xs:w-[160px] md:w-[240px] lg:w-[290px] xl:w-[420px] lg:-ml-12"
+          className="mx-auto w-[133px] xs:w-[160px] md:w-[240px] lg:w-[290px] xl:w-[420px] lg:mx-0"
           src="./img/job.png"
           alt=""
         />

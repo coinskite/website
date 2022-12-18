@@ -8,14 +8,14 @@ function Card({ title, roles = [] }) {
 
   return (
     <>
-      <div className='df justify-between mb-2'>
+      <div className={`${!roles.length ? "hidden" : "df"} justify-between mb-2`}>
         <p className='text-[6px] xs:text-xs sm:text-lg md:text-xl lg:text-[25px] xl:text-3xl font-semibold text-primary-900'>{title}</p>
         <button className='text-[6px] xs:text-[8px] xl:text-base font-medium bg-[#152A39] border border-primary-900 rounded-sm'>
           {roles.length} Open Roles
         </button>
       </div>
 
-      <div className='mb-4'>
+      <div className={`${!roles.length ? "hidden" : ""} mb-4`}>
         {
           roles.map(role => (
             <div
