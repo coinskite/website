@@ -42,7 +42,6 @@ function Main({ data }) {
     return filtered
   }, [department, workType, location, searchBy])
 
-  console.log(roles)
   const clear = () => {
     setDepartment("")
     setWorkType("")
