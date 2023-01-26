@@ -30,7 +30,7 @@ function Choose() {
   return (
     <div className="pad-main-3 text-white bg-[#222531]">
       <h2 className="text-xl sm:text-3xl md:text-[37px] lg:text-[45px] font-bold text-[#22C954] text-center">
-        Why do  startups choose Coinskite?
+        Why do startups choose Coinskite?
       </h2>
 
       <div className="my-6 md:my-12 xl:my-16 max-w-7xl mx-auto grid grid-cols-3 gap-4">
