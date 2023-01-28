@@ -1,18 +1,18 @@
 const data = [
   {
     img: "./img/startup/1.png",
-    title: "Dedicated Team",
-    para: "Our Blockchain developers are hands-on the cognitive technologies to deliver high-quality services and solutions to clienst"
+    title: "Expertise and Experience",
+    para: "With decades of experience under our belts,our team is equipped to help you navigate the complexities of the digital world and achieve your goals."
   },
   {
     img: "./img/startup/2.png",
-    title: "Team Extension",
-    para: "Our team extension model is intended to help clients who want to extend their team with the right expertise required for their project."
+    title: "Customized Solutions",
+    para: "we believe that one size does not fit all when it comes to blockchain solutions. That's why we offer customized services that are tailored to the unique needs and goals of each of our clients."
   },
   {
     img: "./img/startup/3.png",
-    title: "Project Based Model",
-    para: "Our project -based model and software development specialists are there for customer collaboration and specific client project engagement"
+    title: "Superior Customer Support",
+    para: "we are committed to providing the best in customer support.Whether you need help getting started with blockchain technology, or need ongoing support to ensure the smooth operation of your systems, our team is here to help."
   },
 ]
 
@@ -28,7 +28,7 @@ function Card({ img, title, para }) {
 
 function Choose() {
   return (
-    <div className="pad-main-3 text-white bg-[#222531]">
+    <div className="pad-main-3 text-[#0F0450] bg-[#CAFCD9]">
       <h2 className="text-xl sm:text-3xl md:text-[37px] lg:text-[45px] font-bold text-[#22C954] text-center">
         Why do startups choose Coinskite?
       </h2>
@@ -42,28 +42,6 @@ function Choose() {
             />
           ))
         }
-      </div>
-
-      <div className="grid grid-cols-2 gap-4 max-w-7xl mx-auto">
-        <div>
-          <h3 className="w-fit mb-4 text-[15px] sm:text-xl md:text-[25px] lg:text-3xl xl:text-[40px] font-bold">
-            How Startups Partnered <br />
-            with Coinskite to launch <br />
-            products
-          </h3>
-          <img src="./img/startup/Startup.png" alt="startup" />
-        </div>
-
-        <div>
-          <h4 className="text-xs sm:text-xl md:text-2xl lg:text-[27px] font-bold">Partners</h4>
-          <p className="mb-4 md:mb-6 xl:mb-8 text-[7px] sm:text-[10px] md:text-sm lg:text-[17px]">As Startup prepared to launch its Products,the company looked to coinskite for co-marketing guidance and resources to  confidently market a payments solution that would resonate with its merchants.</p>
-
-          <h4 className="text-xs sm:text-xl md:text-2xl lg:text-[27px] font-bold">Solutions</h4>
-          <p className="mb-4 md:mb-6 xl:mb-8 text-[7px] sm:text-[10px] md:text-sm lg:text-[17px]">Startup leaveraged best practices from coinskite marketing toolkit and customized the messaging for its own channels.This saved the team hours from creating content and strategy,allowing them to execute these camapigns and see results quickly.</p>
-
-          <h4 className="text-xs sm:text-xl md:text-2xl lg:text-[27px] font-bold">Impact</h4>
-          <p className="mb-4 md:mb-6 xl:mb-8 text-[7px] sm:text-[10px] md:text-sm lg:text-[17px]">Startup launched its payments product to 18 countries in just three months-and with a team of fewer than 20 people.</p>
-        </div>
       </div>
     </div>
   )

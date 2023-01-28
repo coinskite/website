@@ -1,6 +1,7 @@
 import Choose from "./Choose";
 import Header from "./Header";
 import Industries from "./Industries";
+import SecMiddle from "./SecMiddle";
 import Services from "./Services";
 
 function StartUp() {
@@ -9,6 +10,7 @@ function StartUp() {
       <Header />
       <Services />
       <Choose />
+      <SecMiddle />
       <Industries />
     </>
   )
