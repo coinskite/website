@@ -52,7 +52,9 @@ const data = [
 function Industries() {
   return (
     <>
-      <h2 className="py-4 text-xl sm:text-3xl md:text-[40px] lg:text-[45px] xl:text-[50px] font-semibold bg-[#222531] text-[#22C954] text-center">Industries</h2>
+      <h2 className="py-4 text-xl sm:text-3xl md:text-[40px] lg:text-[45px] xl:text-[50px] font-semibold bg-[#222531] text-[#22C954] text-center">
+        What sectors does CoinSkite work with?
+      </h2>
 
       <div className="pad-main-3 text-[#031B4E] bg-[#CAFCD9]">
         <div className="max-w-7xl mx-auto grid grid-cols-4 md:grid-cols-6 gap-4 sm:gap-8 text-xs md:text-[15px] xl:text-[25px] font-semibold">

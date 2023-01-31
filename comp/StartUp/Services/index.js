@@ -4,22 +4,22 @@ import { SmartContract, DefiDevelopment, NFTDevelopment, MetaverseDevelopment } 
 const data = [
   {
     title: "Smart contract development & Audit",
-    img: "./img/startup/small.jpeg",
+    img: "./img/startup/expertise/top/smart.png",
     id: 1
   },
   {
     title: "Defi development",
-    img: "./img/startup/small.jpeg",
+    img: "./img/startup/expertise/top/defi.png",
     id: 2
   },
   {
     title: "NFT Marketplace",
-    img: "./img/startup/small.jpeg",
+    img: "./img/startup/expertise/top/nft.png",
     id: 3
   },
   {
     title: "Metaverse Development",
-    img: "./img/startup/small.jpeg",
+    img: "./img/startup/expertise/top/meta.png",
     id: 4
   },
 ]
@@ -40,14 +40,14 @@ function Services() {
         <div className="df gap-6 sm:gap-8 md:gap-12 lg:gap-16 my-4 md:my-6 xl:my-8 border-b border-[#E5E8ED] overflow-x-auto">
           {
             data.map(d => (
-              <div
+              <button
                 key={d.id}
-                className={`df border-b-2 cursor-pointer ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
+                className={`df px-0 py-4 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
                 onClick={() => setSelected(d.id)}
               >
                 <img className="w-8 rounded-full" src={d.img} alt={d.title} />
-                <p className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold">{d.title}</p>
-              </div>
+                <span className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold">{d.title}</span>
+              </button>
             ))
           }
         </div>

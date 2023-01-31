@@ -20,14 +20,14 @@ function Template({ src, title1, desc1, list, desc2 }) {
         {
           list.map(l => (
             <Fragment key={l.title}>
-              <h5 className="text-[8px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-xl font-bold text-[#22C954]">
+              <h5 className="text-[8px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-xl font-bold text-[#22C954] underline">
                 {l.title}
               </h5>
 
-              <ol className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
-                {l.list.map(l => (
+              <ol className="mb-4 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
+                {l.list.map((l, i) => (
                   <li key={l}>
-                    {l}
+                    {i + 1}. {l}
                   </li>
                 ))}
               </ol>
@@ -35,7 +35,7 @@ function Template({ src, title1, desc1, list, desc2 }) {
           ))
         }
 
-        <p className="mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
+        <p className="mt-6 mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
           {desc2}
         </p>
 
@@ -50,7 +50,7 @@ function Template({ src, title1, desc1, list, desc2 }) {
 export function SmartContract() {
   return (
     <Template
-      src="./img/startup/Service.png"
+      src="./img/startup/expertise/smart.png"
       title1="Smart Contract Development & Audit"
       desc1="We provide comprehensive smart contract services that help businesses take full advantage of the benefits of blockchain technology. Whether you are looking to develop new smart contracts or audit existing ones, our team of experts has the knowledge and experience to help you succeed"
       list={[
@@ -81,7 +81,7 @@ export function SmartContract() {
 export function DefiDevelopment() {
   return (
     <Template
-      src=""
+      src="./img/startup/expertise/defi.png"
       title1="Defi Development"
       desc1="we understand that startups are often at the forefront of innovation and that Decentralized Finance (DeFi) is one of the most exciting and rapidly-evolving areas of blockchain technology. That's why we offer comprehensive blockchain DeFi development services to startups looking to leverage the power of blockchain technology to create new financial products and services."
       list={[{
@@ -100,7 +100,7 @@ export function DefiDevelopment() {
 export function NFTDevelopment() {
   return (
     <Template
-      src=""
+      src="./img/startup/expertise/nft.png"
       title1="NFT Development"
       desc1="Non-Fungible Tokens (NFTs) are becoming an increasingly popular way for startups to monetize digital assets and create new business models. That's why we offer comprehensive NFT-related development services to startups looking to leverage the power of blockchain technology to create NFT marketplaces, mint and sell NFTs, and create other NFT-based solutions"
       list={[{
@@ -122,7 +122,7 @@ export function NFTDevelopment() {
 export function MetaverseDevelopment() {
   return (
     <Template
-      src=""
+      src="./img/startup/expertise/meta.png"
       title1="Metaverse Development"
       desc1="Metaverse is the next frontier of digital innovation, and startups are well-positioned to capitalize on this emerging technology. That's why we offer comprehensive Metaverse development services to startups looking to create immersive digital experiences, build new business models, and establish a presence in this rapidly-evolving space"
       list={[{
