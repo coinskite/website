@@ -1,53 +1,30 @@
-import { Fragment } from "react"
+import { useState } from "react";
+import Template from './Template';
 
-function Template({ src, title1, desc1, list, desc2 }) {
-  return (
-    <div className="flex items-start gap-4 md:gap-8 lg:gap-12">
-      <img
-        className="w-32 xs:w-36 sm:w-44 md:w-56 lg:w-64 xl:w-80"
-        src={src}
-        alt="Service"
-      />
+const data = [
+  {
+    title: "Smart contract development & Audit",
+    img: "./img/startup/expertise/top/smart.png",
+    id: 1
+  },
+  {
+    title: "Defi development",
+    img: "./img/startup/expertise/top/defi.png",
+    id: 2
+  },
+  {
+    title: "NFT Marketplace",
+    img: "./img/startup/expertise/top/nft.png",
+    id: 3
+  },
+  {
+    title: "Metaverse Development",
+    img: "./img/startup/expertise/top/meta.png",
+    id: 4
+  },
+]
 
-      <div className="max-w-xs xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl">
-        <h3 className="text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-3xl xl:text-[35px] font-bold text-[#22C954]">
-          {title1}
-        </h3>
-        <p className="mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
-          {desc1}
-        </p>
-
-        {
-          list.map(l => (
-            <Fragment key={l.title}>
-              <h5 className="text-[8px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-xl font-bold text-[#22C954] underline">
-                {l.title}
-              </h5>
-
-              <ol className="mb-4 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
-                {l.list.map((l, i) => (
-                  <li key={l}>
-                    {i + 1}. {l}
-                  </li>
-                ))}
-              </ol>
-            </Fragment>
-          ))
-        }
-
-        <p className="mt-6 mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
-          {desc2}
-        </p>
-
-        <button className="text-xs xs:text-base sm:text-lg md:text-xl lg:text-[25px] xl:text-[30px] font-bold text-[#22C954]">
-          Learn more {`>`}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-export function SmartContract() {
+function SmartContract() {
   return (
     <Template
       src="./img/startup/expertise/smart.png"
@@ -78,7 +55,7 @@ export function SmartContract() {
   )
 }
 
-export function DefiDevelopment() {
+function DefiDevelopment() {
   return (
     <Template
       src="./img/startup/expertise/defi.png"
@@ -97,7 +74,7 @@ export function DefiDevelopment() {
   )
 }
 
-export function NFTDevelopment() {
+function NFTDevelopment() {
   return (
     <Template
       src="./img/startup/expertise/nft.png"
@@ -119,7 +96,7 @@ export function NFTDevelopment() {
   )
 }
 
-export function MetaverseDevelopment() {
+function MetaverseDevelopment() {
   return (
     <Template
       src="./img/startup/expertise/meta.png"
@@ -140,3 +117,46 @@ export function MetaverseDevelopment() {
     />
   )
 }
+
+function Services() {
+  const [selected, setSelected] = useState(1)
+
+  return (
+    <div className="pad-main-3 text-white bg-[#222531]">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-[15px] xs:text-xl md:text-[25px] lg:text-[35px] xl:text-[40px] font-semibold text-[#22C954] text-center">
+          Our Expertise at Your Service
+        </h2>
+        <div className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-base xl:text-lg text-center">
+          From smart contract development to blockchain integration. Our team is here to put our skills at your service and drive your business forward with the power of blockchain technology
+        </div>
+
+        <div className="df gap-6 sm:gap-8 md:gap-12 lg:gap-16 my-4 md:my-6 xl:my-8 border-b border-[#E5E8ED] overflow-x-auto">
+          {
+            data.map(d => (
+              <button
+                key={d.id}
+                className={`df px-0 py-4 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
+                onClick={() => setSelected(d.id)}
+              >
+                <img className="w-8 rounded-full" src={d.img} alt={d.title} />
+                <span className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold">{d.title}</span>
+              </button>
+            ))
+          }
+        </div>
+
+        {selected === 1 && <SmartContract />}
+        {selected === 2 && <DefiDevelopment />}
+        {selected === 3 && <NFTDevelopment />}
+        {selected === 4 && <MetaverseDevelopment />}
+      </div>
+
+      <div className="text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold text-[#22C954] text-center">
+        What makes CoinSkite the top choice for startups?
+      </div>
+    </div>
+  )
+}
+
+export default Services

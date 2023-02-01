@@ -25,7 +25,7 @@ const list = [
       {
         img: './img/nav/Services/Enterprise.png',
         name: 'Enterprise',
-        to: "/"
+        to: "/enterprise"
       },
     ]
   },
