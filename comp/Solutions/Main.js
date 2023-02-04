@@ -51,18 +51,20 @@ const data = [
   }
 ]
 
-function Sect({ title, para, img }) {
+function Sect({ title, para, img, order }) {
   return (
-    <div className='dfc items-center p-4 md:p-6 text-[#F5F5F5] border border-[#22C954] bg-[#0F161B] rounded-lg'>
-      <img className="h-20 md:h-24" src={img} alt={title} />
-      <h6 className="relative my-2 text-[15px] sm:text-[17px] md:text-[19px] lg:text-[25px] xl:text-3xl font-extrabold">
-        {title}
-        <span className="h-px w-full absolute bottom-0 left-0 bg-[#22C954]"></span>
-      </h6>
-      <p className="mt-2 mb-4 text-[6px] sm:text-[8px] lg:text-[10px] xl:text-xs font-semibold">{para}</p>
-      <button className="mt-auto py-2 px-8 mx-auto text-[7.6px] md:text-[8px] lg:text-[10px] font-semibold text-white bg-[#22C954] rounded-full">
-        Learn more {`>`}
-      </button>
+    <div className={`df gap-6 mb-4 ${order ? "flex-row-reverse" : ""}`}>
+      <img className="w-40" src={img} alt={title} />
+
+      <div className="col-span-2">
+        <h6 className="relative my-2 text-[15px] sm:text-[17px] md:text-[19px] lg:text-[25px] xl:text-3xl font-extrabold">
+          {title}
+        </h6>
+        <p className="mt-2 mb-4 text-[6px] sm:text-[8px] lg:text-[10px] xl:text-xs font-semibold">{para}</p>
+        <button className="mt-auto py-2 px-8 mx-auto text-[7.6px] md:text-[8px] lg:text-[10px] font-semibold text-white bg-[#22C954] rounded-full">
+          Learn more {`>`}
+        </button>
+      </div>
     </div>
   )
 }
@@ -70,19 +72,19 @@ function Sect({ title, para, img }) {
 function Main() {
   return (
     <div className='pad-main-3 text-white bg-[#222531]'>
-      <div className="grid grid-cols-2 gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {
-          data.map(d => (
+          data.map((d, i) => (
             <Sect
               key={d.title}
               title={d.title}
               para={d.para}
               img={d.img}
+              order={i % 2 !== 0 ? "reverse" : ""}
             />
           ))
         }
       </div>
-      <div className='pad-main-3 grid grid-cols-2  bg-[#CAFCD9]'><p>Explore the possibilities of blockchain with Coinskite</p><button>Contact Us</button></div>
     </div>
   )
 }
