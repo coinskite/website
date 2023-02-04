@@ -1,52 +1,52 @@
 const data = [
   {
     title: "FINANCE",
-    para: "Payments and money transfers made on the blockchain are faster and more traceable than in traditional bankingWhen information flows through different financial intermediaries, there is a risk of interception of that information, raising the possibility of fraud.",
+    para: "Financial transactions are vulnerable to fraud and errors, which can damage trust and increase costs. Additionally, there are often inefficiencies in financial processes that can lead to slow and costly transactions.",
     img: "./img/solution/Finance.png",
   },
   {
     title: "INSURANCE",
-    para: "Blockchain has the ability to help automate claims functions by verifying coverage between companies and reinsurers It will also automate payments between parties for claims and thus lower administrative costs for insurance companies.",
+    para: "Insurance companies face inefficiencies in claims processing and policy authenticity verification, which can lead to customer dissatisfaction and operational costs. The industry is also prone to fraud, which can damage trust and increase costs.",
     img: "./img/solution/Insurance.png",
   },
   {
     title: "REAL ESTATE",
-    para: "Blockchain technology has impacted the real estate industry in a variety of ways,including offering a new means for buyers and sellers to connect with one another.Blockchain could be used to cut intermediaries out of the real estate transaction process, thereby reducing costs.",
+    para: "Property transactions can be slow and costly due to the involvement of intermediaries and large amounts of paperwork. There is also a lack of transparency and security in property records, which can lead to errors and disputes.",
     img: "./img/solution/Real estate.png",
   },
   {
     title: "MEDIA",
-    para: "The decentralized structure of blockchain could enable content creators—such as musicians or writers—to directly distribute their work to consumers, by passing traditional distribution channels and leaving a larger share of revenue for content creators themselves",
+    para: "Digital content creators struggle with distribution and rights management, which can lead to intellectual property violations and unfair compensation. Additionally, there are issues with monetization and the sustainability of the digital content ecosystem.",
     img: "./img/solution/Media.png",
   },
   {
     title: "SUPPLY CHAIN",
-    para: "Blockchain can enable more transparent and accurate end-to-end tracking in the supply chain: Organizations can digitize physical assets and create a decentralized immutable record of all transactions, making it possible to track assets from production to delivery or use by end user.",
+    para: "There is often a lack of visibility and traceability in the supply chain industry, which can lead to inefficiencies and errors. Additionally, there are issues with fraud and counterfeiting in the supply chain, which can damage trust and increase costs..",
     img: "./img/solution/Supplychain.png",
   },
   {
     title: "LAW",
-    para: "Blockchain may change how law firms conduct a multitude of services. Everything from escrow management to contract and transactional processes are already adapting and leveraging these tools, including: Automated Settlements of Security Transactions",
+    para: "The legal industry deals with large amounts of paperwork and the risk of errors in document management, which can lead to costly delays. There are also issues with the transparency and efficiency of legal processes.",
     img: "./img/solution/Law.png",
   },
   {
     title: "SPORTS",
-    para: "Blockchain-based games can be programmed with tokenized digital assets. These digital assets can be traded within a game or externally on the public market. Blockchain technology can also create real-time sports betting with provably fair outcomes.",
+    para: "The sports industry is vulnerable to counterfeiting and fraud in the market for sports memorabilia and collectibles. This can lead to a lack of trust and reduced demand for these items.",
     img: "./img/solution/Sports.png",
   },
   {
     title: "HEALTHCARE",
-    para: "Blockchain has a wide range of applications and uses in healthcare. The ledger technology facilitates the secure transfer of patient medical records, manages the medicine supply chain and helps healthcare researchers unlock genetic code.",
+    para: "BlockThe healthcare industry faces challenges with the security and interoperability of electronic health records (EHRs), which can lead to data breaches and inefficiencies. There is also a lack of trust in the system, as patients may be concerned about the privacy of their personal health information.",
     img: "./img/solution/Healthcare.png",
   },
   {
     title: "GOVERNMENT",
-    para: "By capturing votes as transactions through a blockchain, governments and voters would have a verifiable audit trail, ensuring no votes are changed or removed and no illegitimate votes are added",
+    para: "Governments often deal with large amounts of paperwork and administrative processes, which can lead to inefficiencies and a lack of transparency. There are also issues with the security and integrity of government records.",
     img: "./img/solution/Government.png",
   },
   {
     title: "SOCIAL MEDIA",
-    para: "How does Blockchain technology affect society? With its tracked, audited, and publicly communicated information, blockchain may be able to rebuild those bridges between centralized systems and the people they serve. Verifiable timestamps, geolocations, and supply-chain records can help citizens decipher the truth.",
+    para: "Social media platforms face challenges with the monetization of user-generated content and the protection of user data privacy. There is also a lack of transparency in the algorithms that govern the distribution of content on these platforms..",
     img: "./img/solution/Social media.png",
   }
 ]
@@ -82,6 +82,7 @@ function Main() {
           ))
         }
       </div>
+      <div className='pad-main-3 grid grid-cols-2  bg-[#CAFCD9]'><p>Explore the possibilities of blockchain with Coinskite</p><button>Contact Us</button></div>
     </div>
   )
 }
