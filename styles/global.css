@@ -33,6 +33,11 @@
   button {
     @apply inline-block cursor-pointer rounded-md px-4 py-1 w-fit;
   }
+
+  .no-scroll-bar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
 }
 
 .gradient-bg {

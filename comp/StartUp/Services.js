@@ -131,15 +131,15 @@ function Services() {
           From smart contract development to blockchain integration. Our team is here to put our skills at your service and drive your business forward with the power of blockchain technology
         </div>
 
-        <div className="df gap-6 sm:gap-8 md:gap-12 lg:gap-16 my-4 md:my-6 xl:my-8 border-b border-[#E5E8ED] overflow-x-auto">
+        <div className="df no-scroll-bar gap-6 sm:gap-8 md:gap-12 lg:gap-16 my-4 md:my-6 xl:my-8 border-b border-[#E5E8ED] overflow-x-auto">
           {
             data.map(d => (
               <button
                 key={d.id}
-                className={`df px-0 py-4 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
+                className={`df min-w-[120px] h-8 px-0 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
                 onClick={() => setSelected(d.id)}
               >
-                <img className="w-8 rounded-full" src={d.img} alt={d.title} />
+                <img className="w-3 rounded-full" src={d.img} alt={d.title} />
                 <span className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold">{d.title}</span>
               </button>
             ))
