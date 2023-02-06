@@ -124,7 +124,7 @@ function Services() {
   return (
     <div className="pad-main-3 text-white bg-[#222531]">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[15px] xs:text-xl md:text-[25px] lg:text-[35px] xl:text-[40px] font-semibold text-[#22C954] text-center">
+        <h2 className="mb-2 md:mb-4 text-[15px] xs:text-xl md:text-[25px] lg:text-[35px] xl:text-[40px] font-semibold text-[#22C954] text-center">
           Our Expertise at Your Service
         </h2>
         <div className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-base xl:text-lg text-center">
@@ -136,10 +136,10 @@ function Services() {
             data.map(d => (
               <button
                 key={d.id}
-                className={`df min-w-[120px] h-8 px-0 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
+                className={`df min-w-[120px] h-8 sm:h-12 md:h-14 lg:h-16 xl:h-20 px-0 border-b-2 rounded-none text-left ${selected === d.id ? "border-primary-900" : "opacity-60 border-transparent hover:opacity-100"}`}
                 onClick={() => setSelected(d.id)}
               >
-                <img className="w-3 rounded-full" src={d.img} alt={d.title} />
+                <img className="w-3 xs:w-4 sm:w-5 md:w-6 lg:w-8 rounded-full" src={d.img} alt={d.title} />
                 <span className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold">{d.title}</span>
               </button>
             ))
@@ -152,7 +152,7 @@ function Services() {
         {selected === 4 && <MetaverseDevelopment />}
       </div>
 
-      <div className="text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold text-[#22C954] text-center">
+      <div className="mt-6 md:mt-8 -mb-2 text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold text-[#22C954] text-center">
         What makes CoinSkite the top choice for startups?
       </div>
     </div>

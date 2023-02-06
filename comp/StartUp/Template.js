@@ -13,7 +13,7 @@ function Template({ src, title1, desc1, list, desc2 }) {
         <h3 className="text-[10px] xs:text-[15px] sm:text-xl md:text-[25px] lg:text-3xl xl:text-[35px] font-bold text-[#22C954]">
           {title1}
         </h3>
-        <p className="mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
+        <p className="mb-2 sm:mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
           {desc1}
         </p>
 
@@ -24,7 +24,7 @@ function Template({ src, title1, desc1, list, desc2 }) {
                 {l.title}
               </h5>
 
-              <ol className="mb-4 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
+              <ol className="mb-2 sm:mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
                 {l.list.map((l, i) => (
                   <li key={l}>
                     {i + 1}. {l}
@@ -35,11 +35,11 @@ function Template({ src, title1, desc1, list, desc2 }) {
           ))
         }
 
-        <p className="mt-6 mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
+        <p className="mb-2 sm:mb-4 md:mb-6 xl:mb-8 text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl">
           {desc2}
         </p>
 
-        <button className="text-xs xs:text-base sm:text-lg md:text-xl lg:text-[25px] xl:text-[30px] font-bold text-[#22C954]">
+        <button className="px-0 text-xs xs:text-base sm:text-lg md:text-xl lg:text-[25px] xl:text-[30px] font-bold text-[#22C954]">
           Learn more {`>`}
         </button>
       </div>

@@ -14,7 +14,7 @@ function Header() {
           </button>
         </div>
 
-        <img src="./img/enterprise/header.png" alt="" />
+        <img className="mx-auto translate-y-4 sm:translate-y-8 md:translate-y-12" src="./img/enterprise/header.png" alt="" />
       </div>
     </div>
   )

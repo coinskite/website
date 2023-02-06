@@ -1,7 +1,7 @@
 import Industries from "../StartUp/Industries";
-import SecMiddle from "../StartUp/SecMiddle";
 import Choose from "../StartUp/Choose";
 
+import SecMiddle from "./SecMiddle";
 import Services from "./Services";
 import Header from "./Header";
 

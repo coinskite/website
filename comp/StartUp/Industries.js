@@ -57,11 +57,11 @@ function Industries() {
       </h2>
 
       <div className="pad-main-3 text-[#031B4E] bg-[#CAFCD9]">
-        <div className="max-w-7xl mx-auto grid grid-cols-4 md:grid-cols-6 gap-4 sm:gap-8 text-xs md:text-[15px] xl:text-[25px] font-semibold">
+        <div className="max-w-7xl mx-auto grid grid-cols-3 xs:grid-cols-4 md:grid-cols-6 gap-4 sm:gap-8 text-xs md:text-[15px] xl:text-[25px] font-semibold">
           {
             data.map(d => (
               <div key={d.title}>
-                <img className="h-10 xs:h-12 mx-auto" src={d.img} alt={d.title} />
+                <img className="h-8 sm:h-10 lg:h-12 mx-auto" src={d.img} alt={d.title} />
                 <p className="my-1 md:my-2 text-center">{d.title}</p>
               </div>
             ))
