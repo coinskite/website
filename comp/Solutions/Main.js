@@ -53,15 +53,15 @@ const data = [
 
 function Sect({ title, para, img, order }) {
   return (
-    <div className={`df p-5 gap-6 mb-8 ${order ? "lg:flex-row-reverse" : ""}`}>
-      <img className="px-32 py-16 w-78  bg-[#CAFCD9]" src={img} alt={title} />
+    <div className={`df flex-col lg:flex-row xs:gap-6 mb-8 md:mb-12 lg:mb-16 ${order ? "lg:flex-row-reverse" : ""}`}>
+      <img className="w-[200px] h-[116px] xs:w-[240px] xs:h-[150px] sm:w-[280px] sm:h-[175px] md:w-[328px] md:h-[200px] xl:w-[400px] xl:h-[260px] shrink-0 px-12 py-8 mr-auto object-contain bg-[#CAFCD9]" src={img} alt={title} />
 
-      <div className="col-span-2">
-        <h6 className="relative my-2 text-[#22C954] text-[22px] xs:text-[26px] sm:text-3xl md:text-[35px]  xl:text-[40px] font-semibold">
+      <div>
+        <h6 className="text-[22px] xs:text-[26px] sm:text-3xl md:text-[35px] xl:text-[40px] font-semibold text-[#22C954] relative">
           {title}
         </h6>
-        <p className="mt-2 mb-4 text-[8px] xs:text-[10px] sm:text-sm md:text-base xl:text-xl font-normal">{para}</p>
-        <button className="mt-auto py-2 px-8 mx-auto text-[10px] xs:text-sm sm:text-lg md:text-xl lg:text-lg xl:text-xl font-semibold text-white bg-[#22C954] rounded-sm">
+        <p className="mb-2 md:mb-4 md:mt-1 text-[8px] xs:text-[10px] sm:text-sm md:text-base xl:text-xl font-normal">{para}</p>
+        <button className="text-[10px] xs:text-sm sm:text-lg md:text-xl lg:text-lg xl:text-xl font-semibold text-white bg-[#22C954] rounded-sm">
           Learn more {`>`}
         </button>
       </div>
@@ -72,7 +72,7 @@ function Sect({ title, para, img, order }) {
 function Main() {
   return (
     <div className='pad-main-3 text-white bg-[#222531]'>
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto">
         {
           data.map((d, i) => (
             <Sect
