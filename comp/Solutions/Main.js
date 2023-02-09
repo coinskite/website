@@ -53,8 +53,11 @@ const data = [
 
 function Sect({ title, para, img, order }) {
   return (
-    <div className={`df flex-col lg:flex-row xs:gap-6 mb-8 md:mb-12 lg:mb-16 ${order ? "lg:flex-row-reverse" : ""}`}>
-      <img className="w-[200px] h-[116px] xs:w-[240px] xs:h-[150px] sm:w-[280px] sm:h-[175px] md:w-[328px] md:h-[200px] xl:w-[400px] xl:h-[260px] shrink-0 px-12 py-8 mr-auto object-contain bg-[#CAFCD9]" src={img} alt={title} />
+    <div className={`flex flex-col lg:flex-row lg:items-center xs:gap-6 lg:gap-12 mb-8 md:mb-12 lg:mb-16 ${order ? "lg:flex-row-reverse" : ""}`}>
+      <div className="relative shrink-0 isolate">
+        <img className="z-[1] w-[200px] h-[116px] xs:w-[240px] xs:h-[150px] sm:w-[280px] sm:h-[175px] md:w-[328px] md:h-[200px] xl:w-[400px] xl:h-[260px] px-12 py-8 object-contain bg-[#CAFCD9]" src={img} alt={title} />
+        <div className={`blured-bg absolute inset-0 -z-[1] ${order ? "hidden lg:block" : "hidden"}`}></div>
+      </div>
 
       <div>
         <h6 className="text-[22px] xs:text-[26px] sm:text-3xl md:text-[35px] xl:text-[40px] font-semibold text-[#22C954] relative">

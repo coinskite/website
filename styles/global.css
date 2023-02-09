@@ -77,6 +77,11 @@ svg.hire-details-arrow path {
   stroke: #fff;
 }
 
+.blured-bg {
+  background: linear-gradient(90deg, rgba(34, 201, 84, 0.4) 0%, rgba(34, 201, 84, 0.4) 100%);
+  filter: blur(100px);
+}
+
 @media (max-width: 768px) {
   /* Nav */
   .head-arr {
