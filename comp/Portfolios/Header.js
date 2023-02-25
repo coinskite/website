@@ -26,6 +26,9 @@ function Header() {
           <div className="mb-4 md:mb-6 text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-lg font-medium text-white">
             We empower blockchain startups to establish a strong brand identity, refine their vision, <br /> and deliver exceptional user experiences through our design and strategy expertise
           </div>
+          <div className="relative">
+            <img className="w-[120px] sm:w-[200px] lg:w-[240px] absolute -left-20 xs:-left-28 md:-left-36 lg:-left-12 xl:-left-32 top-0" src="/img/portfolio/circle.png" alt="" />
+          </div>
 
           <div className="p-4 pr-20 w-fit mx-auto text-xs xs:text-base sm:text-xl md:text-[26px] lg:text-3xl xl:text-[35px] font-medium bg-[#152A39] border border-[#22C954] text-white">
             <ul>
