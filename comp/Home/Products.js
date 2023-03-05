@@ -1,55 +1,68 @@
-import { startupPoints, enterprisePoints } from './constants';
-import Arrow from '../../svg/arrows/white.svg';
-// import Tick from '../../svg/tick.svg';
+const list = [
+  {
+    key: "1",
+    src: "./img/home/new/expert/consulting.png",
+    title: "CONSULTING",
+    para: "Unlock the full potential of blockchain technology for your business with our expert team's guidance and customized strategy",
+  },
+  {
+    key: "2",
+    src: "./img/home/new/expert/development.png",
+    title: "DEVELOPMENT",
+    para: "We design and build custom blockchain solutions, such as decentralized applications (DApps) or smart contracts, to meet the specific needs of each client.",
+  },
+  {
+    key: "3",
+    src: "./img/home/new/expert/Integration.png",
+    title: "INTEGARTION",
+    para: "We assist businesses in integrating blockchain technology into their existing systems and processes, ensuring a smooth and seamless transition",
+  },
+  {
+    key: "4",
+    src: "./img/home/new/expert/Maintenance.png",
+    title: "MAINTENANCE",
+    para: "We provide ongoing support and maintenance for clients' blockchain systems, including trouble shooting and issue resolution as needed",
+  },
+]
 
-function TabVal({ title, vals = [] }) {
+function Card({ src, title, para }) {
   return (
-    <div className='dfc p-8 bg-[#363B41] rounded-[5px]'>
-      <img
-        src={title === "Startup" ? "./img/home/sec1/Startup.png" : "./img/home/sec1/Enterprise.png"}
-        alt={title}
-        className="w-14 xl:w-16 ml-auto"
-      />
-      <h3 className="text-[25px] text-primary-900 lg:text-[35px]">{title}</h3>
-
-      <div className="dfc pr-5">
-        {
-          vals.map(val => (
-            <div key={val} className="df gap-4">
-              {/* <Tick className='w-5 h-5' /> */}
-              <p className="text-[19px] lg:text-[22px] font-normal">{val}</p>
-            </div>
-          ))
-        }
+    <div className="df p-2 gap-4 bg-[#363B41] border-t border-primary-900 rounded-[5px]">
+      <div className=" w-16">
+        <img className="w-5 h-5" src={src} alt="" />
+        <p className="text-[8px] font-bold text-primary-900">
+          {title}
+        </p>
       </div>
 
-      <button className="w-full h-[18px] mt-2 lg:h-12 text-[7px] lg:text-xl font-semibold text-[#fff] bg-primary-900 df justify-center rounded-[3px]">
-        Learn more <Arrow />
-      </button>
+      <div className="text-[6px] col-span-2 text-white">
+        {para}
+      </div>
     </div>
   )
 }
 
 function Products() {
   return (
-    <div className='pad-main-1-3'>
-      <div className="max-w-7xl mx-auto font-semibold">
-        <h1 className="text-primary-900 sm:text-xl md:text-[38px] lg:text-[48px]">WE BRING INCREDIBLE IDEAS TO REALITY</h1>
-        <div className=" mt-[9px] text-[13px] sm:text-[20px] md:text-[23px] lg:text-[35px] xl:text-[30px]">
-          Holistic Support During the Entire <br /> Product Development Lifecycle
+    <div className='pad-main-1-3 bg-[#222531] text-white'>
+      <h2 className="text-sm font-semibold text-primary-900">
+        Transform your business with Expert Blockchain Solutions
+      </h2>
+      <div>
+        we offer a range of expert blockchain services to help startups and enterprises <br />
+        leverage the power of this transformative technology.
+      </div>
+
+      <div>
+        <div className="grid gap-2">
+          {list.map(l => <Card {...l} />)}
         </div>
 
-        <div className="grid justify-center md:grid-cols-2 md:justify-items-center gap-4 my-6 mx-auto max-w-4xl">
-          <TabVal
-            title="Startup"
-            vals={startupPoints}
-          />
-
-          <TabVal
-            title="Enterprises"
-            vals={enterprisePoints}
-          />
-        </div>
+        <img
+          className="hidden"
+          src="../../public/img/home/new/expert/expert.png"
+          alt=""
+        />
       </div>
     </div>
   )

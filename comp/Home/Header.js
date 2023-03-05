@@ -1,58 +1,63 @@
 function Header() {
   return (
-    <div className="pad-main-1-3 relative bg-cover bg-primary-900">
-      <div className="dfc jcc gap-2.5 md:gap-8 h-[40vh] sm:h-[60vh] md:h-[80vh] max-w-7xl mx-auto">
-        <h1 className="text-lg sm:text-[27px] md:text-[35px] lg:text-[50px] font-bold z-[1]">
-          We build solution on the
-          <br />
-          Blockchain
+    <div className="pad-main-3 grid gap-4 font-semibold bg-[#222531] text-white relative">
+      <div className="dfc pt-4 relative">
+        <h1 className="text-sm">
+          Revolutionize your business with
+          Coinskite's blockchain solution
         </h1>
-        <p className="text-[7.5px] sm:text-[13px] md:text-lg lg:text-[25px] z-[1]">
-          Building and deploying custom blockchain solutions for high-growth
-          <br />
-          startups and enterprises.
-        </p>
-        <p className="df gap-4 z-[1]">
-          <button className="w-16 h-[18px] lg:w-44 lg:h-12 text-[7px] lg:text-xl font-semibold text-[#17171F] bg-white rounded-[3px]">
-            Services
-          </button>
-          <button className="w-16 h-[18px] lg:w-44 lg:h-12 text-[7px] lg:text-xl font-semibold text-white bg-[#17171F] rounded-[3px]">
-            Contact Us
-          </button>
+
+        <p className="text-[6px]">
+          Experience the security, transparency, and efficiency of blockchain technology
+          with our expert services
         </p>
 
-        <img
-          className="absolute top-1/4 right-1/4"
-          src="./img/home/header/1.png"
-          alt=""
-        />
-        <img
-          className="absolute top-1/2 right-[10%]"
-          src="./img/home/header/1.png"
-          alt=""
-        />
-        <img
-          className="absolute top-3/4 right-1/4"
-          src="./img/home/header/1.png"
-          alt=""
-        />
+        <button className="text-[8px] bg-primary-900">
+          Join the revolution
+        </button>
 
         <img
-          className="absolute -left-20 top-1/2 -translate-y-1/2 w-40"
-          src="./img/home/header/Left middle.png"
-          alt=""
-        />
-        <img
-          className="hidden xl:block absolute top-0 right-0 w-40"
-          src="./img/home/header/Right TOP.png"
-          alt=""
-        />
-        <img
-          className="hidden xl:block absolute -bottom-20 right-0 w-44"
-          src="./img/home/header/Right Bottom.png"
+          className="absolute bottom-0 left-1/2"
+          src="./img/home/new/greenstar3.png"
           alt=""
         />
       </div>
+
+      <img
+        className="z-[1] mx-auto"
+        src="./img/home/new/header.png"
+        alt=""
+      />
+
+      <img
+        className="absolute bottom-0 inset-x-0"
+        src="./img/home/new/headerwave.png"
+        alt=""
+      />
+
+      <img
+        className="absolute top-2 left-2"
+        src="./img/home/new/greenstar1.png"
+        alt=""
+      />
+
+      <img
+        className="absolute top-2 left-36"
+        src="./img/home/new/greenstar2.png"
+        alt=""
+      />
+
+      <img
+        className="absolute top-1/2 left-2"
+        src="./img/home/new/cube.png"
+        alt=""
+      />
+
+      <img
+        className="absolute top-2 left-1/2"
+        src="./img/home/new/cube.png"
+        alt=""
+      />
     </div>
   )
 }
