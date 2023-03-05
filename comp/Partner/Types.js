@@ -26,11 +26,11 @@ const list = [
 function Card({ title, para, list }) {
   return (
     <div className="p-4 bg-[#0F161B] border border-primary-900 rounded-[10px]">
-      <h3 className="mb-1">
+      <h3 className="text-[8px] xs:text-xs sm:text[15px] md:text-xl lg:text[25px] xl:text-3xl font-bold mb-1">
         {title}
       </h3>
 
-      <p className="mb-6">
+      <p className="text-[4px] sm:text[6px] md:text-xs lg:text-base xl:text-sm font-medium mb-6">
         {para}
       </p>
 
@@ -38,7 +38,7 @@ function Card({ title, para, list }) {
         {list.map((l, i) => (
           <li
             key={i}
-            className="df mb-3 text-left"
+            className="text-[5px] xs:text[7px] sm:text[10px] md:text-xs lg:text-xs xl:text-xl font-medium df mb-3 text-left"
           >
             <img src="./img/partner/tick.png" alt="" />
             {l}
@@ -53,11 +53,11 @@ function Types() {
   return (
     <div className="pad-main-1-3 text-center">
       <div className="max-w-7xl mx-auto">
-        <h2 className="mb-2 text-primary-900">
+        <h2 className="text-[15px] xs:text-xl sm:text[25px] md:text[35px] lg:text[40px] xl:text[40px] font-semibold mb-2 text-primary-900">
           Types of partnerships we offer
         </h2>
 
-        <div className="mb-4">
+        <div className="text-[6px] xs:text[8px] sm:text[10px] md:text-xs lg:text-base xl:text-xl font-medium mb-4">
           we understand that every business is unique, and we offer a range of partnership options to meet the needs of startups and enterprises alike. Whether you're looking to expand your product line, increase your customer base, or improve your operations, we have the solutions and expertise to help you succeed
         </div>
 
