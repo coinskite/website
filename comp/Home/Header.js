@@ -2,17 +2,17 @@ function Header() {
   return (
     <div className="pad-main-3 grid gap-4 relative">
       <div className="dfc pt-4 relative">
-        <h1 className="text-sm font-semibold">
+        <h1 className="text-sm xs:text-lg sm:text-2xl md:text-3xl lg:text-[35px] xl:text-[50px] font-semibold">
           Revolutionize your business with
           Coinskite's blockchain solution
         </h1>
 
-        <p className="text-[6px] font-semibold">
+        <p className="text-[6px] xs:text-[8px] sm:text-xs md:text-sm lg:text-[15px] xl:text-xl font-semibold">
           Experience the security, transparency, and efficiency of blockchain technology
           with our expert services
         </p>
 
-        <button className="text-[8px] font-semibold bg-primary-900">
+        <button className="text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-lg xl:text-[25px] font-semibold bg-primary-900">
           Join the revolution
         </button>
 

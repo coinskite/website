@@ -39,7 +39,7 @@ function Template({ src, title1, desc1, list, desc2 }) {
           {desc2}
         </p>
 
-        <button className="px-0 text-xs xs:text-base sm:text-lg md:text-xl lg:text-[25px] xl:text-[30px] font-bold text-[#22C954]">
+        <button className="px-0 text-xs xs:text-base sm:text-lg md:text-xl lg:text-[25px] xl:text-3xl font-bold text-[#22C954]">
           Learn more {`>`}
         </button>
       </div>

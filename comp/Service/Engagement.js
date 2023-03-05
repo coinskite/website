@@ -41,11 +41,11 @@ function Card({ title = "", para = "", list = [] }) {
   return (
     <div className="grid grid-cols-2 mb-4 md:mb-6 lg:mb-8 gap-4 p-6 bg-[#0F161B]">
       <div>
-        <h3 className="text-[15px] xs:text-[20px] sm:text-[25px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold text-primary-900">
+        <h3 className="text-[15px] xs:text-xl sm:text-[25px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold text-primary-900">
           {title}
         </h3>
 
-        <p className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-[18px] xl:text-[20px] font-medium">
+        <p className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-lg xl:text-xl font-medium">
           {para}
         </p>
       </div>
@@ -64,7 +64,7 @@ function Card({ title = "", para = "", list = [] }) {
           }
         </ul>
 
-        <p className="mb-1 text-[6px] xs:text-[8px] sm:text-[13px] md:text-[20px] lg:text-[25px] xl:text-3xl font-semibold leading-none text-primary-900">Timeline</p>
+        <p className="mb-1 text-[6px] xs:text-[8px] sm:text-[13px] md:text-xl lg:text-[25px] xl:text-3xl font-semibold leading-none text-primary-900">Timeline</p>
         <button className="block px-2 py-1 text-[6px] xs-text-[6px] sm:text-[10px] md:text-[15px] lg:text-xl xl:text-[23px] font-medium text-[#0F161B] bg-primary-900">
           2+ weeks
         </button>
@@ -76,7 +76,7 @@ function Card({ title = "", para = "", list = [] }) {
 function Engagement() {
   return (
     <div className="pad-main-3 text-white bg-[#222531] relative isolate">
-      <h2 className="mb-4 text-[15px] xs:text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] text-primary-900 text-center font-bold">
+      <h2 className="mb-4 text-[15px] xs:text-xl sm:text-[25px] md:text-3xl lg:text-[35px] xl:text-[40px] text-primary-900 text-center font-bold">
         Our Engagement Models
       </h2>
 
