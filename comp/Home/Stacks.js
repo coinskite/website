@@ -1,5 +1,3 @@
-import Arrow from '../../svg/arrows/white.svg';
-
 function Stacks() {
   return (
     <>

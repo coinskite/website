@@ -44,7 +44,7 @@ function Card({ src, title, para }) {
 
 function Products() {
   return (
-    <div className='pad-main-1-3 bg-[#222531] text-white overflow-hidden'>
+    <div className='pad-main-1-3 overflow-hidden'>
       <div className="max-w-7xl mx-auto">
         <h2 className="mb-2 text-sm font-semibold text-primary-900">
           Transform your business with Expert Blockchain Solutions
