@@ -16,7 +16,7 @@ function Final() {
           Contact Us
         </button>
 
-        <img
+        {/* <img
           className="absolute top-0 right-8"
           src="./img/home/new/contact2.png"
           alt=""
@@ -25,7 +25,7 @@ function Final() {
           className="absolute bottom-0 left-8 "
           src="./img/home/new/contact1.png"
           alt=""
-        />
+        /> */}
       </div>
     </div>
   )

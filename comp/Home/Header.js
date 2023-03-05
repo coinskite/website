@@ -1,18 +1,18 @@
 function Header() {
   return (
-    <div className="pad-main-3 grid gap-4 font-semibold bg-[#222531] text-white relative">
+    <div className="pad-main-3 grid gap-4 bg-[#222531] text-white relative">
       <div className="dfc pt-4 relative">
-        <h1 className="text-sm">
+        <h1 className="text-sm font-semibold">
           Revolutionize your business with
           Coinskite's blockchain solution
         </h1>
 
-        <p className="text-[6px]">
+        <p className="text-[6px] font-semibold">
           Experience the security, transparency, and efficiency of blockchain technology
           with our expert services
         </p>
 
-        <button className="text-[8px] bg-primary-900">
+        <button className="text-[8px] font-semibold bg-primary-900">
           Join the revolution
         </button>
 
@@ -31,7 +31,7 @@ function Header() {
 
       <img
         className="absolute bottom-0 inset-x-0"
-        src="./img/home/new/headerwave.png"
+        src="./img/home/new/wave.png"
         alt=""
       />
 

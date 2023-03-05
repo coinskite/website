@@ -26,11 +26,12 @@ function Card({ src, detail }) {
     </div>
   )
 }
+
 function Blog() {
   return (
     <div className="pad-main-3 2xl:py-14 blog-bg bg-no-repeat bg-cover">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-primary-900 text-[15px] sm:text-xl md:text-[23px] lg:text-[48px] xl:text-[45px] md:font-bold text-center">
+        <h1 className="text-primary-900 text-center">
           Find out what new at Coinskite
         </h1>
 
