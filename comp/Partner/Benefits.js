@@ -46,11 +46,11 @@ function Card({ src, title, para }) {
         alt=""
       />
 
-      <p className="text-[8px] xs:text[10px] sm:text-sm md:text-lg lg:text-xl xl:text[25px] font-bold my-2">
+      <p className="text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-xl xl:text-[25px] font-bold my-2">
         {title}
       </p>
 
-      <p className="text-[4px] xs:text[5px] sm:text[6px] md:text[8px] lg:text-xs xl:text[15px] font-normal">
+      <p className="text-[4px] xs:text-[5px] sm:text-[6px] md:text-[8px] lg:text-xs xl:text-[15px] font-normal">
         {para}
       </p>
     </div>
@@ -61,11 +61,11 @@ function Benefits() {
   return (
     <div className="pad-main-1-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[15px] xs:text-xl sm:text[25px] md:text[35px] lg:text[40px] font-semibold mb-2 text-primary-900">
+        <h2 className="text-[15px] xs:text-xl sm:text-[25px] md:text-[35px] lg:text-[40px] font-semibold mb-2 text-primary-900">
           Partner Benefits
         </h2>
 
-        <div className="text-[6px] xs:text[8px] sm:text[10px] md:text-xs lg:text-base xl:text-xl font-normal mb-4">
+        <div className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-base xl:text-xl font-normal mb-4">
           Collaborating with Coinskite offers numerous benefits for your business. From access to cutting-edge technology and expert guidance, to customized solutions and increased visibility, there are many advantages to partnering with us
         </div>
 
