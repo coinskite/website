@@ -1,28 +1,34 @@
 function Header() {
   return (
-    <div className='grid-2 gap1 blog-main-header pad-main-3'>
-      <div className='df jcc'>
-        <div className='theme-bg blog-head-bg br5'></div>
+    <div className='pad-main-3 grid lg:flex gap-4'>
+      <div className="h-[200px] w-[200px] bg-primary-900">
+
       </div>
 
-      <div className='dfc jcc gap1'>
-        <div className='blog-main-header-content'>
-          <span>Sales</span>
-          <h1>The 3 Best Practices in Sales Prospecting</h1>
-          <p className='df'>
-            <span>February 24, 2021</span>
-            <span>|</span>
-            <span>8 min read</span>
-          </p>
-        </div>
+      <div>
+        <button className="text-white bg-primary-900">
+          NEW
+        </button>
 
-        <div className='df blog-m-h'>
-          <div className='p-16 theme-sec br5'></div>
-          <div>
-            <p>Coinskite</p>
-            <p>B2B Data's Favorite Sidekick</p>
-          </div>
-        </div>
+        <p>
+          Map2Earn to help merge physical and
+          virtual worlds
+        </p>
+
+        <p>
+          Map2Earn is a revolutionary Metaverse-oriented economic model that
+          enables users to become mappers while earning tokens
+        </p>
+
+        <p className="df">
+          <span>
+            Rubesh,Researcher @coinskite
+          </span>
+
+          <span>
+            Jan 21,2023
+          </span>
+        </p>
       </div>
     </div>
   )

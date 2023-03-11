@@ -1,82 +1,138 @@
 import React, { useState } from 'react';
-import Search from '../../svg/search.svg';
-import Arr from '../../svg/arrows/white.svg';
 
-const tabs = ["All posts", "Sales", "Marketing", "Recruiting", "Guides"]
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const tabs = ["All", "Blockchain", "Crypto", "Defi", "Smart contract", "Research"]
 
-function Blog({ type, heading, date, read }) {
+const arr = [
+  {
+    key: 1,
+    src: "",
+    type: "Blockchain",
+    heading: "10 ways blockchain developers can use ChatGPT",
+    date: "Jan 21,2023",
+    by: "Sathish,Developer @coinskite",
+  },
+  {
+    key: 2,
+    src: "",
+    type: "Defi",
+    heading: "City of Busan to establish digital assets exchange: Report",
+    date: "",
+    by: "",
+  },
+  {
+    key: 3,
+    src: "",
+    type: "NFT",
+    heading: "Decentralized forex will reduce cost by as much as 80%: Report",
+    date: "",
+    by: "",
+  },
+  {
+    key: 4,
+    src: "",
+    type: "Blockchain",
+    heading: "10 ways blockchain developers can use ChatGPT",
+    date: "Jan 21,2023",
+    by: "Sathish,Developer @coinskite",
+  },
+  {
+    key: 5,
+    src: "",
+    type: "Defi",
+    heading: "City of Busan to establish digital assets exchange: Report",
+    date: "",
+    by: "",
+  },
+  {
+    key: 6,
+    src: "",
+    type: "NFT",
+    heading: "Decentralized forex will reduce cost by as much as 80%: Report",
+    date: "",
+    by: "",
+  },
+  {
+    key: 7,
+    src: "",
+    type: "Blockchain",
+    heading: "10 ways blockchain developers can use ChatGPT",
+    date: "Jan 21,2023",
+    by: "Sathish,Developer @coinskite",
+  },
+  {
+    key: 8,
+    src: "",
+    type: "Defi",
+    heading: "City of Busan to establish digital assets exchange: Report",
+    date: "",
+    by: "",
+  },
+  {
+    key: 9,
+    src: "",
+    type: "NFT",
+    heading: "Decentralized forex will reduce cost by as much as 80%: Report",
+    date: "",
+    by: "",
+  },
+]
+
+function Blog({ src, type, heading, by, date }) {
   return (
     <div className='dfc'>
-      <div className='theme-bg in-blog'></div>
+      <div className='h-20 bg-primary-900'>
+        <img src={src} alt="" />
+      </div>
 
-      <div>
-        <p className='in-blog-pink'>{type}</p>
-        <h3 className='in-blg-h3'>{heading}</h3>
-        <p className='in-blog-info'>{date} | {read}</p>
+      <div className='dfc '>
+        <button className='text-white bg-primary-900'>
+          {type}
+        </button>
+        <p className=''>{heading}</p>
+        {
+          by &&
+          <p className='df'>
+            {by} |
+            <span className='text-[#C4C4C4]'>
+              {date}
+            </span>
+          </p>
+        }
       </div>
     </div>
   )
 }
 
 function Main() {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState("All")
 
   return (
     <div className='pad-main-1-3'>
-      <div className='df mb-16 blog-tab'>
-        {
-          tabs.map((tab, i) => (
-            <div
-              key={tab}
-              onClick={() => setCurrent(i)}
-              className={`pr tab-title ${i === current ? "active" : ""}`}
-            >
-              <div>{tab}</div>
-              <div className="tab-line"></div>
-            </div>
-          ))
-        }
-        <div className='br5' style={{ backgroundColor: '#D9D9D9', padding: "4px 4px 0" }}>
-          <Search />
-        </div>
+      <div>
+        Latest stories
       </div>
 
-      <select className='mb-16 reselect-tab input-box'>
+      <div className='df mb-4'>
         {
           tabs.map(tab => (
-            <option key={tab} value={tab}>{tab}</option>
-          ))
-        }
-      </select>
-
-      <div className='blog-main-lists'>
-        {
-          arr.map(data => (
-            <Blog
-              key={data}
-              type="Sales"
-              heading="How Sales Data Analysis Cuts Prospecting Times in Half"
-              date="December 16, 2021"
-              read="14 min read"
-            />
+            <button
+              key={tab}
+              onClick={() => setCurrent(tab)}
+              className={tab === current ? "bg-[#CAFCD9] text-black" : ""}
+            >
+              {tab}
+            </button>
           ))
         }
       </div>
 
-      <div className='df jcc in-blog-num'>
-        <Arr className="rotateZ180" />
-        {
-          arr
-            .filter(data => data < 7)
-            .map(data => (
-              <p key={data} className={data === 1 ? "theme-sec" : ""}>{data}</p>
-            ))
-        }
-        <p style={{ letterSpacing: "2px" }}>...</p>
-        <p>12</p>
-        <Arr />
+      <div className='grid md:grid-cols-3 gap-4'>
+        {arr.map(l => <Blog {...l} />)}
       </div>
+
+      <button className='text-white bg-primary-900'>
+        Load more stories
+      </button>
     </div>
   )
 }

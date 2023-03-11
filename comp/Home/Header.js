@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="pad-main-3 grid gap-4 relative">
+    <div className="pad-main-3 grid lg:flex gap-4 relative">
       <div className="dfc pt-4 relative">
         <h1 className="text-sm xs:text-lg sm:text-2xl md:text-3xl lg:text-[35px] xl:text-[50px] font-semibold">
           Revolutionize your business with

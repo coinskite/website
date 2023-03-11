@@ -1,12 +1,17 @@
 function Final() {
   return (
-    <div className='theme-sec blog-main-final df jcc p-16'>
-      <h1>Subscribe our newsletter</h1>
+    <div className='df py-4 px-12 bg-[#CAFCD9]'>
+      <p className="text-black">JOIN OUR NEWSLETTER</p>
 
-      <div className='df p-8'>
-        <input type="text" className='p-8' placeholder='Enter your work email' />
-        <button className='theme-sec'>Subscribe</button>
-      </div>
+      <input
+        type="text"
+        className='p-1 max-w-xs ml-auto bg-[#DCDCDC] text-[#7C7F83]'
+        placeholder='Enter your email address'
+      />
+
+      <button className='text-white bg-primary-900'>
+        Subscribe
+      </button>
     </div>
   )
 }

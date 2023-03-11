@@ -27,7 +27,7 @@ const list = [
 
 function Card({ src, title, para }) {
   return (
-    <div className="df w-[95%] lg:w-full mx-auto p-2 gap-4 bg-[#363B41] border-t border-primary-900 rounded-[5px]">
+    <div className="df lg:flex-col w-[95%] lg:w-full mx-auto p-2 gap-4 bg-[#363B41] border-t border-primary-900 rounded-[5px]">
       <div className="w-16">
         <img className="w-5 h-5" src={src} alt="" />
         <p className="text-[8px] xs:text-xs sm:text-base md:text-lg lg:text-lg xl:text-[22px] font-bold text-primary-900">
