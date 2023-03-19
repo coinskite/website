@@ -2,7 +2,7 @@ function Stacks() {
   return (
     <>
       <div className='pad-main-1-3 mb-6'>
-        <div className="grid md:grid-cols-2 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 max-w-7xl mx-auto">
           <div className='mb-4 '>
             <h1 className="text-[11px] xs:text-lg sm:text-lg md:text-[22px] lg:text-3xl xl:text-[40px] text-primary-900">
               Our Technology Arsenal

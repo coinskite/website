@@ -18,9 +18,9 @@ const list = [
 
 function Card({ src, detail }) {
   return (
-    <div> 
+    <div>
       <img src={src} alt="" />
-      <p className="text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-lg">
+      <p className="mt-2 text-[4px] xs:text-[6px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-lg">
         {detail}
       </p>
     </div>
@@ -29,7 +29,7 @@ function Card({ src, detail }) {
 
 function Blog() {
   return (
-    <div className="pad-main-3 2xl:py-14 blog-bg bg-no-repeat bg-cover">
+    <div className="pad-main-3 2xl:py-14">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-[11px] xs:text-sm sm:text-lg md:text-[22px] lg:text-3xl xl:text-[40px] text-primary-900 text-center">
           Find out what new at Coinskite
