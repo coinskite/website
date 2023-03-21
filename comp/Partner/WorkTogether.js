@@ -1,9 +1,13 @@
 
 function WorkTogether() {
   return (
-    <div className="pad-main-1-3 bg-[#CAFCD9] text-[#0F0450]">
+    <div className="pad-main-3 bg-[#CAFCD9] text-[#0F0450]">
       <div className="df max-w-7xl mx-auto">
-        <img src="./img/partner/lets work.png" alt="" />
+        <img
+          className="w-24 xs:w-28 sm:w-40 md:w-56 lg:w-80 xl:w-[370px]"
+          src="./img/partner/lets work.png"
+          alt=""
+        />
 
         <div>
           <h2 className="text-xl xs:text-[25px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px] font-semibold text-[#223764]">

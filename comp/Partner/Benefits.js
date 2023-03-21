@@ -41,7 +41,7 @@ function Card({ src, title, para }) {
   return (
     <div className="text-center">
       <img
-        className="mx-auto"
+        className="mx-auto w-8 xs:w-10 sm:w-14 md:w-16 lg:w-[86px] xl:w-[106px]"
         src={src}
         alt=""
       />
@@ -59,13 +59,13 @@ function Card({ src, title, para }) {
 
 function Benefits() {
   return (
-    <div className="pad-main-1-3">
+    <div className="pad-main-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[15px] xs:text-xl sm:text-[25px] md:text-[35px] lg:text-[40px] font-semibold mb-2 text-primary-900">
+        <h2 className="mb-2 text-[15px] xs:text-xl sm:text-[25px] md:text-[35px] lg:text-[40px] font-semibold text-primary-900 text-center">
           Partner Benefits
         </h2>
 
-        <div className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-base xl:text-xl font-normal mb-4">
+        <div className="mb-4 text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-base xl:text-xl text-center">
           Collaborating with Coinskite offers numerous benefits for your business. From access to cutting-edge technology and expert guidance, to customized solutions and increased visibility, there are many advantages to partnering with us
         </div>
 
