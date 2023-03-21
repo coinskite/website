@@ -2,7 +2,7 @@ function Header() {
   return (
     <div className='pad-main-3 grid lg:flex gap-4'>
       <div className="h-[200px] w-[200px] bg-primary-900">
-
+        <img src="./img/blog/chatgpt.png" alt="" />
       </div>
 
       <div>

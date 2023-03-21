@@ -5,7 +5,7 @@ const tabs = ["All", "Blockchain", "Crypto", "Defi", "Smart contract", "Research
 const arr = [
   {
     key: 1,
-    src: "",
+    src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
     date: "Jan 21,2023",
@@ -13,7 +13,7 @@ const arr = [
   },
   {
     key: 2,
-    src: "",
+    src: "./img/blog/bitcoin.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
     date: "",
@@ -21,7 +21,7 @@ const arr = [
   },
   {
     key: 3,
-    src: "",
+    src: "./img/blog/circles.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
     date: "",
@@ -29,7 +29,7 @@ const arr = [
   },
   {
     key: 4,
-    src: "",
+    src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
     date: "Jan 21,2023",
@@ -37,7 +37,7 @@ const arr = [
   },
   {
     key: 5,
-    src: "",
+    src: "./img/blog/web3.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
     date: "",
@@ -45,7 +45,7 @@ const arr = [
   },
   {
     key: 6,
-    src: "",
+    src: "./img/blog/web3.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
     date: "",
@@ -53,7 +53,7 @@ const arr = [
   },
   {
     key: 7,
-    src: "",
+    src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
     date: "Jan 21,2023",
@@ -61,7 +61,7 @@ const arr = [
   },
   {
     key: 8,
-    src: "",
+    src: "./img/blog/nft.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
     date: "",
@@ -69,7 +69,7 @@ const arr = [
   },
   {
     key: 9,
-    src: "",
+    src: "./img/blog/nasdaq.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
     date: "",
