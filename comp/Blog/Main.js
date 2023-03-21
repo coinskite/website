@@ -85,15 +85,15 @@ function Blog({ src, type, heading, by, date }) {
       </div>
 
       <div className='dfc '>
-        <button className='ts:text-[10px] xs:text-[12px] md:text-[10px] lg:text-[12px] font-semibold text-white bg-primary-900'>
+        <button className='text-[10px] xs:text-xs md:text-[10px] lg:text-xs font-semibold text-white bg-primary-900'>
           {type}
         </button>
-        <p className='ts:text-[12px] xs:text-[15px] sm:text-[18px] md:text-[12px] lg:text-[15px] xl:text-[18px] font-semibold'>{heading}</p>
+        <p className='text-xs xs:text-[15px] sm:text-lg md:text-xs lg:text-[15px] xl:text-lg font-semibold'>{heading}</p>
         {
           by &&
           <p className='df'>
             {by} |
-            <span className='ts:text[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] font-semibold text-[#C4C4C4]'>
+            <span className='text[6px] md:text-[8px] lg:text-[10px] xl:text-xs font-semibold text-[#C4C4C4]'>
               {date}
             </span>
           </p>
@@ -107,7 +107,7 @@ function Main() {
   const [current, setCurrent] = useState("All")
 
   return (
-    <div className='ts:text-[14px] xs:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-semibold pad-main-1-3'>
+    <div className='text-sm xs:text-base md:text-base lg:text-lg xl:text-xl font-semibold pad-main-1-3'>
       <div>
         Latest stories
       </div>
@@ -130,7 +130,7 @@ function Main() {
         {arr.map(l => <Blog {...l} />)}
       </div>
 
-      <button className=' ts:text-[10px] xs:text-[12px] sm:text-[14px] lg:text-[18px] xl:text-[20px] font-semibold text-white bg-primary-900'>
+      <button className='text-[10px] xs:text-xs sm:text-sm lg:text-lg xl:text-xl font-semibold text-white bg-primary-900'>
         Load more stories
       </button>
     </div>
