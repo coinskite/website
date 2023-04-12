@@ -1,31 +1,35 @@
 function Header() {
   return (
     <div className='pad-main-3 grid lg:flex gap-4'>
-      <div className="h-[200px] w-[200px] bg-primary-900">
-        <img src="./img/blog/chatgpt.png" alt="" />
+      <div className="df justify-center w-[260px] h-[150px] lg:w-80 lg:h-48 xl:w-[420px] xl:h-[250px] bg-primary-900 rounded-md">
+        <img
+          className="w-24 lg:w-28 xl:w-36"
+          src="./img/blog/header.png"
+          alt=""
+        />
       </div>
 
       <div>
-        <button className="ts:text-[12px] xs:text-[12px] sm:text-[12px] font-semibold text-white bg-primary-900">
+        <button className="text-xs font-semibold text-white bg-primary-900">
           NEW
         </button>
 
-        <p className="ts:text[14px] xs:text-[16px] sm:text-[18px] lg:text-[22px] xl:text-[25px] font-semibold">
-          Map2Earn to help merge physical and
+        <p className="mt-4 text-sm xs:text-base sm:text-lg lg:text-[22px] xl:text-[25px] font-semibold">
+          Map2Earn to help merge physical and <br />
           virtual worlds
         </p>
 
-        <p className="ts:[8px] xs:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[15px] font-medium ">
-          Map2Earn is a revolutionary Metaverse-oriented economic model that
+        <p className="my-4 text-[8px] xs:text-[10px] md:text-xs lg:text-sm xl:text-[15px] font-medium">
+          Map2Earn is a revolutionary Metaverse-oriented economic model that <br />
           enables users to become mappers while earning tokens
         </p>
 
         <p className="df">
-          <span className="ts:text[8px]  xs:text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[15px] font-semibold">
-            Rubesh,Researcher @coinskite
+          <span className="text-[8px] xs:text-[10px] lg:text-xs xl:text-[15px] font-semibold">
+            Rubesh, Researcher @coinskite
           </span>
 
-          <span className="ts:text[6px] xs:text-[6px] font-semibold">
+          <span className="text-[6px] xs:text-[6px] font-semibold">
             Jan 21,2023
           </span>
         </p>

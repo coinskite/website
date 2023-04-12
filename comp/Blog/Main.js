@@ -80,20 +80,24 @@ const arr = [
 function Blog({ src, type, heading, by, date }) {
   return (
     <div className='dfc'>
-      <div className='h-20 bg-primary-900'>
-        <img src={src} alt="" />
+      <div className='df justify-center py-6 md:py-7 max-w-xs h-28xs:h-[150px] sm:h-44 bg-primary-900 rounded-md'>
+        <img
+          className='h-[74px] xs:h-[104px] sm:h-32 md:h-[74px] lg:h-[104px] xl:h-32'
+          src={src}
+          alt=""
+        />
       </div>
 
-      <div className='dfc '>
-        <button className='ts:text-[10px] xs:text-[12px] md:text-[10px] lg:text-[12px] font-semibold text-white bg-primary-900'>
+      <div className='dfc'>
+        <button className='text-[10px] xs:text-xs md:text-[10px] lg:text-xs font-semibold text-white bg-primary-900'>
           {type}
         </button>
-        <p className='ts:text-[12px] xs:text-[15px] sm:text-[18px] md:text-[12px] lg:text-[15px] xl:text-[18px] font-semibold'>{heading}</p>
+        <p className='text-xs xs:text-[15px] sm:text-lg md:text-xs lg:text-[15px] xl:text-lg font-semibold'>{heading}</p>
         {
           by &&
-          <p className='df'>
+          <p className='df flex-wrap'>
             {by} |
-            <span className='ts:text[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] font-semibold text-[#C4C4C4]'>
+            <span className='text-[6px] md:text-[8px] lg:text-[10px] xl:text-xs font-semibold text-[#C4C4C4]'>
               {date}
             </span>
           </p>
@@ -107,7 +111,7 @@ function Main() {
   const [current, setCurrent] = useState("All")
 
   return (
-    <div className='ts:text-[14px] xs:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-semibold pad-main-1-3'>
+    <div className='text-sm xs:text-base lg:text-lg xl:text-xl font-semibold pad-main-1-3'>
       <div>
         Latest stories
       </div>
@@ -126,11 +130,11 @@ function Main() {
         }
       </div>
 
-      <div className='grid md:grid-cols-3 gap-4'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-4'>
         {arr.map(l => <Blog {...l} />)}
       </div>
 
-      <button className=' ts:text-[10px] xs:text-[12px] sm:text-[14px] lg:text-[18px] xl:text-[20px] font-semibold text-white bg-primary-900'>
+      <button className='block mx-auto my-8 text-[10px] xs:text-xs sm:text-sm lg:text-lg xl:text-xl font-semibold text-white bg-primary-900'>
         Load more stories
       </button>
     </div>
