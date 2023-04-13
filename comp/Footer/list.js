@@ -139,7 +139,7 @@ export const Partners = [
 
 export const Resources = [
   {
-    link: '/',
+    link: '/resource',
     title: 'Resource Center'
   },
   {

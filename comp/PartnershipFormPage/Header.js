@@ -1,8 +1,8 @@
 
 function Header() {
   return (
-    <div className="mb-6">
-      <h1 className='text-[32px] xs:text-[38px] sm:text-[44px] md:text-[55px] xl:text-[70px] font-bold'>
+    <div>
+      <h1 className='mb-2 lg:mb-4 text-[32px] xs:text-[38px] sm:text-[44px] md:text-[55px] xl:text-[70px] font-bold leading-[1.2]'>
         Let’s talk about partnership
       </h1>
 

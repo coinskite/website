@@ -82,6 +82,16 @@ svg.hire-details-arrow path {
   filter: blur(100px);
 }
 
+/* Partnership form */
+.partnership-form input,
+.partnership-form select,
+.partnership-form textarea {
+ @apply mb-4 pl-2 md:pl-4
+ text-[6px] xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-2xl 
+ text-[#C4C4C4] border border-[#C4C4C4] rounded-[5px]
+ ;
+}
+
 @media (max-width: 768px) {
   /* Nav */
   .head-arr {

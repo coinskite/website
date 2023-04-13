@@ -100,7 +100,7 @@ const list = [
       {
         img: './img/nav/Partner/Become.png',
         name: 'Become a Partner',
-        to: "/"
+        to: "/partnership-form"
       },
       {
         img: './img/nav/Partner/Terms.png',
