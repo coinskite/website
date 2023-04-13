@@ -2,9 +2,9 @@ function Header() {
   return (
     <div className='pad-main-3'>
       <div className="grid md:flex gap-4 lg:gap-6 max-w-xs xs:max-w-sm sm:max-w-md md:max-w-7xl mx-auto">
-        <div className="df justify-center w-[260px] h-[150px] lg:w-80 lg:h-48 xl:w-[420px] xl:h-[250px] bg-primary-900 rounded-md">
+        <div className="df justify-center w-[260px] h-[150px] xs:w-[338px] xs:h-[200px] sm:w-[344px] sm:h-[186px] md:w-[260px] md:h-[154px] lg:w-[338px] lg:h-[200px] xl:w-[420px] xl:h-[250px] bg-primary-900 rounded-md">
           <img
-            className="w-24 lg:w-28 xl:w-36"
+            className="w-[90px] xs:w-[103px] md:w-[90px] lg:w-28 xl:w-[150px]"
             src="./img/blog/header.png"
             alt=""
           />

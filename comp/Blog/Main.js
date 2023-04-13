@@ -80,7 +80,7 @@ const arr = [
 function Blog({ src, type, heading, by, date }) {
   return (
     <div className='dfc'>
-      <div className='df justify-center py-6 md:py-7 max-w-xs h-28 xs:h-[150px] sm:h-44 bg-primary-900 rounded-md'>
+      <div className='df justify-center py-6 md:py-8 max-w-xs h-28 xs:h-[150px] sm:h-44 md:h-28 lg:h-[150px] xl:h-[180px] bg-primary-900 rounded-md'>
         <img
           className='h-[74px] xs:h-[104px] sm:h-32 md:h-[74px] lg:h-[104px] xl:h-32'
           src={src}
