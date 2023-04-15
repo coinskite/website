@@ -12,6 +12,11 @@ const list = [
         name: 'KiteZa',
         to: "/"
       },
+      {
+        img: './img/nav/Product/Marketplace.png',
+        name: 'DigiKite',
+        to: "/digi-kite"
+      },
     ]
   },
   {

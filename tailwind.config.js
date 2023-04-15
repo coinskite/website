@@ -11,6 +11,10 @@ module.exports = {
       colors: {
         primary: {
           900: '#22C954'
+        },
+        digi: {
+          primary: "#00AC4F",
+          light: "#A5A5A5"
         }
       }
     },

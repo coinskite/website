@@ -92,6 +92,76 @@ svg.hire-details-arrow path {
  ;
 }
 
+/* DigiKite */
+.digi-wrapper section {
+  @apply my-2 md:my-4 lg:my-8 xl:my-12;
+}
+
+.digi-wrapper h1 {
+  @apply mb-2 md:mb-4 lg:mb-8 xl:mb-12 uppercase text-xl lg:text-3xl xl:text-[40px];
+}
+
+.digi-kite-nav-bar.active {
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+}
+
+.digi-kite-nav-bar.active .nav-item-1,
+.digi-kite-nav-bar.active .nav-search,
+.digi-kite-nav-bar.active .nav-item-last {
+  display: none;
+}
+
+.digi-kite-nav-bar.active .nav-item-2,
+.digi-kite-nav-bar.active .nav-item-3 {
+  display: block;
+}
+
+.digi-kite-nav-bar.active .nav-item-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.digi-kite-nav-search {
+  border: 1px solid rgba(255, 255, 255, .4);
+}
+
+.circle-wrapper {
+  background-image: url(/img/digi/circle/full.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.discord-bg {
+  background-image: url(/img/digi/discord/web_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper {
+  padding-bottom: 2.5rem !important;
+}
+
+.swiper-pagination-bullet{
+  background: #fff !important;
+  opacity: .8 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #00AC4F !important;
+  opacity: 1 !important;
+}
+
+
 @media (max-width: 768px) {
   /* Nav */
   .head-arr {
