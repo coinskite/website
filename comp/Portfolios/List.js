@@ -59,7 +59,7 @@ function List() {
 
   return (
     <div className="pad-main-3 bg-[#111112]">
-      <h2 className="text-xs xs:text-base sm:text-xl md:text-[28px] lg:text-[32px] xl:text-[40px] text-[#18E25D]">
+      <h2 className="text-[15px] xs:text-xl sm:text-[25px] text-[#18E25D]">
         Our Work
       </h2>
 
@@ -75,7 +75,8 @@ function List() {
               }}
             >
               {/* <img className="w-3 xs:w-4 sm:w-5 md:w-6 lg:w-8 rounded-full" src={d.img} alt={d.title} /> */}
-              <span className="text-[6px] xs:text-[8px] sm:text-[10px] md:text-sm lg:text-base xl:text-xl font-semibold text-white">{d.title}</span>
+              <span className="text-xs xs:text-base sm:text-xl md:text-sm lg:text-base xl:text-xl font-medium text-white">{d.title}</span>
+              {/* line */}
             </button>
           ))
         }

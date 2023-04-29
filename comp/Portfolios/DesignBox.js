@@ -12,7 +12,7 @@ function DesignBox({ img, title }) {
         </h3>
       </div>
 
-      <div className="no-scroll-bar h-36 xs:h-52 sm:h-64 xl:h-[350px] overflow-y-auto rounded-b-lg">
+      <div className="no-scroll-bar h-[176px] w-[254px] xs:h-[228px] xs:w-[340px] sm:h-[280px] sm:w-[418px] xl:h-[352px] xl:w-[493px] overflow-y-auto rounded-b-lg">
         <img src={img} alt="" />
       </div>
     </div>
