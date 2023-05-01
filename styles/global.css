@@ -168,6 +168,7 @@ svg.hire-details-arrow path {
 }
 
 .portfolio-btn.active {
+  @apply border border-primary-900;
   background: linear-gradient(180deg, #22C954 0%, rgba(34, 201, 84, 0) 100%);
 }
 

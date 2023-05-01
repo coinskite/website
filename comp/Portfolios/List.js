@@ -3,62 +3,76 @@ import DesignBox from "./DesignBox";
 
 const list = [
   {
-    title: "UI DESIGN",
+    title: "UI Design",
     img: "",
     list: [
       {
+        type: "UI DESIGN",
         title: "Coinskite",
         img: "/img/portfolio/coinskite.png"
       },
       {
+        type: "UI DESIGN",
         title: "NFT Marketplace",
         img: "/img/portfolio/nft.png"
       },
       {
+        type: "SOCILA MEDIA",
         title: "Social Media",
         img: "/img/portfolio/social_media.png"
       },
       {
+        type: "YOUTUBE",
         title: "Youtube Thumbnail",
         img: "/img/portfolio/youtube.png"
       },
       {
+        type: "NFT ILLUSTRATION",
         title: "NFT RUGGED WOMEN",
         img: "/img/portfolio/rugged.png"
       },
       {
+        type: "NFT ILLUSTRATION",
         title: "NFT DOG",
         img: "/img/portfolio/dog.png"
       },
       {
+        type: "NFT ILLUSTRATION",
         title: "NFT FASHION",
         img: "/img/portfolio/fashion.png"
       },
     ]
   },
   {
-    title: "SOCIAL MEDIA",
+    title: "Social Media",
     img: "",
     list: []
   },
   {
-    title: "NFT ILLUSTRATION",
+    title: "NFT Illustration",
     img: "",
     list: []
   },
   {
-    title: "THUMBNAIL",
+    title: "Thumbnail",
     img: "",
     list: []
   },
+  {
+    title: "Motion",
+    img: "",
+    list: []
+  }
 ]
 
 function List() {
   const [currentList, setCurrentList] = useState(list[0].list)
-  const [selected, setSelected] = useState("UI DESIGN")
+  const [selected, setSelected] = useState("UI Design")
 
   return (
-    <div className="pad-main-3 bg-[#111112]">
+    <div className="pad-main-3 bg-[#111112] relative">
+      <div className="blured-bg absolute top-16 left-0 w-80 h-60"></div>
+
       <div className="grid lg:grid-cols-2 gap-10 w-fit mx-auto">
         <h2 className="text-[15px] xs:text-xl sm:text-[25px] text-[#18E25D] lg:col-span-2">
           Our Work
@@ -69,7 +83,7 @@ function List() {
             list.map(d => (
               <button
                 key={d.title}
-                className={`df portfolio-btn text-xs xs:text-base sm:text-xl md:text-sm lg:text-base xl:text-xl font-medium text-white hover:text-emerald-400 whitespace-nowrap ${selected === d.title ? "active" : ""}`}
+                className={`df portfolio-btn text-xs xs:text-base sm:text-lg font-medium text-white hover:text-emerald-400 whitespace-nowrap ${selected === d.title ? "active" : ""}`}
                 onClick={() => {
                   setSelected(d.title)
                   setCurrentList(d.list)
