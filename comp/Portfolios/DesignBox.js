@@ -1,7 +1,7 @@
 
 function DesignBox({ img, title }) {
   return (
-    <div className="rounded-lg bg-[#1E1E1E] border">
+    <div className="w-fit mx-auto rounded-lg bg-[#1E1E1E] border">
       <div className="df py-2 px-2 text-[#888899] relative">
         <div className="w-3 h-3 bg-[#FF5E57] rounded-full"></div>
         <div className="w-3 h-3 bg-[#FFBB2E] rounded-full"></div>

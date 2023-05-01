@@ -162,6 +162,15 @@ svg.hire-details-arrow path {
 }
 
 
+/* portfolio */
+.portfolio-header-img {
+  transform: rotateY(180deg);
+}
+
+.portfolio-btn.active {
+  background: linear-gradient(180deg, #22C954 0%, rgba(34, 201, 84, 0) 100%);
+}
+
 @media (max-width: 768px) {
   /* Nav */
   .head-arr {

@@ -1,7 +1,7 @@
 
 function Header() {
   return (
-    <div className="pad-main-3 bg-[#111112]">
+    <div className="pad-main-3 bg-[#111112] overflow-hidden">
       <div className="w-fit lg:w-auto xl:max-w-7xl mx-auto">
         <div className="mb-4 sm:mb-6 lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
           <img className="w-36 xs:w-48 sm:w-64 md:w-[310px] mx-auto mb-4 lg:mb-0" src="/img/portfolio/header.png" alt="" />
@@ -26,19 +26,22 @@ function Header() {
           <div className="mb-4 md:mb-6 text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-xl font-medium text-white">
             We empower blockchain startups to establish a strong brand identity, refine their vision, <br /> and deliver exceptional user experiences through our design and strategy expertise
           </div>
-          <div className="relative">
-            <img className="w-[120px] sm:w-[200px] lg:w-[240px] absolute -left-20 xs:-left-28 md:-left-36 lg:-left-12 xl:-left-32 top-0" src="/img/portfolio/circle.png" alt="" />
-          </div>
 
-          <div className="p-4 pr-20 w-fit mx-auto text-xs xs:text-base sm:text-xl md:text-[26px] lg:text-3xl xl:text-[30px] font-medium bg-[#152A39] border border-[#22C954] text-[#01F08B] rounded-xl">
-            <ul>
-              <li>Design Research</li>
-              <li>UI & UX Design</li>
-              <li>Dapp Design</li>
-              <li>NFT’s Design</li>
-              <li>Design System</li>
+          <div className="flex items-start relative">
+            <img
+              className="portfolio-header-img w-[102px] xs:w-[159px] sm:w-[214px] md:w-[240px]"
+              src="/img/portfolio/circle.png"
+              alt=""
+            />
+            <ul className="py-6 px-5 sm:py-12 sm:px-10 w-fit text-xs xs:text-base sm:text-xl md:text-[26px] lg:text-3xl xl:text-[30px] font-medium bg-[#152A39] border border-[#22C954] text-[#01F08B] rounded-xl">
+              <li className="mb-4 lg:mb-6">Design Research</li>
+              <li className="mb-4 lg:mb-6">UI & UX Design</li>
+              <li className="mb-4 lg:mb-6">Dapp Design</li>
+              <li className="mb-4 lg:mb-6">NFT’s Design</li>
+              <li className="mb-4 lg:mb-6">Design System</li>
               <li>Logo & Icon</li>
             </ul>
+            <div className="blured-bg w-80 h-60 absolute top-1/2 left-1/2 -translate-y-1/2"></div>
           </div>
         </div>
       </div>
