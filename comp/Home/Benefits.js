@@ -24,8 +24,8 @@ const list = [
     title: "Flexible work terms",
     para: " Find your ideal work-life balance with our flexible working arrangements"
   },
-
 ]
+
 const list2 = [
   {
     key: "1",
@@ -53,43 +53,61 @@ const list2 = [
   },
 ]
 
-function Cards({ src, title, para, sub }) {
+function Cards({ src, title, para }) {
   return (
-    <div>
+    <div className="df">
+      <img
+        className=''
+        src={src}
+        alt=''
+      />
       <div>
-        <img
-          className=''
-          src={src}
-          alt=''
-        />
         <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
           {title}
         </p>
         <p className="text-[8px] xs:text-xs xl:text-base font-normal" >
           {para}
         </p>
-        <p>
-          {sub}
-        </p>
       </div>
     </div>
+  )
+}
 
+function Card2({ src, title, sub }) {
+  return (
+    <div>
+      <img
+        className=''
+        src={src}
+        alt=''
+      />
+
+      <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
+        {title}
+      </p>
+
+      <p className="text-[8px] xs:text-xs xl:text-base font-normal" >
+        {sub}
+      </p>
+    </div>
   )
 }
 
 function Benefits() {
   return (
-    <div>
-      <div>
+    <div className="pad-main-3">
+      <div className="max-w-7xl mx-auto">
         <p className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">Benefits of working with us</p>
-        <div classname='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal'>
+        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal'>
           Discover the Advantages of Collaborating with Our Team
         </div>
-        <div>
+
+        <div className="grid grid-cols-2 gap-4 mb-16">
           {list.map(l1 => <Cards {...l1} />)}
         </div>
-        <div className="df">
-          {list2.map(c => <Cards {...c} />)}
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg">
+          {list2.map(c => <Card2 {...c} />)}
         </div>
       </div>
     </div>
