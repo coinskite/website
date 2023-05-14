@@ -70,10 +70,10 @@ function List() {
   const [selected, setSelected] = useState("UI Design")
 
   return (
-    <div className="pad-main-3 bg-[#111112] relative">
-      <div className="blured-bg absolute top-16 left-0 w-80 h-60"></div>
+    <div className="pad-main-3 bg-[#111112] relative isolate">
+      <div className="blured-bg absolute top-16 left-0 w-80 h-60 -z-[1]"></div>
 
-      <div className="grid lg:grid-cols-2 gap-10 w-fit mx-auto">
+      <div className="grid lg:grid-cols-2 gap-10 w-fit mx-auto z-[1]">
         <h2 className="text-[15px] xs:text-xl sm:text-[25px] text-[#18E25D] lg:col-span-2">
           Our Work
         </h2>
