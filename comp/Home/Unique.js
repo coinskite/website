@@ -57,7 +57,7 @@ function Unique() {
         </p>
       </div>
 
-      <div className='df '>
+      <div className=' grid grid-cols-4 lg:grid-cols-4 gap-4 p-6 mb-8 '>
         {list.map(l => < Card {...l} />)}
       </div>
     </div>

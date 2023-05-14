@@ -64,7 +64,7 @@ function Clients() {
                 </p>
             </div>
 
-            <div className='df'>
+            <div className='grid grid-cols-3 gap-8 bg-[#BFFFD3]'>
                 {list.map(l => <Card {...l} />)}
             </div>
         </div>
