@@ -26,7 +26,34 @@ const list = [
   },
 
 ]
-function Cards({ src, title, para }) {
+const list2 = [
+  {
+    key: "1",
+    title: '30+',
+    sub: "Happy Clients",
+    src: "/img/home_new/clients BOX/1.png"
+  },
+  {
+    key: "2",
+    title: '120+',
+    sub: "Projects Completed",
+    src: "/img/home_new/clients BOX/2.png"
+  },
+  {
+    key: "3",
+    title: '70',
+    sub: "Dedicated Members",
+    src: "/img/home_new/clients BOX/3.png"
+  },
+  {
+    key: "4",
+    title: '12+',
+    sub: "Awards Won",
+    src: "/img/home_new/clients BOX/4.png"
+  },
+]
+
+function Cards({ src, title, para, sub }) {
   return (
     <div>
       <div>
@@ -35,11 +62,14 @@ function Cards({ src, title, para }) {
           src={src}
           alt=''
         />
-        <h1>
+        <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
           {title}
-        </h1>
-        <p>
+        </p>
+        <p className="text-[8px] xs:text-xs xl:text-base font-normal" >
           {para}
+        </p>
+        <p>
+          {sub}
         </p>
       </div>
     </div>
@@ -51,12 +81,15 @@ function Benefits() {
   return (
     <div>
       <div>
-        <h1>Benefits of working with us</h1>
-        <div>
+        <p className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">Benefits of working with us</p>
+        <div classname='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal'>
           Discover the Advantages of Collaborating with Our Team
         </div>
         <div>
           {list.map(l1 => <Cards {...l1} />)}
+        </div>
+        <div className="df">
+          {list2.map(c => <Cards {...c} />)}
         </div>
       </div>
     </div>

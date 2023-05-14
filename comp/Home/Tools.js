@@ -115,7 +115,7 @@ function Tools() {
         Utilizing cutting-edge tools
       </div>
 
-      <div className='text-sm xs:text-base sm:text-xs md:text-sm lg:text-[32px] xl:text-lg text-[#E8E00E]  font-bold'>
+      <div className='text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg font-normal'>
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 

@@ -35,10 +35,10 @@ function Card({ src, title, para }) {
         src={src}
         alt=''
       />
-      <p>
+      <p className="text-base sm:text-lg lg:text-base xl:text-lg font-bold text-[#E8E00E]">
         {title}
       </p>
-      <p>
+      <p className="text-[10px] sm:text-xs lg:text-[15px] xl:text-base font-normal">
         {para}
       </p>
     </div>
@@ -49,10 +49,10 @@ function Unique() {
   return (
     <div>
       <div>
-        <p>
+        <p className="text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">
           Our Unique Methodology
         </p>
-        <p>
+        <p className="text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal">
           Learn about our step-by-step process for delivering results
         </p>
       </div>

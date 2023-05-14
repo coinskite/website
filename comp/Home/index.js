@@ -7,15 +7,17 @@ import Tools from './Tools';
 import Benefits from './Benefits';
 import Unique from './Unique';
 import Clients from './Clients';
+import Platforms from './Platforms';
 
 function Home() {
   return (
     <div className='text-white bg-[#222531]'>
       <Header />
       {/* <Products /> */}
-      <Stacks />
+      {/* <Stacks /> */}
       {/* <Blog /> */}
       {/* <Final /> */}
+      <Platforms />
       <Tools />
       <Benefits />
       <Unique />
