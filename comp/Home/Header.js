@@ -23,8 +23,8 @@ const list = [
 
 function Header() {
   return (
-    <div className="pad-main-3 grid lg:grid-cols-3 gap-4 relative text-center">
-      <div className="lg:gap-4 pt-4 relative lg:col-span-2">
+    <div className="pad-main-3 relative text-center">
+      <div className="pt-4 relative lg:col-span-2">
         <h1 className="text-base xs:text-[22px] sm:text-3xl md:text-4xl lg:text-[38px] xl:text-[50px] font-semibold">
           Revolutionize your business with
           <span className="text-[#22C954]">Coinskite's</span> blockchain solution
