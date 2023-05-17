@@ -75,14 +75,14 @@ function Cards({ src, title, para }) {
 
 function Card2({ src, title, sub }) {
   return (
-    <div>
+    <div className="text-center">
       <img
-        className=''
+        className='mx-auto'
         src={src}
         alt=''
       />
 
-      <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
+      <p className="my-2 text-sm xs:text-base sm:text-[24px] text-[#01F08B] font-bold">
         {title}
       </p>
 
@@ -97,8 +97,10 @@ function Benefits() {
   return (
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto">
-        <p className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">Benefits of working with us</p>
-        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal'>
+        <h2 className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] text-center">
+          Benefits of working with us
+        </h2>
+        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
           Discover the Advantages of Collaborating with Our Team
         </div>
 
@@ -106,7 +108,7 @@ function Benefits() {
           {list.map(l1 => <Cards {...l1} />)}
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 max-w-6xl mx-auto border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg">
           {list2.map(c => <Card2 {...c} />)}
         </div>
       </div>

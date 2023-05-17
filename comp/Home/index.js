@@ -1,16 +1,16 @@
-import Blog from './Blog';
+import Platforms from './Platforms';
+import Benefits from './Benefits';
+import Clients from './Clients';
 import Header from './Header';
-// import Products from './Products';
+import Unique from './Unique';
 import Final from './Final';
 import Tools from './Tools';
-import Benefits from './Benefits';
-import Unique from './Unique';
-import Clients from './Clients';
-import Platforms from './Platforms';
+import Blog from './Blog';
+// import Products from './Products';
 
 function Home() {
   return (
-    <div className='text-white bg-[#222531]'>
+    <div className='text-white bg-[#111112]'>
       <Header />
       {/* <Products /> */}
       <Platforms />

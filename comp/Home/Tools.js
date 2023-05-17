@@ -95,7 +95,7 @@ const list3 = [
 
 function Card({ src, title }) {
   return (
-    <div className='df rounded-xl bg-[#272727]'>
+    <div className='df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
       <img
         className=''
         src={src}
@@ -110,7 +110,7 @@ function Card({ src, title }) {
 
 function Tools() {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto text-center">
       <div className='text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E]  font-bold'>
         Utilizing cutting-edge tools
       </div>
@@ -119,15 +119,15 @@ function Tools() {
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 
-      <div className='df'>
+      <div className='df justify-center'>
         {list1.map(firstline => <Card {...firstline} />)}
       </div>
 
-      <div className='df'>
+      <div className='df justify-center my-4'>
         {list2.map(secondline => <Card {...secondline} />)}
       </div>
 
-      <div className='df'>
+      <div className='df justify-center'>
         {list3.map(thirdline => <Card {...thirdline} />)}
       </div>
     </div>

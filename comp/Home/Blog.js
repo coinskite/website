@@ -30,24 +30,25 @@ const list = [
 
 function Card({ src, title, para, subtitle, date }) {
   return (
-    <div>
+    <div className=" border border-primary-900">
       <img
         className=""
         src={src}
         alt=""
       />
-      <p className="mt-2 text-xs lg:text-sm xl:text-sm font-normal text-[#A4A4A4]">
-        {title}
-      </p>
-      <p className="text-[10px] lg:text-xs xl:text-xs text-[#505050] font-normal ">
-        {subtitle}
-      </p>
-      <p className="text-[8px] lg:text-[10px] xl:text-[10px] font-normal">
-        {para}
-      </p>
-      <p>
-        {date}
-      </p>
+
+      <div className="p-3 text-[#505050] bg-[#BFFFD3]">
+        <p className="df justify-between mt-2 text-xs lg:text-sm xl:text-sm text-[#A4A4A4]">
+          <span>{title}</span>
+          <p>{date}</p>
+        </p>
+        <p className="text-[10px] lg:text-xs xl:text-xs">
+          {subtitle}
+        </p>
+        <p className="text-[8px] lg:text-[10px] xl:text-[10px]">
+          {para}
+        </p>
+      </div>
     </div>
   )
 }
