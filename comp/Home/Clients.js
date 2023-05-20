@@ -42,7 +42,7 @@ function Card({ src, title, para, name, role, }) {
 
       <div>
         <img
-          className='mx-auto'
+          className='mx-auto w-[56px]'
           src={src}
           alt=''
         />

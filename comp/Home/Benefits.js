@@ -57,7 +57,7 @@ function Cards({ src, title, para }) {
   return (
     <div className="df">
       <img
-        className=''
+        className='w-[42px] xs:w-[48px] sm:w-[72px]'
         src={src}
         alt=''
       />
@@ -77,16 +77,16 @@ function Card2({ src, title, sub }) {
   return (
     <div className="text-center">
       <img
-        className='mx-auto'
+        className='mx-auto w-[44px] md:w-[55px] xl:w-[64px]'
         src={src}
         alt=''
       />
 
-      <p className="my-2 text-sm xs:text-base sm:text-[24px] text-[#01F08B] font-bold">
+      <p className="my-2 text-[28px] sm:text-[35px] md:text-[42px] xl:text-[48px] text-[#01F08B] font-extrabold">
         {title}
       </p>
 
-      <p className="text-[8px] xs:text-xs xl:text-base font-normal" >
+      <p className="text-[10px] sm:text-sm md:text-base xl:text-lg font-normal" >
         {sub}
       </p>
     </div>
@@ -100,7 +100,7 @@ function Benefits() {
         <h2 className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] text-center">
           Benefits of working with us
         </h2>
-        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
+        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center font-normal'>
           Discover the Advantages of Collaborating with Our Team
         </div>
 

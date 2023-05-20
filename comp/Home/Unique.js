@@ -30,7 +30,7 @@ function Card({ src, title, para }) {
   return (
     <div className='text-center'>
       <img
-        className='mx-auto'
+        className='mx-auto w-[70px] sm:w-[80px] md:text-[95px] lg:w-[55px] xl:w-[80px]'
         src={src}
         alt=''
       />

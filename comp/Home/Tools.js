@@ -97,7 +97,7 @@ function Card({ src, title }) {
   return (
     <div className='df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
       <img
-        className=''
+        className='w-[10px] xs:w-[13px] sm:w-[17px] md:w-[20px] xl:w-[22px] '
         src={src}
         alt=''
       />
@@ -115,7 +115,7 @@ function Tools() {
         Utilizing cutting-edge tools
       </div>
 
-      <div className='text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg font-normal'>
+      <div className=' mt-[17px] mb-5 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg font-normal'>
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 

@@ -40,12 +40,12 @@ function Card({ src, title, para, subtitle, date }) {
       <div className="p-3 text-[#505050] bg-[#BFFFD3]">
         <p className="df justify-between mt-2 text-xs lg:text-sm xl:text-sm text-[#A4A4A4]">
           <span>{title}</span>
-          <p>{date}</p>
+          <p className="text-sm font-normal text-[#505050]">{date}</p>
         </p>
-        <p className="text-[10px] lg:text-xs xl:text-xs">
+        <p className="text-[10px] lg:text-xs xl:text-xs font-normal text-[#505050]">
           {subtitle}
         </p>
-        <p className="text-[8px] lg:text-[10px] xl:text-[10px]">
+        <p className="text-[8px] lg:text-[10px] xl:text-[10px] font-normal text-[#505050]">
           {para}
         </p>
       </div>

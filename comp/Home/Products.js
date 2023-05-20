@@ -50,7 +50,7 @@ function Card({ src, title, para, active, setActive }) {
     <div>
       <div>
         <button
-          className={`portfolio-btn mb-4 ${title === active ? "active" : ""}`}
+          className={`portfolio-btn mb-4 ${title === active ? "active" : "text-[10px] xs:text-xs sm:text-sm md:text-lg lg:text-[26px] xl:text-[28px] font-bold"}`}
           onClick={() => setActive(title)}
         >
           {title}
@@ -59,13 +59,14 @@ function Card({ src, title, para, active, setActive }) {
 
       <div className={`p-4 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] ${active !== title ? "hidden" : ""}`}>
         <img
+          className="w-[35px] xs:[46px] sm:w-[58px] md:w-[65px] lg:w-[80px] xl:w-[100px] "
           src={src}
           alt=""
         />
-        <p>
+        <p className="text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px]  font-bold">
           {title}
         </p>
-        <p>
+        <p className="text-[9px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  font-normal">
           {para}
         </p>
       </div>
@@ -79,10 +80,10 @@ function Products() {
   return (
     <div className='pad-main-1-3'>
       <div className="max-w-7xl mx-auto">
-        <h2>
+        <h2 className="text-sm xs:text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:txet-[36px] font-bold text-[#E8E00E]">
           Our Services
         </h2>
-        <div>
+        <div className=" text-[8px] xs:text-[10px] sm:text-sm md:text-lg font-normal">
           we offer a range of expert blockchain services to help startups and enterprises leverage the power of this transformative technology.
         </div>
 

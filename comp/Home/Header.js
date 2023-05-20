@@ -39,14 +39,14 @@ function Header() {
           Join the revolution
         </button>
 
-        <div className="mt-6 mb-4 text-[8px] xs:text-[10px] sm:text-base md:text-lg font-normal">
-          trust by startup and large enterprises
+        <div className="mt-6 mb-4 text-[8px] xs:text-[10px] sm:text-base md:text-lg font-normal text-[#E2E2E2]">
+          TRUSTED BY STARTED AND LARGE ENTERPRISES
         </div>
 
         <div className="df justify-center gap-8">
           {list.map(l => (
             <img
-              className=""
+              className=" w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"
               src={l.src}
               key={l.key}
             />

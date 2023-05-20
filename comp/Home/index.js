@@ -13,8 +13,8 @@ function Home() {
     <div className='text-white bg-[#111112]'>
       <Header />
       <Products />
-      <Platforms />
       <Tools />
+      <Platforms />
       <Benefits />
       <Unique />
       <Clients />
