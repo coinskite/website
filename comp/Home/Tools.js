@@ -1,3 +1,4 @@
+import { useKeenSlider } from "keen-slider/react"
 
 const list1 = [
   {
@@ -95,15 +96,45 @@ const list3 = [
 
 function Card({ src, title }) {
   return (
-    <div className='df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
+    <div className='keen-slider__slide df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
       <img
         className='w-[10px] xs:w-[13px] sm:w-[17px] md:w-[20px] xl:w-[22px] '
         src={src}
         alt=''
       />
-      <p className="text-[8px] xs:text-xs sm:text-sm md:text-lg lg:text-xl font-normal">
+      <p className="text-[8px] xs:text-xs sm:text-sm md:text-lg lg:text-xl">
         {title}
       </p>
+    </div>
+  )
+}
+
+const animation = { duration: 40000, easing: (t) => t }
+
+function Slider({ list = [], className = "", perView = 5, rtl = false }) {
+  const [sliderRef] = useKeenSlider({
+    rtl,
+    loop: true,
+    drag: false,
+    renderMode: "performance",
+    slides: {
+      spacing: 10,
+      perView,
+    },
+    created(s) {
+      s.moveToIdx(5, true, animation)
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+  })
+
+  return (
+    <div ref={sliderRef} className={`keen-slider ${className}`}>
+      {list.map(firstline => <Card {...firstline} />)}
     </div>
   )
 }
@@ -111,25 +142,17 @@ function Card({ src, title }) {
 function Tools() {
   return (
     <div className="max-w-7xl mx-auto text-center">
-      <div className='text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E]  font-bold'>
+      <div className='mb-2 md:mb-4 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E] font-bold'>
         Utilizing cutting-edge tools
       </div>
 
-      <div className=' mt-[17px] mb-5 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg font-normal'>
+      <div className='mb-4 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg'>
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 
-      <div className='df justify-center'>
-        {list1.map(firstline => <Card {...firstline} />)}
-      </div>
-
-      <div className='df justify-center my-4'>
-        {list2.map(secondline => <Card {...secondline} />)}
-      </div>
-
-      <div className='df justify-center'>
-        {list3.map(thirdline => <Card {...thirdline} />)}
-      </div>
+      <Slider list={list1} perView={4} />
+      <Slider rtl list={list2} className="my-4" />
+      <Slider list={list3} />
     </div>
   )
 }

@@ -47,7 +47,7 @@ const list = [
 
 function Card({ src, title, para, active, setActive }) {
   return (
-    <div>
+    <div className="lg:grid lg:grid-cols-2 lg:gap-4">
       <div>
         <button
           className={`portfolio-btn mb-4 ${title === active ? "active" : "text-[10px] xs:text-xs sm:text-sm md:text-lg lg:text-[26px] xl:text-[28px] font-bold"}`}
@@ -57,7 +57,7 @@ function Card({ src, title, para, active, setActive }) {
         </button>
       </div>
 
-      <div className={`p-4 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] ${active !== title ? "hidden" : ""}`}>
+      <div className={`p-4 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] lg:absolute lg:top-0 lg:left-1/2 ${active !== title ? "hidden" : ""}`}>
         <img
           className="w-[35px] xs:[46px] sm:w-[58px] md:w-[65px] lg:w-[80px] xl:w-[100px] "
           src={src}
@@ -66,7 +66,7 @@ function Card({ src, title, para, active, setActive }) {
         <p className="text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px]  font-bold">
           {title}
         </p>
-        <p className="text-[9px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  font-normal">
+        <p className="text-[9px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
           {para}
         </p>
       </div>
@@ -83,11 +83,13 @@ function Products() {
         <h2 className="text-sm xs:text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:txet-[36px] font-bold text-[#E8E00E]">
           Our Services
         </h2>
-        <div className=" text-[8px] xs:text-[10px] sm:text-sm md:text-lg font-normal">
+        <div className="mb-4 text-[8px] xs:text-[10px] sm:text-sm md:text-lg">
           we offer a range of expert blockchain services to help startups and enterprises leverage the power of this transformative technology.
         </div>
 
-        {list.map(l => <Card {...l} active={active} setActive={setActive} />)}
+        <div className="relative">
+          {list.map(l => <Card {...l} active={active} setActive={setActive} />)}
+        </div>
       </div>
     </div>
   )

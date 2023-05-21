@@ -37,7 +37,7 @@ function Card({ src, title, para }) {
       <p className="my-2 text-base sm:text-lg lg:text-base xl:text-lg font-bold">
         {title}
       </p>
-      <p className="text-[10px] sm:text-xs lg:text-[15px] xl:text-base font-normal">
+      <p className="text-[10px] sm:text-xs lg:text-[15px] xl:text-base">
         {para}
       </p>
     </div>
@@ -51,12 +51,12 @@ function Unique() {
         <h2 className="text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">
           Our Unique Methodology
         </h2>
-        <p className="text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg font-normal">
+        <p className="text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg">
           Learn about our step-by-step process for delivering results
         </p>
       </div>
 
-      <div className=' grid grid-cols-4 lg:grid-cols-4 gap-4 p-6 mb-8 '>
+      <div className='grid lg:grid-cols-4 gap-4 p-6 mb-8'>
         {list.map(l => < Card {...l} />)}
       </div>
     </div>

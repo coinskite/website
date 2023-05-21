@@ -30,7 +30,7 @@ const list = [
 
 function Card({ src, title, para, subtitle, date }) {
   return (
-    <div className=" border border-primary-900">
+    <div className="w-[246px] xl:w-[310px] border border-primary-900">
       <img
         className=""
         src={src}
@@ -40,12 +40,12 @@ function Card({ src, title, para, subtitle, date }) {
       <div className="p-3 text-[#505050] bg-[#BFFFD3]">
         <p className="df justify-between mt-2 text-xs lg:text-sm xl:text-sm text-[#A4A4A4]">
           <span>{title}</span>
-          <p className="text-sm font-normal text-[#505050]">{date}</p>
+          <p className="text-sm text-[#505050]">{date}</p>
         </p>
-        <p className="text-[10px] lg:text-xs xl:text-xs font-normal text-[#505050]">
+        <p className="text-[10px] lg:text-xs xl:text-xs text-[#505050]">
           {subtitle}
         </p>
-        <p className="text-[8px] lg:text-[10px] xl:text-[10px] font-normal text-[#505050]">
+        <p className="text-[8px] lg:text-[10px] xl:text-[10px] text-[#505050]">
           {para}
         </p>
       </div>
@@ -60,11 +60,11 @@ function Blog() {
         <p className="text-sm xs:text-lg sm:text-lg md:text-[34px] xl:text-[40px] text-[#E8E00E] font-bold text-center">
           Read Our latest Insights
         </p>
-        <p className="text-[8px] xs:text-xs sm:text-base xl:text-lg font-normal text-center">
+        <p className="text-[8px] xs:text-xs sm:text-base xl:text-lg text-center">
           All the latest updates and community happenings
         </p>
 
-        <div className="grid grid-cols-3 gap-8 pad-main-3">
+        <div className="flex flex-col lg:flex-row items-center lg:justify-center gap-8 pad-main-3">
           {list.map(l => <Card {...l} />)}
         </div>
       </div>

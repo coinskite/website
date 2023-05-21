@@ -65,7 +65,7 @@ function Cards({ src, title, para }) {
         <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
           {title}
         </p>
-        <p className="text-[8px] xs:text-xs xl:text-base font-normal" >
+        <p className="text-[8px] xs:text-xs xl:text-base" >
           {para}
         </p>
       </div>
@@ -86,7 +86,7 @@ function Card2({ src, title, sub }) {
         {title}
       </p>
 
-      <p className="text-[10px] sm:text-sm md:text-base xl:text-lg font-normal" >
+      <p className="text-[10px] sm:text-sm md:text-base xl:text-lg">
         {sub}
       </p>
     </div>
@@ -100,11 +100,11 @@ function Benefits() {
         <h2 className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] text-center">
           Benefits of working with us
         </h2>
-        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center font-normal'>
+        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
           Discover the Advantages of Collaborating with Our Team
         </div>
 
-        <div className="grid grid-cols-2 gap-4 mb-16">
+        <div className="grid lg:grid-cols-2 gap-4 mb-16">
           {list.map(l1 => <Cards {...l1} />)}
         </div>
 

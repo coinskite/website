@@ -24,22 +24,22 @@ const list = [
 function Header() {
   return (
     <div className="pad-main-3 relative text-center">
-      <div className="pt-4 relative lg:col-span-2">
+      <div className="pt-4 relative">
         <h1 className="text-base xs:text-[22px] sm:text-3xl md:text-4xl lg:text-[38px] xl:text-[50px] font-semibold">
           Revolutionize your business with <br />
           <span className="text-[#22C954]">Coinskite's</span> blockchain solution
         </h1>
 
-        <div className="mt-4 mb-6 text-[8px] xs:text-[10px] sm:text-sm md:text-lg  xl:text-xl font-normal">
+        <div className="mt-4 mb-6 text-[8px] xs:text-[10px] sm:text-sm md:text-lg xl:text-xl">
           Experience the security, transparency, and efficiency of <br />
           blockchain technology with our expert services
         </div>
 
-        <button className="text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-lg font-normal bg-primary-900 ">
+        <button className="text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-lg bg-primary-900 ">
           Join the revolution
         </button>
 
-        <div className="mt-6 mb-4 text-[8px] xs:text-[10px] sm:text-base md:text-lg font-normal text-[#E2E2E2]">
+        <div className="mt-6 mb-4 text-[8px] xs:text-[10px] sm:text-base md:text-lg text-[#E2E2E2]">
           TRUSTED BY STARTED AND LARGE ENTERPRISES
         </div>
 

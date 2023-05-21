@@ -8,6 +8,8 @@ import Final from './Final';
 import Tools from './Tools';
 import Blog from './Blog';
 
+import "keen-slider/keen-slider.min.css"
+
 function Home() {
   return (
     <div className='text-white bg-[#111112]'>
