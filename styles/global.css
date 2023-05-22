@@ -60,6 +60,22 @@
 }
 
 /* Home */
+.home-tools::before,
+.home-tools::after {
+  @apply absolute w-[100px] top-0 bottom-0 z-[1];
+  content: "";
+}
+
+.home-tools::before {
+  left: 0;
+  background: linear-gradient(to right, #111112 30%, rgba(0, 0, 0, 0));
+}
+
+.home-tools::after {
+  right: 0;
+  background: linear-gradient(to left, #111112 30%, rgba(0, 0, 0, 0));
+}
+
 .blog-bg {
   background-image: url(../public/img/home/blog/net1.png);
 }

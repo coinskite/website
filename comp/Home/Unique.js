@@ -28,7 +28,7 @@ const list = [
 
 function Card({ src, title, para }) {
   return (
-    <div className='text-center'>
+    <div className='text-center z-[1]'>
       <img
         className='mx-auto w-[70px] sm:w-[80px] md:text-[95px] lg:w-[55px] xl:w-[80px]'
         src={src}
@@ -56,8 +56,9 @@ function Unique() {
         </p>
       </div>
 
-      <div className='grid lg:grid-cols-4 gap-4 p-6 mb-8'>
+      <div className='grid lg:grid-cols-4 gap-4 p-6 mb-8 relative'>
         {list.map(l => < Card {...l} />)}
+        {/* <div className="absolute top-0 bottom-0 left-1/2 border border-dotted border-primary-900"></div> */}
       </div>
     </div>
   )

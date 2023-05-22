@@ -118,7 +118,7 @@ function Slider({ list = [], className = "", perView = 5, rtl = false }) {
     drag: false,
     renderMode: "performance",
     slides: {
-      spacing: 10,
+      spacing: 40,
       perView,
     },
     created(s) {
@@ -150,9 +150,11 @@ function Tools() {
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 
-      <Slider list={list1} perView={4} />
-      <Slider rtl list={list2} className="my-4" />
-      <Slider list={list3} />
+      <div className="home-tools max-w-5xl mx-auto relative">
+        <Slider list={list1} perView={4} />
+        <Slider rtl list={list2} className="my-6" />
+        <Slider list={list3} />
+      </div>
     </div>
   )
 }

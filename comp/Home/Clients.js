@@ -31,13 +31,14 @@ const list = [
 function Card({ src, title, para, name, role, }) {
   return (
     <div className='text-center'>
-      <div className="p-4 mb-6 bg-[#BFFFD3] rounded-[10px]">
+      <div className="p-4 mb-6 bg-[#BFFFD3] rounded-[10px] relative">
         <p className="mb-4 text-lg lg:text-[22px] xl:text-lg font-bold text-[#2B2C3B]">
           {title}
         </p>
         <p className="text-sm md:text-base lg:text-sm text-black">
           {para}
         </p>
+        <p className="w-4 h-4 absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-sm rotate-45 bg-[#BFFFD3]"></p>
       </div>
 
       <div>
@@ -69,8 +70,11 @@ function Clients() {
         </p>
       </div>
 
-      <div className='grid lg:grid-cols-3 gap-8'>
+      <div className='grid lg:grid-cols-3 gap-8 relative'>
         {list.map(l => <Card {...l} />)}
+
+        <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
+        <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>
       </div>
     </div>
   )

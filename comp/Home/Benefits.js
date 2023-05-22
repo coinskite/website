@@ -108,8 +108,9 @@ function Benefits() {
           {list.map(l1 => <Cards {...l1} />)}
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 max-w-6xl mx-auto border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 max-w-6xl mx-auto border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
           {list2.map(c => <Card2 {...c} />)}
+          <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
         </div>
       </div>
     </div>
