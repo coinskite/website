@@ -84,7 +84,7 @@ function Header() {
         alt=""
       />
 
-      <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>
+      <div className="absolute w-80 h-80 top-0 left-0 blured-bg z-[1]"></div>
     </div>
   )
 }
