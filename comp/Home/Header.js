@@ -30,7 +30,7 @@ function Header() {
           <span className="text-[#22C954]">Coinskite's</span> blockchain solution
         </h1>
 
-        <div className="mt-4 mb-6 text-[8px] xs:text-[10px] sm:text-sm md:text-lg xl:text-xl">
+        <div className="my-2 md:mt-3 md:mb-6 text-[8px] xs:text-[10px] sm:text-sm md:text-lg xl:text-xl">
           Experience the security, transparency, and efficiency of <br />
           blockchain technology with our expert services
         </div>
@@ -39,14 +39,14 @@ function Header() {
           Join the revolution
         </button>
 
-        <div className="mt-6 mb-4 text-[8px] xs:text-[10px] sm:text-base md:text-lg text-[#E2E2E2]">
+        <div className="mt-8 mdb:mt-12 mb-2 text-[8px] xs:text-[10px] sm:text-base md:text-lg text-[#E2E2E2]">
           TRUSTED BY STARTED AND LARGE ENTERPRISES
         </div>
 
         <div className="df justify-center gap-8">
           {list.map(l => (
             <img
-              className=" w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"
+              className="w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"
               src={l.src}
               key={l.key}
             />
@@ -55,36 +55,36 @@ function Header() {
       </div>
 
       <img
-        className="absolute top-2 left-2"
+        className="w-4 sm:w-6 md:w-auto absolute top-1/2 left-2 mdb:left-16"
         src="./img/home/new/greenstar1.png"
         alt=""
       />
 
       <img
-        className="absolute top-2 left-36"
+        className="hidden lg:block absolute top-2 left-1/2"
         src="./img/home/new/greenstar2.png"
         alt=""
       />
 
       <img
-        className="absolute bottom-12 right-6"
+        className="w-4 sm:w-6 md:w-auto absolute top-[58%] right-6 mdb:right-16"
         src="./img/home/new/greenstar3.png"
         alt=""
       />
 
       <img
-        className="absolute top-1/2 left-2"
+        className="w-4 sm:w-6 md:w-auto absolute top-8 left-4 mdb:left-24"
         src="./img/home/new/cube.png"
         alt=""
       />
 
       <img
-        className="absolute top-2 left-1/2"
+        className="w-4 sm:w-6 md:w-auto absolute top-2 right-4 mdb:right-40"
         src="./img/home/new/cube.png"
         alt=""
       />
 
-      <div className="absolute w-80 h-80 top-0 left-0 blured-bg z-[1]"></div>
+      <div className="absolute w-40 h-40 sm:w-60 sm:h-60 lg:w-80 lg:h-80 top-0 left-0 blured-bg z-[1] pointer-events-none"></div>
     </div>
   )
 }

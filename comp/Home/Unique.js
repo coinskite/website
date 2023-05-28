@@ -46,9 +46,9 @@ function Card({ src, title, para }) {
 
 function Unique() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="mt-8 max-w-7xl mx-auto relative">
       <div className="text-center">
-        <h2 className="text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E]">
+        <h2 className="text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-[#E8E00E]">
           Our Unique Methodology
         </h2>
         <p className="text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg">
@@ -56,10 +56,16 @@ function Unique() {
         </p>
       </div>
 
-      <div className='grid lg:grid-cols-4 gap-4 p-6 mb-8 relative'>
+      <div className='grid lg:grid-cols-4 gap-4 p-6 relative'>
         {list.map(l => < Card {...l} />)}
         {/* <div className="absolute top-0 bottom-0 left-1/2 border border-dotted border-primary-900"></div> */}
       </div>
+
+      <img
+        className="w-44 md:w-56 lg:hidden absolute top-12 md:top-20"
+        src="/img/portfolio/circle.png"
+        alt=""
+      />
     </div>
   )
 }

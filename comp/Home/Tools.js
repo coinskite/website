@@ -141,18 +141,18 @@ function Slider({ list = [], className = "", perView = 5, rtl = false }) {
 
 function Tools() {
   return (
-    <div className="max-w-7xl mx-auto text-center">
-      <div className='mb-2 md:mb-4 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E] font-bold'>
+    <div className="max-w-7xl mx-auto mb-8 sm:mb-12 mdb:mb-16 text-center">
+      <div className='mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E] uppercase font-bold'>
         Utilizing cutting-edge tools
       </div>
 
-      <div className='mb-4 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg'>
+      <div className='mb-4 mdb:mb-8 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg'>
         We build for your users, regardless of platform, language, or protocol limitations.
       </div>
 
       <div className="home-tools max-w-5xl mx-auto relative">
         <Slider list={list1} perView={4} />
-        <Slider rtl list={list2} className="my-6" />
+        <Slider rtl list={list2} className=" my-3 sm:my-6" />
         <Slider list={list3} />
       </div>
     </div>

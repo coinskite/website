@@ -55,7 +55,7 @@ const list2 = [
 
 function Cards({ src, title, para }) {
   return (
-    <div className="df">
+    <div className="df gap-4">
       <img
         className='w-[42px] xs:w-[48px] sm:w-[72px]'
         src={src}
@@ -82,7 +82,7 @@ function Card2({ src, title, sub }) {
         alt=''
       />
 
-      <p className="my-2 text-[28px] sm:text-[35px] md:text-[42px] xl:text-[48px] text-[#01F08B] font-extrabold">
+      <p className="md:my-2 text-[28px] sm:text-[35px] md:text-[42px] xl:text-[48px] text-[#01F08B] font-extrabold">
         {title}
       </p>
 
@@ -97,20 +97,22 @@ function Benefits() {
   return (
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] text-center">
+        <h2 className="mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] uppercase text-center">
           Benefits of working with us
         </h2>
-        <div className='text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
+        <div className='mb-4 sm:mb-8 text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
           Discover the Advantages of Collaborating with Our Team
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-4 mb-16">
-          {list.map(l1 => <Cards {...l1} />)}
-        </div>
+        <div className="xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 mb-6 sm:mb-8">
+            {list.map(l1 => <Cards {...l1} />)}
+          </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 max-w-6xl mx-auto border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
-          {list2.map(c => <Card2 {...c} />)}
-          <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
+            {list2.map(c => <Card2 {...c} />)}
+            <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
+          </div>
         </div>
       </div>
     </div>

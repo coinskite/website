@@ -57,13 +57,13 @@ function Card({ src, title, para, active, setActive }) {
         </button>
       </div>
 
-      <div className={`p-4 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] lg:absolute lg:top-0 lg:left-1/2 ${active !== title ? "hidden" : ""}`}>
+      <div className={`p-4 mdb:p-6 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] lg:absolute lg:top-0 lg:left-1/2 ${active !== title ? "hidden" : ""}`}>
         <img
           className="w-[35px] xs:[46px] sm:w-[58px] md:w-[65px] lg:w-[80px] xl:w-[100px] "
           src={src}
           alt=""
         />
-        <p className="my-2 text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px]  font-bold">
+        <p className="my-2 md:my-3 text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px]  font-bold">
           {title}
         </p>
         <p className="text-[9px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
@@ -80,11 +80,12 @@ function Products() {
   return (
     <div className='pad-main-1-3'>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-sm xs:text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:txet-[36px] font-bold text-[#E8E00E]">
+        <h2 className="mb-2 text-sm xs:text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:txet-[36px] font-bold uppercase text-[#E8E00E]">
           Our Services
         </h2>
-        <div className="mb-4 text-[8px] xs:text-[10px] sm:text-sm md:text-lg">
-          we offer a range of expert blockchain services to help startups and enterprises leverage the power of this transformative technology.
+        <div className="mb-4 mdb:mb-8 text-[8px] xs:text-[10px] sm:text-sm md:text-lg">
+          we offer a range of expert blockchain services to help startups and <br />
+          enterprises leverage the power of this transformative technology.
         </div>
 
         <div className="relative">
