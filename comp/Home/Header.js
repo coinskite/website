@@ -43,7 +43,7 @@ function Header() {
           TRUSTED BY STARTED AND LARGE ENTERPRISES
         </div>
 
-        <div className="df justify-center gap-8">
+        <div className="df justify-center gap-8 xl:gap-12">
           {list.map(l => (
             <img
               className="w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"

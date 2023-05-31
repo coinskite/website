@@ -25,6 +25,31 @@ const list1 = [
     key: "5",
     src: "/img/home_new/Teckstack/Polygon.png",
     title: 'polygon',
+  },
+  {
+    key: "6",
+    src: "/img/home_new/Teckstack/etherscan.png",
+    title: 'Etherscan',
+  },
+  {
+    key: "7",
+    src: "/img/home_new/Teckstack/Infura.png",
+    title: 'INFURA',
+  },
+  {
+    key: "8",
+    src: "/img/home_new/Teckstack/Band.png",
+    title: 'Band',
+  },
+  {
+    key: "9",
+    src: "/img/home_new/Teckstack/uma.png",
+    title: "UMA",
+  },
+  {
+    key: "10",
+    src: "/img/home_new/Teckstack/Polygon.png",
+    title: 'polygon',
   }
 ]
 
@@ -56,6 +81,36 @@ const list2 = [
   },
   {
     key: "6",
+    src: "/img/home_new/Teckstack/hop.png",
+    title: 'Hop',
+  },
+  {
+    key: "7",
+    src: "/img/home_new/Teckstack/near.png",
+    title: 'near',
+  },
+  {
+    key: "8",
+    src: "/img/home_new/Teckstack/bnb.png",
+    title: 'BNB',
+  },
+  {
+    key: "9",
+    src: "/img/home_new/Teckstack/filecoin.png",
+    title: 'Filecoin',
+  },
+  {
+    key: "10",
+    src: "/img/home_new/Teckstack/Chainlink.png",
+    title: "Chainlink",
+  },
+  {
+    key: "11",
+    src: "/img/home_new/Teckstack/zksync.png",
+    title: 'zkSync',
+  },
+  {
+    key: "12",
     src: "/img/home_new/Teckstack/hop.png",
     title: 'Hop',
   }
@@ -91,18 +146,48 @@ const list3 = [
     key: "6",
     src: "/img/home_new/Teckstack/across.png",
     title: 'Across',
+  },
+  {
+    key: "7",
+    src: "/img/home_new/Teckstack/ethereum.png",
+    title: 'Ethereum',
+  },
+  {
+    key: "8",
+    src: "/img/home_new/Teckstack/solana.png",
+    title: 'SOLANA',
+  },
+  {
+    key: "9",
+    src: "/img/home_new/Teckstack/arweave.png",
+    title: 'arweave',
+  },
+  {
+    key: "10",
+    src: "/img/home_new/Teckstack/optimism.png",
+    title: "Optimism",
+  },
+  {
+    key: "11",
+    src: "/img/home_new/Teckstack/graph.png",
+    title: 'Graph',
+  },
+  {
+    key: "12",
+    src: "/img/home_new/Teckstack/across.png",
+    title: 'Across',
   }
 ]
 
 function Card({ src, title }) {
   return (
-    <div className='keen-slider__slide df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
+    <div className='keen-slider__slide min-w-fit df px-2.5 py-1 rounded-[10px] bg-[#272727]'>
       <img
         className='w-[10px] xs:w-[13px] sm:w-[17px] md:w-[20px] xl:w-[22px] '
         src={src}
         alt=''
       />
-      <p className="text-[8px] xs:text-xs sm:text-sm md:text-lg lg:text-xl">
+      <p className="text-[8px] xs:text-xs sm:text-sm md:text-lg lg:text-xl whitespace-nowrap">
         {title}
       </p>
     </div>
@@ -111,7 +196,7 @@ function Card({ src, title }) {
 
 const animation = { duration: 40000, easing: (t) => t }
 
-function Slider({ list = [], className = "", perView = 5, rtl = false }) {
+function Slider({ list = [], className = "", rtl = false }) {
   const [sliderRef] = useKeenSlider({
     rtl,
     loop: true,
@@ -119,7 +204,7 @@ function Slider({ list = [], className = "", perView = 5, rtl = false }) {
     renderMode: "performance",
     slides: {
       spacing: 40,
-      perView,
+      perView: "auto",
     },
     created(s) {
       s.moveToIdx(5, true, animation)
@@ -151,8 +236,8 @@ function Tools() {
       </div>
 
       <div className="home-tools max-w-5xl mx-auto relative">
-        <Slider list={list1} perView={4} />
-        <Slider rtl list={list2} className=" my-3 sm:my-6" />
+        <Slider list={list1} />
+        <Slider rtl list={list2} className="my-3 sm:my-6" />
         <Slider list={list3} />
       </div>
     </div>
