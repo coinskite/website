@@ -103,7 +103,7 @@ function Nav() {
           }
 
           <button
-            className="block w-full max-w-[360px] sm:max-w-[440px] mt-4 md:mt-0 py-1.5 md:px-4 mx-auto font-semibold text-white bg-primary-900 md:bg-white rounded md:rounded-sm"
+            className="block w-full max-w-[360px] sm:max-w-[440px] mt-4 md:mt-0 py-1.5 md:px-4 mx-auto font-semibold text-white bg-primary-900 md:bg-white md:text-[#17171F] rounded md:rounded-sm"
             onClick={() => navigate("/contact")}
           >
             Contact Us
