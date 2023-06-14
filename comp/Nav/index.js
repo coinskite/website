@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/router';
-import Arrow from '../../svg/arrows/down.svg';
 import Close from '../../svg/cross.svg';
 import Lines from '../../svg/lines.svg';
 import Link from 'next/link';
@@ -34,12 +33,12 @@ function Nav() {
         </div>
 
         <div
-          className="hidden md:flex md:items-center md:gap-4 lg:gap-6 xl:gap-8 py-4 px-6 md:p-0 md:ml-auto fixed md:static inset-0 bg-white text-[#222531] md:bg-inherit md:text-white z-[1]"
+          className="hidden md:flex md:items-center md:gap-4 lg:gap-6 xl:gap-8 py-4 px-6 md:p-0 md:ml-auto fixed md:static inset-0 md:bg-inherit bg-[#13111B] text-white z-[1]"
           ref={hamRef}
         >
           <div className='flex md:hidden items-center justify-between mb-4 -mr-2'>
-            <img className='w-40' src='./img/logo/green.png' alt="logo" />
-            <Close className='w-8 h-8' onClick={onClickfn} />
+            <img className='w-40' src='./img/logo/logo.png' alt="logo" />
+            <Close className='w-8 h-8 fill-white' onClick={onClickfn} />
           </div>
 
           {
@@ -49,14 +48,11 @@ function Nav() {
                 onClick={() => onClk(l.title)}
                 className='mb-2 md:mb-0 relative group'
               >
-                <div className='df font-semibold cursor-pointer md:py-1'>
+                <div className='df py-2 md:py-1 font-semibold cursor-pointer border-b border-white md:border-none'>
                   {l.title}
-                  <Arrow
-                    className={`ml-auto md:hidden ${active === l.title ? ' rotate-180' : ''}`}
-                  />
                 </div>
 
-                <div className={`${active === l.title ? "" : "hidden"} md:hidden md:min-w-max md:group-hover:block md:absolute md:top-8 md:bg-[#17171F] md:left-1/2 md:-translate-x-1/2 md:p-4 md:rounded-2xl`}>
+                <div className={`hidden md:min-w-max md:group-hover:block md:absolute md:top-8 md:bg-[#17171F] md:left-1/2 md:-translate-x-1/2 md:p-4 md:rounded-2xl`}>
                   <div className='hidden md:block md:absolute md:-top-2 md:left-1/2 md:-translate-x-1/2 md:-z-[1] bg-[#17171F] w-4 h-4 rotate-45 rounded-sm'>
                   </div>
 
@@ -107,7 +103,7 @@ function Nav() {
           }
 
           <button
-            className="block w-full h-[61px] max-w-[360px] sm:max-w-[440px] md:h-auto mt-4 md:mt-0 py-1.5 md:px-4 mx-auto font-semibold text-[#222531] bg-primary-900 md:bg-white rounded md:rounded-sm"
+            className="block w-full max-w-[360px] sm:max-w-[440px] mt-4 md:mt-0 py-1.5 md:px-4 mx-auto font-semibold text-white bg-primary-900 md:bg-white rounded md:rounded-sm"
             onClick={() => navigate("/contact")}
           >
             Contact Us

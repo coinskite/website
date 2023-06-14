@@ -57,13 +57,13 @@ function Card({ src, title, para, active, setActive }) {
         </button>
       </div>
 
-      <div className={`p-4 mdb:p-6 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] lg:absolute lg:top-0 lg:left-1/2 ${active !== title ? "hidden" : ""}`}>
+      <div className={`p-4 lg:h-full xl:h-[110%] xl:-my-20 lg:max-w-md mdb:p-6 mb-4 bg-[#0F161B] border border-primary-900 rounded-[10px] lg:absolute lg:top-0 lg:left-1/2 ${active !== title ? "hidden" : ""}`}>
         <img
-          className="w-[35px] xs:[46px] sm:w-[58px] md:w-[65px] lg:w-[80px] xl:w-[100px] "
+          className="w-[35px] xs:[46px] sm:w-[58px] md:w-[65px] lg:w-[80px] xl:w-[100px]"
           src={src}
           alt=""
         />
-        <p className="my-2 md:my-3 text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px]  font-bold">
+        <p className="my-2 md:my-3 text-[10px] xs:text-sm md:text-lg lg:text-[26px] xl:text-[28px] font-bold text-[#E8E00E]">
           {title}
         </p>
         <p className="text-[9px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">

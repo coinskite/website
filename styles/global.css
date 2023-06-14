@@ -38,6 +38,19 @@
     height: 0;
     width: 0;
   }
+
+  .df, .dfc {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .df {
+    align-items: center;
+  }
+
+  .dfc {
+    flex-direction: column;
+  }
 }
 
 .gradient-bg {
