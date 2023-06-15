@@ -46,9 +46,9 @@ function Nav() {
               <div
                 key={l.title}
                 onClick={() => onClk(l.title)}
-                className='mb-2 md:mb-0 relative group'
+                className='text-2xl md:text-base md:font-bold xl:text-xl md:font font-bold mb-2 md:mb-0 relative group'
               >
-                <div className='df py-2 md:py-1 font-semibold cursor-pointer border-b border-white md:border-none'>
+                <div className='df py-5 md:py-1 font-semibold cursor-pointer border-b border-[rgba(255,255,255,0.1)] md:border-none'>
                   {l.title}
                 </div>
 
@@ -103,7 +103,7 @@ function Nav() {
           }
 
           <button
-            className="block w-full max-w-[360px] sm:max-w-[440px] mt-4 md:mt-0 py-1.5 md:px-4 mx-auto font-semibold text-white bg-primary-900 md:bg-white md:text-[#17171F] rounded md:rounded-sm"
+            className="md:text-base lg:text-base xl:text-lg font-bold block w-full mt-4 md:mt-0 py-1.5 md:px-4 mx-auto text-white bg-primary-900 md:bg-white md:text-[#17171F] rounded md:rounded-sm"
             onClick={() => navigate("/contact")}
           >
             Contact Us
