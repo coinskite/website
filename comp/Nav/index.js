@@ -28,7 +28,7 @@ function Nav() {
           </Link>
         </div>
 
-        <div className='ml-auto md:hidden' onClick={onClickfn}>
+        <div className='ml-auto md:hidden cursor-pointer' onClick={onClickfn}>
           <Lines />
         </div>
 
@@ -38,7 +38,7 @@ function Nav() {
         >
           <div className='flex md:hidden items-center justify-between mb-4 -mr-2'>
             <img className='w-40' src='./img/logo/logo.png' alt="logo" />
-            <Close className='w-8 h-8 fill-white' onClick={onClickfn} />
+            <Close className='w-8 h-8 fill-white cursor-pointer' onClick={onClickfn} />
           </div>
 
           {
@@ -46,13 +46,13 @@ function Nav() {
               <div
                 key={l.title}
                 onClick={() => onClk(l.title)}
-                className='text-2xl md:text-base md:font-bold xl:text-xl md:font font-bold mb-2 md:mb-0 relative group'
+                className='text-2xl md:text-base md:font-bold xl:text-xl md:font font-bold py-4 md:p-0 relative group border-b border-[rgba(255,255,255,0.1)] md:border-none'
               >
-                <div className='df py-5 md:py-1 font-semibold cursor-pointer border-b border-[rgba(255,255,255,0.1)] md:border-none'>
+                <div className='df py-1 font-semibold cursor-pointer'>
                   {l.title}
                 </div>
 
-                <div className={`hidden md:min-w-max md:group-hover:block md:absolute md:top-8 md:bg-[#17171F] md:left-1/2 md:-translate-x-1/2 md:p-4 md:rounded-2xl`}>
+                <div className={`${active === l.title ? "" : "hidden"} md:hidden md:min-w-max md:group-hover:block md:absolute md:top-10 md:bg-[#17171F] md:left-1/2 md:-translate-x-1/2 md:p-4 md:rounded-2xl`}>
                   <div className='hidden md:block md:absolute md:-top-2 md:left-1/2 md:-translate-x-1/2 md:-z-[1] bg-[#17171F] w-4 h-4 rotate-45 rounded-sm'>
                   </div>
 
@@ -69,7 +69,10 @@ function Nav() {
                         <div
                           key={sl.name}
                           className='df gap-4 md:px-2 my-2 text-sm cursor-pointer hover:text-primary-900'
-                          onClick={() => navigate(sl.to)}
+                          onClick={() => {
+                            navigate(sl.to)
+                            onClickfn()
+                          }}
                         >
                           <img
                             src={sl.img}
@@ -103,7 +106,7 @@ function Nav() {
           }
 
           <button
-            className="md:text-base lg:text-base xl:text-lg font-bold block w-full mt-4 md:mt-0 py-1.5 md:px-4 mx-auto text-white bg-primary-900 md:bg-white md:text-[#17171F] rounded md:rounded-sm"
+            className="block w-full h-12 md:h-auto mt-4 md:mt-0 py-1.5 md:px-4 mx-auto md:text-base lg:text-base xl:text-lg font-bold text-white bg-primary-900 md:bg-white md:text-[#17171F] rounded md:rounded-sm"
             onClick={() => navigate("/contact")}
           >
             Contact Us
