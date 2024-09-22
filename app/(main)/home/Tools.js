@@ -228,8 +228,8 @@ function Slider({ list = [], className = "", rtl = false }) {
 
 function Tools() {
   return (
-    <div className="max-w-7xl mx-auto mb-8 sm:mb-12 mdb:mb-16 text-center">
-      <div className='mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] text-[#E8E00E] uppercase font-bold'>
+    <div className="max-w-7xl mx-auto mb-8 my-4 sm:mb-12 mdb:mb-16 sm:text-center md:text-left">
+      <div className='mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] bg-[#E8E00E] text-black w-fit p-2 uppercase font-bold'>
         Utilizing cutting-edge tools
       </div>
 

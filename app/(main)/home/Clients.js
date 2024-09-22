@@ -28,31 +28,34 @@ const list = [
 
   }
 ]
+
 function Card({ src, title, para, name, role, }) {
   return (
-    <div className='text-center'>
-      <div className="p-4 mb-6 bg-[#BFFFD3] rounded-[10px] relative">
-        <p className="mb-4 text-lg font-bold text-[#2B2C3B]">
-          {title}
-        </p>
-        <p className="text-sm md:text-base lg:text-sm text-black">
-          {para}
-        </p>
-        <p className="w-4 h-4 absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-sm rotate-45 bg-[#BFFFD3]"></p>
-      </div>
+    <div>
+      <div className="bg-[#0F161B] border-[3px] h-[220px] border-[#22C954] rounded p-4">
 
-      <div>
-        <img
-          className='mx-auto w-[56px]'
-          src={src}
-          alt=''
-        />
-        <p className="my-1.5 text-lg font-bold text-[#22C954]">
-          {name}
-        </p>
-        <p className="text-sm">
-          {role}
-        </p>
+        <div className="flex items-center justify-start gap-4 mb-4">
+          <img
+            className='w-[56px]'
+            src={src}
+            alt=''
+          />
+          <div className="flex flex-col items-start">
+            <p className="my-1.5 text-lg font-bold text-[#22C954]">
+              {name}
+            </p>
+            <p className="text-sm">
+              {role}
+            </p>
+          </div>
+        </div>
+
+        <div className="text-left">
+          <p className="text-sm text-white md:text-base lg:text-sm">
+            {para}
+          </p>
+        </div>
+
       </div>
     </div>
   )
@@ -61,8 +64,8 @@ function Card({ src, title, para, name, role, }) {
 function Clients() {
   return (
     <div className="pad-main-3">
-      <div className="mb-4 sm:mb-8 text-center">
-        <h2 className="mb-2 text-sm xs:text-lg sm:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-[#E8E00E]">
+      <div className="mb-4 sm:mb-8">
+        <h2 className="mb-2 p-2 bg-[#E8E00E] text-sm xs:text-lg sm:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-black w-fit">
           Our Clients Speak
         </h2>
         <p className="text-[8px] xs:text-xs xl:text-base">

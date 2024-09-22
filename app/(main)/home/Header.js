@@ -35,23 +35,10 @@ function Header() {
           blockchain technology with our expert services
         </div>
 
-        <button className="text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-lg bg-primary-900 ">
-          Join the revolution
+        <button className="text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-lg  bg-gradient-to-r from-[#22C954]  to-[#116329]">
+          Contact us
         </button>
 
-        <div className="mt-8 mdb:mt-12 mb-2 text-[8px] xs:text-[10px] sm:text-base md:text-lg text-[#E2E2E2]">
-          TRUSTED BY STARTED AND LARGE ENTERPRISES
-        </div>
-
-        <div className="df justify-center gap-8 xl:gap-12">
-          {list.map(l => (
-            <img
-              className="w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"
-              src={l.src}
-              key={l.id}
-            />
-          ))}
-        </div>
       </div>
 
       <img

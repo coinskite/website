@@ -1,30 +1,30 @@
 
-const list = [
-  {
-    id: '1',
-    src: "/img/home_new/Beneits/1.png",
-    title: "Time zones ain't no thing",
-    para: "Work seamlessly with our team, no matter your time zone"
-  },
-  {
-    id: '2',
-    src: "/img/home_new/Beneits/2.png",
-    title: "Impossible? We're on it",
-    para: "We tackle the toughest problems with cutting-edge tech "
-  },
-  {
-    id: '3',
-    src: "/img/home_new/Beneits/3.png",
-    title: "Full spectrum of services",
-    para: "Streamline your operations with our comprehensive suite of services "
-  },
-  {
-    id: '4',
-    src: "/img/home_new/Beneits/4.png",
-    title: "Flexible work terms",
-    para: " Find your ideal work-life balance with our flexible working arrangements"
-  },
-]
+// const list = [
+//   {
+//     id: '1',
+//     src: "/img/home_new/Beneits/1.png",
+//     title: "Time zones ain't no thing",
+//     para: "Work seamlessly with our team, no matter your time zone"
+//   },
+//   {
+//     id: '2',
+//     src: "/img/home_new/Beneits/2.png",
+//     title: "Impossible? We're on it",
+//     para: "We tackle the toughest problems with cutting-edge tech "
+//   },
+//   {
+//     id: '3',
+//     src: "/img/home_new/Beneits/3.png",
+//     title: "Full spectrum of services",
+//     para: "Streamline your operations with our comprehensive suite of services "
+//   },
+//   {
+//     id: '4',
+//     src: "/img/home_new/Beneits/4.png",
+//     title: "Flexible work terms",
+//     para: " Find your ideal work-life balance with our flexible working arrangements"
+//   },
+// ]
 
 const list2 = [
   {
@@ -97,17 +97,17 @@ function Benefits() {
   return (
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] uppercase text-center">
+        {/* <h2 className="mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] uppercase text-center">
           Benefits of working with us
         </h2>
         <div className='mb-4 sm:mb-8 text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>
           Discover the Advantages of Collaborating with Our Team
-        </div>
+        </div> */}
 
         <div className="xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 mb-6 sm:mb-8">
+          {/* <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 mb-6 sm:mb-8">
             {list.map(l => <Cards key={l.id} {...l} />)}
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
             {list2.map(c => <Card2 key={c.id} {...c} />)}
