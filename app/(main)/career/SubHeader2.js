@@ -11,7 +11,7 @@ function SubHeader2() {
         </p>
 
         <img
-          src="./img/logo/icononly.png"
+          src="/img/logo/icononly.png"
           className='w-12 md:w-14 lg:w-16 xl:w-20 mx-auto my-4 lg:my-8'
           alt="logo"
         />
@@ -32,7 +32,7 @@ function SubHeader2() {
         <div className='df gap-2 xs:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mb-8 md:mb-12 lg:mb-16 xl:mb-20 text-left'>
           <img
             className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[320px] xl:w-[470px]"
-            src="./img/career/r1.jpeg"
+            src="/img/career/r1.jpeg"
             alt="group"
           />
           <div>
@@ -52,7 +52,7 @@ function SubHeader2() {
           </div>
           <img
             className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[320px] xl:w-[470px]"
-            src="./img/career/r2.jpeg"
+            src="/img/career/r2.jpeg"
             alt="group"
           />
         </div>

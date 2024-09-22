@@ -2,37 +2,37 @@ const list = [
   {
     id: "1",
     head: 'Promoting Diversity',
-    img: './img/career/image0.png',
+    img: '/img/career/image0.png',
     para: 'Coinskite is an equal opportunity  employer. Everyone with relevant skills has an opportunity.'
   },
   {
     id: "2",
     head: 'Company Equity',
-    img: './img/career/image1.png',
+    img: '/img/career/image1.png',
     para: 'We believe in collaboration and mutual growth. Hence, we offer a stake in our unborn success.'
   },
   {
     id: "3",
     head: 'Flexible Timimg',
-    img: './img/career/image2.png',
+    img: '/img/career/image2.png',
     para: 'We believe in collaboration and mutual growth. Hence, we offer a stake in our unborn success.'
   },
   {
     id: "4",
     head: 'Competitive salary',
-    img: './img/career/image3.png',
+    img: '/img/career/image3.png',
     para: 'A healthy salary structure that is competitive with other blockchain-based service providers.'
   },
   {
     id: "5",
     head: 'Training and Mentorship',
-    img: './img/career/image4.png',
+    img: '/img/career/image4.png',
     para: 'The Coinskite team is collaborative. We help each other stay on top of the newest developments.'
   },
   {
     id: "6",
     head: 'Unlimited Vacation',
-    img: './img/career/image5.png',
+    img: '/img/career/image5.png',
     para: 'Work-life balance is crucial. So, you are free to take a vacation on  any day throughout the year.'
   },
 ]

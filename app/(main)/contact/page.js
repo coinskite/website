@@ -121,7 +121,7 @@ function Contact() {
 
       <div className="pad-main-3 black-bg">
         <div className='contact-footer max-w-7xl mx-auto'>
-          <img src='./img/logo/logo.png' alt="logo" />
+          <img src='/img/logo/logo.png' alt="logo" />
 
           <div className='df gap-4 flex-wrap'>
             <p className="mr-auto">Copyright 2022 Coinskite Pvt Ltd</p>

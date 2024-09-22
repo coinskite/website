@@ -14,7 +14,7 @@ function Main({ data }) {
   const [searchBy, setSearchBy] = useState("")
 
   const roles = useMemo(() => {
-    const filtered = [...data]
+    let filtered = [...data]
 
     if (department) {
       filtered = filtered.filter(d => d.title === department)

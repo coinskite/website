@@ -42,7 +42,7 @@ function Card({ title, para, list }) {
           >
             <img
               className="w-3 xs:w-4 md:w-6 lg:w-9"
-              src="./img/partner/tick.png"
+              src="/img/partner/tick.png"
               alt=""
             />
             {l}

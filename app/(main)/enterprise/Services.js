@@ -6,22 +6,22 @@ import Template from '../startup/Template';
 const data = [
   {
     title: "Private Blockchain development",
-    img: "./img/enterprise/expertise/top/private.png",
+    img: "/img/enterprise/expertise/top/private.png",
     id: 1
   },
   {
     title: "Tokenization of assets",
-    img: "./img/enterprise/expertise/top/token.png",
+    img: "/img/enterprise/expertise/top/token.png",
     id: 2
   },
   {
     title: "Supply chain Management",
-    img: "./img/enterprise/expertise/top/supply.png",
+    img: "/img/enterprise/expertise/top/supply.png",
     id: 3
   },
   {
     title: "Blockchain Integration",
-    img: "./img/enterprise/expertise/top/integrate.png",
+    img: "/img/enterprise/expertise/top/integrate.png",
     id: 4
   },
 ]
@@ -29,7 +29,7 @@ const data = [
 function PrivateBlock() {
   return (
     <Template
-      src="./img/enterprise/expertise/private.png"
+      src="/img/enterprise/expertise/private.png"
       title1="Private Blockchain development"
       desc1="we understand the unique needs and challenges that enterprises face when it comes to blockchain technology. That's why we specialize in providing cutting-edge private blockchain development services to businesses looking to leverage the power of blockchain technology while maintaining control over their data."
       list={[
@@ -52,7 +52,7 @@ function PrivateBlock() {
 function Tokenization() {
   return (
     <Template
-      src="./img/enterprise/expertise/token.png"
+      src="/img/enterprise/expertise/token.png"
       title1="Tokenization of assets"
       desc1="Tokenization is a powerful way for enterprises to unlock new business opportunities and improve their operations. Tokenization is the process of creating digital tokens that represent ownership of an asset, such as a stock, bond, real estate property, artwork, etc. These tokens can then be traded, tracked, and managed on a blockchain platform."
       list={[
@@ -91,7 +91,7 @@ function Tokenization() {
 function Supply() {
   return (
     <Template
-      src="./img/enterprise/expertise/supply.png"
+      src="/img/enterprise/expertise/supply.png"
       title1="Supply chain Management"
       desc1="Supply chain management is a critical component of any enterprise's operations, and that blockchain technology can play a key role in improving supply chain visibility, traceability, and efficiency. That's why we offer comprehensive supply chain solutions to enterprises looking to leverage the power of blockchain technology to improve their supply chain operations."
       list={[
@@ -122,7 +122,7 @@ function Supply() {
 function Blockchain() {
   return (
     <Template
-      src="./img/enterprise/expertise/integrate.png"
+      src="/img/enterprise/expertise/integrate.png"
       title1="Blockchain Integration"
       desc1="We understand that for enterprises, the key to realizing the full potential of blockchain technology is through seamless integration with existing systems and processes. That's why we offer comprehensive blockchain integration services to enterprises looking to incorporate blockchain technology into their existing operations."
       list={[

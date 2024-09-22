@@ -4,7 +4,7 @@ function Switch({ active, onClick }) {
   return (
     <div
       onClick={onClick}
-      className={`dc pr cp switch ${active ? "active" : ""}`}
+      className={`dc relative cursor-pointer switch ${active ? "active" : ""}`}
     >
     </div>
   )

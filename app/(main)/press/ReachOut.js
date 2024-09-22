@@ -16,7 +16,7 @@ function ReachOut() {
         <div className="df md:mx-auto">
           <img
             className="w-16 lg:w-24"
-            src="./img/press/Avatar.png"
+            src="/img/press/Avatar.png"
             alt="User"
           />
 

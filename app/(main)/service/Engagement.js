@@ -80,7 +80,7 @@ function Engagement() {
         Our Engagement Models
       </h2>
 
-      <img className=" w-40 sm:w-60 md:w-auto absolute right-0 top-1/2 -translate-y-1/2 -z-[1]" src="./img/service/circle.png" alt="circle" />
+      <img className=" w-40 sm:w-60 md:w-auto absolute right-0 top-1/2 -translate-y-1/2 -z-[1]" src="/img/service/circle.png" alt="circle" />
 
       {
         data.map(d => (

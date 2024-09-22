@@ -36,7 +36,7 @@ function Card({ detail }) {
         Read the article
         <img
           className="w-2 lg:w-3 xl:w-4 mt-0.5"
-          src="./img/press/arrow.png"
+          src="/img/press/arrow.png"
           alt="arrow"
         />
       </button>

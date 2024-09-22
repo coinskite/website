@@ -5,22 +5,22 @@ import Template from './Template';
 const data = [
   {
     title: "Smart contract development & Audit",
-    img: "./img/startup/expertise/top/smart.png",
+    img: "/img/startup/expertise/top/smart.png",
     id: 1
   },
   {
     title: "Defi development",
-    img: "./img/startup/expertise/top/defi.png",
+    img: "/img/startup/expertise/top/defi.png",
     id: 2
   },
   {
     title: "NFT Marketplace",
-    img: "./img/startup/expertise/top/nft.png",
+    img: "/img/startup/expertise/top/nft.png",
     id: 3
   },
   {
     title: "Metaverse Development",
-    img: "./img/startup/expertise/top/meta.png",
+    img: "/img/startup/expertise/top/meta.png",
     id: 4
   },
 ]
@@ -28,7 +28,7 @@ const data = [
 function SmartContract() {
   return (
     <Template
-      src="./img/startup/expertise/smart.png"
+      src="/img/startup/expertise/smart.png"
       title1="Smart Contract Development & Audit"
       desc1="We provide comprehensive smart contract services that help businesses take full advantage of the benefits of blockchain technology. Whether you are looking to develop new smart contracts or audit existing ones, our team of experts has the knowledge and experience to help you succeed"
       list={[
@@ -59,7 +59,7 @@ function SmartContract() {
 function DefiDevelopment() {
   return (
     <Template
-      src="./img/startup/expertise/defi.png"
+      src="/img/startup/expertise/defi.png"
       title1="Defi Development"
       desc1="we understand that startups are often at the forefront of innovation and that Decentralized Finance (DeFi) is one of the most exciting and rapidly-evolving areas of blockchain technology. That's why we offer comprehensive blockchain DeFi development services to startups looking to leverage the power of blockchain technology to create new financial products and services."
       list={[{
@@ -78,7 +78,7 @@ function DefiDevelopment() {
 function NFTDevelopment() {
   return (
     <Template
-      src="./img/startup/expertise/nft.png"
+      src="/img/startup/expertise/nft.png"
       title1="NFT Development"
       desc1="Non-Fungible Tokens (NFTs) are becoming an increasingly popular way for startups to monetize digital assets and create new business models. That's why we offer comprehensive NFT-related development services to startups looking to leverage the power of blockchain technology to create NFT marketplaces, mint and sell NFTs, and create other NFT-based solutions"
       list={[{
@@ -100,7 +100,7 @@ function NFTDevelopment() {
 function MetaverseDevelopment() {
   return (
     <Template
-      src="./img/startup/expertise/meta.png"
+      src="/img/startup/expertise/meta.png"
       title1="Metaverse Development"
       desc1="Metaverse is the next frontier of digital innovation, and startups are well-positioned to capitalize on this emerging technology. That's why we offer comprehensive Metaverse development services to startups looking to create immersive digital experiences, build new business models, and establish a presence in this rapidly-evolving space"
       list={[{

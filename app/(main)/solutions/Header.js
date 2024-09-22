@@ -9,7 +9,7 @@ function Header() {
         with our cutting-edge blockchain technology
       </p>
       <button className="bg-white text-[10px] xs:text-xs sm:text-sm md:text-lg xl:text-xl rounded-sm xs:rounded-[5px] font-semibold">Connect with a Pro</button>
-      <img className="-mb-20 -mt-12 sm:-mb-28 xs:max-w-sm" src="./img/solution/header.png" alt="illustration" />
+      <img className="-mb-20 -mt-12 sm:-mb-28 xs:max-w-sm" src="/img/solution/header.png" alt="illustration" />
     </div>
   )
 }

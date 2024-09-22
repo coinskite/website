@@ -21,7 +21,7 @@ function Office() {
           </button>
         </div>
 
-        <img className="max-h-96" src="./img/about/map.png" alt="Map" />
+        <img className="max-h-96" src="/img/about/map.png" alt="Map" />
       </div>
     </div>
   )

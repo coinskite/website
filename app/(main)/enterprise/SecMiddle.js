@@ -7,7 +7,7 @@ function SecMiddle() {
           <h3 className="w-fit mb-4 text-[15px] sm:text-xl md:text-[25px] lg:text-3xl xl:text-[40px] font-bold text-[#22C954]">
             Enterprise benefits from CoinSkite service and integration
           </h3>
-          <img className="mx-auto lg:mx-0" src="./img/startup/Startup.png" alt="startup" />
+          <img className="mx-auto lg:mx-0" src="/img/startup/Startup.png" alt="startup" />
         </div>
 
         <div className="text-[7px] sm:text-[10px] md:text-sm lg:text-[17px]">

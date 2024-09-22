@@ -3,7 +3,7 @@ function Footer() {
     <footer className='bg-[#0E0E0F] -mx-4 p-4 md:py-16 sm:-mx-8 sm:p-8 text-digi-light'>
       <div className="grid grid-cols-2 md:grid-cols-6 text-sm">
         <div className="df flex-col justify-center text-center md:text-left lg:justify-start lg:items-start col-span-2 md:col-span-3">
-          <img src="./img/digi/footer/logo.png" alt="logo" className='h-10' />
+          <img src="/img/digi/footer/logo.png" alt="logo" className='h-10' />
           <p>CoinNft is a one stop solution for creating, trading, buying and selling NFTs that is already used by millions of loyal users.</p>
           <p className='df'>
             <span>You're on CoinNft</span>
@@ -11,12 +11,12 @@ function Footer() {
           </p>
 
           <p className="df">
-            <img src="./img/digi/footer/twitter.png" alt="social" className='w-8' />
-            <img src="./img/digi/footer/discord.png" alt="social" className='w-8' />
-            <img src="./img/digi/footer/telegram.png" alt="social" className='w-8' />
-            <img src="./img/digi/footer/medium.png" alt="social" className='w-8' />
-            <img src="./img/digi/footer/youtube.png" alt="social" className='w-8' />
-            <img src="./img/digi/footer/github.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/twitter.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/discord.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/telegram.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/medium.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/youtube.png" alt="social" className='w-8' />
+            <img src="/img/digi/footer/github.png" alt="social" className='w-8' />
           </p>
         </div>
 

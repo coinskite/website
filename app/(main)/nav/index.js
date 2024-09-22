@@ -24,7 +24,7 @@ function Nav() {
       <div className="df gap-4 max-w-7xl mx-auto">
         <div className="nav-logo">
           <Link href="/">
-            <img className='w-40' src='./img/logo/logo.png' alt="logo" />
+            <img className='w-40' src='/img/logo/logo.png' alt="logo" />
           </Link>
         </div>
 
@@ -37,7 +37,7 @@ function Nav() {
           ref={hamRef}
         >
           <div className='flex md:hidden items-center justify-between mb-4 -mr-2'>
-            <img className='w-40' src='./img/logo/logo.png' alt="logo" />
+            <img className='w-40' src='/img/logo/logo.png' alt="logo" />
             <Close className='w-8 h-8 fill-white cursor-pointer' onClick={onClickfn} />
           </div>
 
@@ -95,7 +95,7 @@ function Nav() {
                       See all solutions
                       <img
                         className='w-3'
-                        src="./img/nav/Solutions/arrow.png"
+                        src="/img/nav/Solutions/arrow.png"
                         alt="arrow"
                       />
                     </div>

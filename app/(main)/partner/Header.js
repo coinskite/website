@@ -23,7 +23,7 @@ function Header() {
 
         <img
           className="w-32 sm:w-48 md:w-60 lg:w-80 xl:w-[450px] absolute top-1/2 -translate-y-1/2 right-0"
-          src="./img/partner/header.png"
+          src="/img/partner/header.png"
           alt=""
         />
       </div>

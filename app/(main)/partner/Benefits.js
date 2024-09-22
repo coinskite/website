@@ -1,37 +1,37 @@
 const list = [
   {
     id: "1",
-    src: "./img/partner/market.png",
+    src: "/img/partner/market.png",
     title: "GO-TO MARKET Support",
     para: "our expert go-to-market strategy and drive success for your product. From market research and positioning to messaging and promotion, we have the tools and expertise to help you succeed in the market.",
   },
   {
     id: "2",
-    src: "./img/partner/long-term-growth.png",
+    src: "/img/partner/long-term-growth.png",
     title: "Long-term growth",
     para: "Develop a long-term growth strategy that aligns with their business goals.",
   },
   {
     id: "3",
-    src: "./img/partner/training-growth.png",
+    src: "/img/partner/training-growth.png",
     title: "Training and education:",
     para: "Access training and education resources to help them effectively implement and utilize your company's technology",
   },
   {
     id: "4",
-    src: "./img/partner/revenue.png",
+    src: "/img/partner/revenue.png",
     title: "Increased revenue",
     para: "Partners can increase their revenue by offering your company's products or services to their customers",
   },
   {
     id: "5",
-    src: "./img/partner/customized-solutions.png",
+    src: "/img/partner/customized-solutions.png",
     title: "Customized solutions",
     para: "Your company can offer customized solutions to its partners, tailored to their specific business needs and goals",
   },
   {
     id: "6",
-    src: "./img/partner/competitive-advantage.png",
+    src: "/img/partner/competitive-advantage.png",
     title: "Competitive advantage",
     para: "Partners can gain a competitive advantage in their market by partnering with your company and offering unique products or services",
   },

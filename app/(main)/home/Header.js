@@ -56,31 +56,31 @@ function Header() {
 
       <img
         className="w-4 sm:w-6 md:w-auto absolute top-1/2 left-2 mdb:left-16"
-        src="./img/home/new/greenstar1.png"
+        src="/img/home/new/greenstar1.png"
         alt=""
       />
 
       <img
         className="hidden lg:block absolute top-2 left-1/2"
-        src="./img/home/new/greenstar2.png"
+        src="/img/home/new/greenstar2.png"
         alt=""
       />
 
       <img
         className="w-4 sm:w-6 md:w-auto absolute top-[58%] right-6 mdb:right-16"
-        src="./img/home/new/greenstar3.png"
+        src="/img/home/new/greenstar3.png"
         alt=""
       />
 
       <img
         className="w-4 sm:w-6 md:w-auto absolute top-8 left-4 mdb:left-24"
-        src="./img/home/new/cube.png"
+        src="/img/home/new/cube.png"
         alt=""
       />
 
       <img
         className="w-4 sm:w-6 md:w-auto absolute top-2 right-4 mdb:right-40"
-        src="./img/home/new/cube.png"
+        src="/img/home/new/cube.png"
         alt=""
       />
 

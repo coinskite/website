@@ -1,50 +1,50 @@
 const data = [
   {
-    img: "./img/startup/Industries/finance.png",
+    img: "/img/startup/Industries/finance.png",
     title: "Finance"
   },
   {
-    img: "./img/startup/Industries/media.png",
+    img: "/img/startup/Industries/media.png",
     title: "Media"
   },
   {
-    img: "./img/startup/Industries/Digital.png",
+    img: "/img/startup/Industries/Digital.png",
     title: "Digital Identity"
   },
   {
-    img: "./img/startup/Industries/Law.png",
+    img: "/img/startup/Industries/Law.png",
     title: "Law"
   },
   {
-    img: "./img/startup/Industries/Healthcare.png",
+    img: "/img/startup/Industries/Healthcare.png",
     title: "Healthcare"
   },
   {
-    img: "./img/startup/Industries/sports.png",
+    img: "/img/startup/Industries/sports.png",
     title: "Sports"
   },
   {
-    img: "./img/startup/Industries/Logistics.png",
+    img: "/img/startup/Industries/Logistics.png",
     title: "Logistics"
   },
   {
-    img: "./img/startup/Industries/Government.png",
+    img: "/img/startup/Industries/Government.png",
     title: "Government"
   },
   {
-    img: "./img/startup/Industries/Social.png",
+    img: "/img/startup/Industries/Social.png",
     title: "Social Media"
   },
   {
-    img: "./img/startup/Industries/real.png",
+    img: "/img/startup/Industries/real.png",
     title: "Real Estate"
   },
   {
-    img: "./img/startup/Industries/insurance.png",
+    img: "/img/startup/Industries/insurance.png",
     title: "Insurance"
   },
   {
-    img: "./img/startup/Industries/supply.png",
+    img: "/img/startup/Industries/supply.png",
     title: "Supply Chain"
   },
 ]

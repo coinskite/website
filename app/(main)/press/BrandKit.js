@@ -1,26 +1,26 @@
 const data = [
   {
-    img: "./img/press/logos/WLC.png",
+    img: "/img/press/logos/WLC.png",
     title: "White horizontal logo"
   },
   {
-    img: "./img/press/logos/GLC.png",
+    img: "/img/press/logos/GLC.png",
     title: "Green horizontal logo"
   },
   {
-    img: "./img/press/logos/Green.png",
+    img: "/img/press/logos/Green.png",
     title: "Symbol"
   },
   {
-    img: "./img/press/logos/coinskite.png",
+    img: "/img/press/logos/coinskite.png",
     title: "Wordmark"
   },
   {
-    img: "./img/press/logos/whiteV.png",
+    img: "/img/press/logos/whiteV.png",
     title: "White Vertical logo"
   },
   {
-    img: "./img/press/logos/GreenV.png",
+    img: "/img/press/logos/GreenV.png",
     title: "Green Vertical logo"
   },
 ]

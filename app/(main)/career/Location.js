@@ -10,7 +10,7 @@ function Location() {
           employees. For non-India staff, equivalent benefits can be discussed at the time of interview.
         </div>
 
-        <img className="m-auto" src="./img/career/Map.png" alt="location" />
+        <img className="m-auto" src="/img/career/Map.png" alt="location" />
       </div>
 
       <div className='pad-main-3 df justify-center sm:gap-8 bg-primary-900'>

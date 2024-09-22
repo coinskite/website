@@ -11,7 +11,7 @@ function Nav() {
   return (
     <nav className={`df digi-kite-nav-bar py-4 ${open ? "active" : ""}`}>
       <div className='mr-auto nav-item-1'>
-        <img src="./img/digi/nav/logo.png" alt="logo" className='w-40' />
+        <img src="/img/digi/nav/logo.png" alt="logo" className='w-40' />
       </div>
 
       <div className='df digi-kite-nav-search rounded-full py-1 px-2 gap-2'>
@@ -33,8 +33,8 @@ function Nav() {
       <div className="hidden md:flex gap-2 items-center nav-item-4">
         <p className='block md:hidden mb-4'>Let's get started</p>
         <button className='bg-digi-primary px-8 py-2 min-w-[300px] md:min-w-max md:px-4 md:py-1 text-sm rounded-lg'>Connect wallet</button>
-        <button className='bg-digi-primary px-8 py-2 min-w-[300px] text-sm rounded-lg df justify-center gap-0 md:hidden'>Notification <img src="./img/digi/nav/bell.png" alt="bell" className="w-6" /></button>
-        <img src="./img/digi/nav/bell.png" alt="bell" className="w-8 hidden md:block" />
+        <button className='bg-digi-primary px-8 py-2 min-w-[300px] text-sm rounded-lg df justify-center gap-0 md:hidden'>Notification <img src="/img/digi/nav/bell.png" alt="bell" className="w-6" /></button>
+        <img src="/img/digi/nav/bell.png" alt="bell" className="w-8 hidden md:block" />
       </div>
 
       <div className='hidden nav-item-2 ml-auto cursor-pointer' onClick={() => setOpen(p => !p)}>
@@ -45,7 +45,7 @@ function Nav() {
         className='md:hidden cursor-pointer nav-item-last'
         onClick={() => setOpen(p => !p)}
       >
-        <img src="./img/digi/nav/navigation.png" alt="hamburger" />
+        <img src="/img/digi/nav/navigation.png" alt="hamburger" />
       </div>
     </nav>
   )

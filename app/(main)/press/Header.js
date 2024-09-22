@@ -18,7 +18,7 @@ function Header() {
         </div>
 
         <div>
-          <img className="mx-auto" src="./img/press/HEADER.png" alt="pinned" />
+          <img className="mx-auto" src="/img/press/HEADER.png" alt="pinned" />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ function Mvp() {
     <div className="flex items-start gap-6 lg:gap-12 pad-main-3 text-white bg-[#222531]">
       <img
         className="w-32 xs:w-40 lg:w-60"
-        src="./img/service/Cube.png"
+        src="/img/service/Cube.png"
         alt="Cube"
       />
 

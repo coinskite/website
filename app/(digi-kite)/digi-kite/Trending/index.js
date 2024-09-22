@@ -14,7 +14,7 @@ function Trending() {
             >
               <img src={l.img} alt={l.title} />
               <div className="absolute bottom-4 p-2 lg:px-4">
-                <p className="df mb-1">{l.title} <span className='text-xs'>{l.by}</span> <img src="./img/digi/trending/bluetick.png" alt="bluetick" /> </p>
+                <p className="df mb-1">{l.title} <span className='text-xs'>{l.by}</span> <img src="/img/digi/trending/bluetick.png" alt="bluetick" /> </p>
                 <p className='text-digi-light leading-5'>{l.info}</p>
               </div>
             </div>

@@ -1,16 +1,16 @@
 const data = [
   {
-    img: "./img/startup/img1.png",
+    img: "/img/startup/img1.png",
     title: "Expertise and Experience",
     para: <>With decades of experience under our belts, our team is equipped to help you navigate <br className="lg:hidden" /> the complexities of the digital world and achieve your goals.</>
   },
   {
-    img: "./img/startup/img2.png",
+    img: "/img/startup/img2.png",
     title: "Customized Solutions",
     para: <>We believe that one size does not fit all when it comes to blockchain solutions. That's why we offer <br className="lg:hidden" /> customized services that are tailored to the unique needs and goals of each of our clients.</>
   },
   {
-    img: "./img/startup/img3.png",
+    img: "/img/startup/img3.png",
     title: "Superior Customer Support",
     para: <>We are committed to providing the best in customer support. Whether you need help getting started with <br className="lg:hidden" /> blockchain technology, or need ongoing support to ensure the smooth operation of your systems, our team <br className="lg:hidden" /> is here to help.</>
   },

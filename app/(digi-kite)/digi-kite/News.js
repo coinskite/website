@@ -17,7 +17,7 @@ function News() {
         <div className='hidden xl:block'>
           <img
             className='w-12 h-12 cursor-pointer'
-            src="./img/digi/news/left.png"
+            src="/img/digi/news/left.png"
             alt="left arrow"
             onClick={() => slide(false)}
           />
@@ -41,16 +41,16 @@ function News() {
               }
             }}
           >
-            <SwiperSlide><div><img src="./img/digi/news/1.png" alt="news" /></div></SwiperSlide>
-            <SwiperSlide><div><img src="./img/digi/news/2.png" alt="news" /></div></SwiperSlide>
-            <SwiperSlide><div><img src="./img/digi/news/3.png" alt="news" /></div></SwiperSlide>
+            <SwiperSlide><div><img src="/img/digi/news/1.png" alt="news" /></div></SwiperSlide>
+            <SwiperSlide><div><img src="/img/digi/news/2.png" alt="news" /></div></SwiperSlide>
+            <SwiperSlide><div><img src="/img/digi/news/3.png" alt="news" /></div></SwiperSlide>
           </Swiper>
         </div>
 
         <div className='hidden xl:block'>
           <img
             className='w-12 h-12 cursor-pointer'
-            src="./img/digi/news/right.png"
+            src="/img/digi/news/right.png"
             alt="right arrow"
             onClick={() => slide(true)}
           />

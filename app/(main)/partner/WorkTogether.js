@@ -5,7 +5,7 @@ function WorkTogether() {
       <div className="df max-w-7xl mx-auto">
         <img
           className="w-24 xs:w-28 sm:w-40 md:w-56 lg:w-80 xl:w-[370px]"
-          src="./img/partner/lets work.png"
+          src="/img/partner/lets work.png"
           alt=""
         />
 

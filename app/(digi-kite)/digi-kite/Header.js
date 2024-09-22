@@ -13,10 +13,10 @@ function Header() {
         spaceBetween={10}
         modules={[Pagination]}
       >
-        <SwiperSlide><img className='w-full' src="./img/digi/header/1.jpeg" alt="slider" /></SwiperSlide>
-        <SwiperSlide><img className='w-full' src="./img/digi/header/2.jpeg" alt="slider" /></SwiperSlide>
-        <SwiperSlide><img className='w-full' src="./img/digi/header/3.jpeg" alt="slider" /></SwiperSlide>
-        <SwiperSlide><img className='w-full' src="./img/digi/header/4.jpeg" alt="slider" /></SwiperSlide>
+        <SwiperSlide><img className='w-full' src="/img/digi/header/1.jpeg" alt="slider" /></SwiperSlide>
+        <SwiperSlide><img className='w-full' src="/img/digi/header/2.jpeg" alt="slider" /></SwiperSlide>
+        <SwiperSlide><img className='w-full' src="/img/digi/header/3.jpeg" alt="slider" /></SwiperSlide>
+        <SwiperSlide><img className='w-full' src="/img/digi/header/4.jpeg" alt="slider" /></SwiperSlide>
       </Swiper>
     </section>
   )
