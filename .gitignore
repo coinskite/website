@@ -35,3 +35,5 @@ yarn-error.log*
 .vercel
 
 a.txt
+package-lock.json
+pnpm-lock.yaml
