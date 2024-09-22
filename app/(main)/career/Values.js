@@ -4,27 +4,27 @@ import { useState } from 'react';
 
 const list = [
   {
-    key: 1,
+    id: 1,
     title: 'Community-centric',
     para: 'We aspire to build a community of blockchain enthusiasts from all walks of life for sustained growth.'
   },
   {
-    key: 2,
+    id: 2,
     title: 'Simple but significant',
     para: 'Every Blockchain experts shares the same vision of inclucating trust among clients and delivering results that far exceed their expectations than just us'
   },
   {
-    key: 3,
+    id: 3,
     title: 'Action-oriented',
     para: 'Every Blockchain experts shares the same vision of inclucating trust among clients and delivering results that far exceed their expectations than just us'
   },
   {
-    key: 4,
+    id: 4,
     title: 'Accountable',
     para: 'Every Blockchain experts shares the same vision of inclucating trust among clients and delivering results that far exceed their expectations than just us'
   },
   {
-    key: 5,
+    id: 5,
     title: 'Passionate',
     para: 'Every Blockchain experts shares the same vision of inclucating trust among clients and delivering results that far exceed their expectations than just us'
   }
@@ -57,8 +57,8 @@ function Values() {
           {
             list.map(l => (
               <p
-                key={l.key}
-                onClick={() => setSelected(l.key)}
+                key={l.id}
+                onClick={() => setSelected(l.id)}
                 className={`pl-2 sm:pl-4 lg:pl-5 py-1.5 sm:py-2 md:py-3 xl:py-4 leading-none border-l-2 cursor-pointer ${l.key === selected ? "border-white" : ' border-transparent'}`}
               >
                 {l.title}

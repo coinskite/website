@@ -1,5 +1,5 @@
 import axios from 'axios';
-import mainUrl from '../../../constants/url';
+import mainUrl from '@/constants/url';
 
 import Header from './Header';
 import Main from './Main';

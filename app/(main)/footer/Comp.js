@@ -17,10 +17,8 @@ function Comp({ active, name, list, onClk }) {
               key={li.title}
               className="need mb-1"
             >
-              <Link href={li.link}>
-                <a className='text-[10px] xs:text-sm md:text-xs lg:text-base lg:font-medium text-[#C4C4C4] hover:text-white'>
-                  {li.title}
-                </a>
+              <Link href={li.link} className='text-[10px] xs:text-sm md:text-xs lg:text-base lg:font-medium text-[#C4C4C4] hover:text-white'>
+                {li.title}
               </Link>
             </li>
           ))

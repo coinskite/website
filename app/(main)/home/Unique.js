@@ -1,25 +1,25 @@
 
 const list = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/methodology/1.png",
     title: "Ideate",
     para: <>Turn your idea from <br /> concept to MVP</>
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/methodology/2.png",
     title: "Design",
     para: <>Sketch out the product to <br /> align the user needs</>
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/methodology/3.png",
     title: "Develop",
     para: <>Convert the designs into a <br /> live application</>
   },
   {
-    key: "4",
+    id: "4",
     src: "/img/home_new/methodology/4.png",
     title: "Deploy",
     para: <>Launching the application to <br /> the market</>
@@ -57,7 +57,7 @@ function Unique() {
       </div>
 
       <div className='grid lg:grid-cols-4 gap-4 p-6 relative'>
-        {list.map(l => < Card {...l} />)}
+        {list.map(l => <Card key={l.id} {...l} />)}
         {/* <div className="absolute top-0 bottom-0 left-1/2 border border-dotted border-primary-900"></div> */}
       </div>
 

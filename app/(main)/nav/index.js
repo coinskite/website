@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Close from '@/svg/cross.svg';
 import Lines from '@/svg/lines.svg';
 import Link from 'next/link';
@@ -24,9 +24,7 @@ function Nav() {
       <div className="df gap-4 max-w-7xl mx-auto">
         <div className="nav-logo">
           <Link href="/">
-            <a>
-              <img className='w-40' src='./img/logo/logo.png' alt="logo" />
-            </a>
+            <img className='w-40' src='./img/logo/logo.png' alt="logo" />
           </Link>
         </div>
 

@@ -1,26 +1,26 @@
 const data = [
   {
-    key: "1",
+    id: "1",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
   {
-    key: "2",
+    id: "2",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
   {
-    key: "3",
+    id: "3",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
   {
-    key: "4",
+    id: "4",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
   {
-    key: "5",
+    id: "5",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
   {
-    key: "6",
+    id: "6",
     detail: "Coinskite: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
   },
 ]
@@ -55,7 +55,7 @@ function Newsroom() {
         {
           data.map(d => (
             <Card
-              key={d.key}
+              key={d.id}
               detail={d.detail}
             />
           ))

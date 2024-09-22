@@ -4,52 +4,52 @@ import { useKeenSlider } from "keen-slider/react";
 
 const list1 = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/Teckstack/etherscan.png",
     title: 'Etherscan',
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/Teckstack/Infura.png",
     title: 'INFURA',
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/Teckstack/Band.png",
     title: 'Band',
   },
   {
-    key: "4",
+    id: "4",
     src: "/img/home_new/Teckstack/uma.png",
     title: "UMA",
   },
   {
-    key: "5",
+    id: "5",
     src: "/img/home_new/Teckstack/Polygon.png",
     title: 'polygon',
   },
   {
-    key: "6",
+    id: "6",
     src: "/img/home_new/Teckstack/etherscan.png",
     title: 'Etherscan',
   },
   {
-    key: "7",
+    id: "7",
     src: "/img/home_new/Teckstack/Infura.png",
     title: 'INFURA',
   },
   {
-    key: "8",
+    id: "8",
     src: "/img/home_new/Teckstack/Band.png",
     title: 'Band',
   },
   {
-    key: "9",
+    id: "9",
     src: "/img/home_new/Teckstack/uma.png",
     title: "UMA",
   },
   {
-    key: "10",
+    id: "10",
     src: "/img/home_new/Teckstack/Polygon.png",
     title: 'polygon',
   }
@@ -57,62 +57,62 @@ const list1 = [
 
 const list2 = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/Teckstack/near.png",
     title: 'near',
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/Teckstack/bnb.png",
     title: 'BNB',
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/Teckstack/filecoin.png",
     title: 'Filecoin',
   },
   {
-    key: "4",
+    id: "4",
     src: "/img/home_new/Teckstack/Chainlink.png",
     title: "Chainlink",
   },
   {
-    key: "5",
+    id: "5",
     src: "/img/home_new/Teckstack/zksync.png",
     title: 'zkSync',
   },
   {
-    key: "6",
+    id: "6",
     src: "/img/home_new/Teckstack/hop.png",
     title: 'Hop',
   },
   {
-    key: "7",
+    id: "7",
     src: "/img/home_new/Teckstack/near.png",
     title: 'near',
   },
   {
-    key: "8",
+    id: "8",
     src: "/img/home_new/Teckstack/bnb.png",
     title: 'BNB',
   },
   {
-    key: "9",
+    id: "9",
     src: "/img/home_new/Teckstack/filecoin.png",
     title: 'Filecoin',
   },
   {
-    key: "10",
+    id: "10",
     src: "/img/home_new/Teckstack/Chainlink.png",
     title: "Chainlink",
   },
   {
-    key: "11",
+    id: "11",
     src: "/img/home_new/Teckstack/zksync.png",
     title: 'zkSync',
   },
   {
-    key: "12",
+    id: "12",
     src: "/img/home_new/Teckstack/hop.png",
     title: 'Hop',
   }
@@ -120,62 +120,62 @@ const list2 = [
 
 const list3 = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/Teckstack/ethereum.png",
     title: 'Ethereum',
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/Teckstack/solana.png",
     title: 'SOLANA',
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/Teckstack/arweave.png",
     title: 'arweave',
   },
   {
-    key: "4",
+    id: "4",
     src: "/img/home_new/Teckstack/optimism.png",
     title: "Optimism",
   },
   {
-    key: "5",
+    id: "5",
     src: "/img/home_new/Teckstack/graph.png",
     title: 'Graph',
   },
   {
-    key: "6",
+    id: "6",
     src: "/img/home_new/Teckstack/across.png",
     title: 'Across',
   },
   {
-    key: "7",
+    id: "7",
     src: "/img/home_new/Teckstack/ethereum.png",
     title: 'Ethereum',
   },
   {
-    key: "8",
+    id: "8",
     src: "/img/home_new/Teckstack/solana.png",
     title: 'SOLANA',
   },
   {
-    key: "9",
+    id: "9",
     src: "/img/home_new/Teckstack/arweave.png",
     title: 'arweave',
   },
   {
-    key: "10",
+    id: "10",
     src: "/img/home_new/Teckstack/optimism.png",
     title: "Optimism",
   },
   {
-    key: "11",
+    id: "11",
     src: "/img/home_new/Teckstack/graph.png",
     title: 'Graph',
   },
   {
-    key: "12",
+    id: "12",
     src: "/img/home_new/Teckstack/across.png",
     title: 'Across',
   }
@@ -221,7 +221,7 @@ function Slider({ list = [], className = "", rtl = false }) {
 
   return (
     <div ref={sliderRef} className={`keen-slider ${className}`}>
-      {list.map(firstline => <Card {...firstline} />)}
+      {list.map(l => <Card key={l.id} {...l} />)}
     </div>
   )
 }

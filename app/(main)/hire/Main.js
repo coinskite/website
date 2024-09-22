@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import Search from '@/svg/search.svg'
 import Switch from './Switch'
 import Card from './Card'

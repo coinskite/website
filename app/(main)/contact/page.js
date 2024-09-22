@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import countryCodes from "../../constants/countryCodes";
+import countryCodes from "@/constants/countryCodes";
 
 function Contact() {
   const [details, setDetails] = useState({

@@ -1,6 +1,6 @@
 const list = [
   {
-    key: "1",
+    id: "1",
     title: "Technology Partners",
     para: "Access leading-edge technology and expertise. We offer a range of options to meet your business needs and help you stay ahead of the curve",
     list: [
@@ -11,7 +11,7 @@ const list = [
     ],
   },
   {
-    key: "2",
+    id: "2",
     title: "Strategic Partners",
     para: "Our strategic partnership program offers a range of options to meet your needs and drive progress and innovation. Contact us to learn more and explore the endless possibilities that await.",
     list: [
@@ -66,7 +66,7 @@ function Types() {
         </div>
 
         <div className="grid grid-cols-2 gap-6 max-w-xs xs:max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto">
-          {list.map(l => <Card {...l} />)}
+          {list.map(l => <Card key={l.id} {...l} />)}
         </div>
       </div>
     </div>

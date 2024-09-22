@@ -3,7 +3,7 @@ function Final() {
   return (
     <div className="pad-main-3 text-[#223764] bg-[#CAFCD9]">
       <h2 className="text-[10px] sm:text-[17px] md:text-xl lg:text-[25px] xl:text-3xl font-semibold text-center">
-        We’re doing big things and can’t wait to share <br />
+        We're doing big things and can't wait to share <br />
         them with you
       </h2>
 

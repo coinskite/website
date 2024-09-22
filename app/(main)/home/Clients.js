@@ -1,7 +1,7 @@
 
 const list = [
   {
-    key: "1",
+    id: "1",
     title: "Innovative Solutions",
     para: <>Impressed with Coinskite's <br /> innovative blockchain solutions. They <br /> have transformed our business <br /> operations</>,
     src: "/img/home_new/testimonials/1.png",
@@ -10,7 +10,7 @@ const list = [
 
   },
   {
-    key: "2",
+    id: "2",
     title: "Reliable and Trustworthy",
     para: <>Trustworthy blockchain solutions <br /> provided. They have boosted our <br /> productivity and fostered <br /> transparency</>,
     src: "/img/home_new/testimonials/2.png",
@@ -19,7 +19,7 @@ const list = [
 
   },
   {
-    key: "3",
+    id: "3",
     title: "Exceptional Service Provider",
     para: <>Exceptional blockchain services <br /> offered. They have given us a <br /> competitive edge in the digital <br /> landscape</>,
     src: "/img/home_new/testimonials/3.png",
@@ -71,7 +71,7 @@ function Clients() {
       </div>
 
       <div className='grid lg:grid-cols-3 justify-center gap-8 relative'>
-        {list.map(l => <Card {...l} />)}
+        {list.map(l => <Card key={l.id} {...l} />)}
 
         <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
         <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>

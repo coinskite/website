@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+"use client";
+
+import { useState } from 'react';
 
 const tabs = ["All", "Blockchain", "Crypto", "Defi", "Smart contract", "Research"]
 
 const arr = [
   {
-    key: 1,
+    id: 1,
     src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
@@ -12,7 +14,7 @@ const arr = [
     by: "Sathish,Developer @coinskite",
   },
   {
-    key: 2,
+    id: 2,
     src: "./img/blog/bitcoin.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
@@ -20,7 +22,7 @@ const arr = [
     by: "",
   },
   {
-    key: 3,
+    id: 3,
     src: "./img/blog/circles.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
@@ -28,7 +30,7 @@ const arr = [
     by: "",
   },
   {
-    key: 4,
+    id: 4,
     src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
@@ -36,7 +38,7 @@ const arr = [
     by: "Sathish,Developer @coinskite",
   },
   {
-    key: 5,
+    id: 5,
     src: "./img/blog/web3.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
@@ -44,7 +46,7 @@ const arr = [
     by: "",
   },
   {
-    key: 6,
+    id: 6,
     src: "./img/blog/web3.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
@@ -52,7 +54,7 @@ const arr = [
     by: "",
   },
   {
-    key: 7,
+    id: 7,
     src: "./img/blog/chatgpt.png",
     type: "Blockchain",
     heading: "10 ways blockchain developers can use ChatGPT",
@@ -60,7 +62,7 @@ const arr = [
     by: "Sathish,Developer @coinskite",
   },
   {
-    key: 8,
+    id: 8,
     src: "./img/blog/nft.png",
     type: "Defi",
     heading: "City of Busan to establish digital assets exchange: Report",
@@ -68,7 +70,7 @@ const arr = [
     by: "",
   },
   {
-    key: 9,
+    id: 9,
     src: "./img/blog/nasdaq.png",
     type: "NFT",
     heading: "Decentralized forex will reduce cost by as much as 80%: Report",
@@ -134,7 +136,7 @@ function Main() {
         </div>
 
         <div className='grid md:grid-cols-3 justify-center gap-4'>
-          {arr.map(l => <Blog {...l} />)}
+          {arr.map(l => <Blog key={l.id} {...l} />)}
         </div>
 
         <button className='block mx-auto my-8 px-6 py-2 text-[10px] xs:text-xs sm:text-sm lg:text-lg xl:text-xl font-semibold text-white bg-primary-900 rounded-sm'>

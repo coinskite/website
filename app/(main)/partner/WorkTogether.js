@@ -11,7 +11,7 @@ function WorkTogether() {
 
         <div>
           <h2 className="text-xl xs:text-[25px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px] font-semibold text-[#223764]">
-            Let’s work together
+            Let's work together
           </h2>
 
           <p className="text-[6px] xs:text-[8px] sm:text-xs md:text-xs lg:text-base xl:text-[22px] font-medium">

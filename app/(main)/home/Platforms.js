@@ -1,22 +1,22 @@
 const list = [
   {
-    key: '1',
+    id: '1',
     src: "/img/home_new/platforms/aws.png"
   },
   {
-    key: '2',
+    id: '2',
     src: "/img/home_new/platforms/oracle.png"
   },
   {
-    key: '3',
+    id: '3',
     src: "/img/home_new/platforms/azure blockchain.png"
   },
   {
-    key: '4',
+    id: '4',
     src: "/img/home_new/platforms/IBM.png"
   },
   {
-    key: '5',
+    id: '5',
     src: "/img/home_new/platforms/google cloud.png"
   }
 ]
@@ -32,7 +32,7 @@ function Platforms() {
         <div className="df justify-center gap-6 md:gap-20 max-w-7xl mx-auto">
           {
             list.map(l => (
-              <div key={l.key}>
+              <div key={l.id}>
                 <img
                   src={l.src}
                   alt=""

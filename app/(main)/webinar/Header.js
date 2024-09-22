@@ -8,7 +8,7 @@ function Header() {
           <h1 className="">
             Webinars
           </h1>
-          <p>At Coinskite, you’ll be on the cutting edge of technological innovation, working with teammates across the globe to build a trusted foundation for the digital economy of tomorrow.</p>
+          <p>At Coinskite, you'll be on the cutting edge of technological innovation, working with teammates across the globe to build a trusted foundation for the digital economy of tomorrow.</p>
 
           <div className="df webinar-header-search">
             <Search />

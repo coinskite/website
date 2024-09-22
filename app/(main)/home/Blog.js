@@ -1,6 +1,6 @@
 const list = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/read articles/1.png",
     title: "Artificial Intelligence",
     subtitle: "'Godfather of AI' resigns from Google, warns of the dangers of AI'",
@@ -9,7 +9,7 @@ const list = [
 
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/read articles/2.png",
     title: "Investment",
     subtitle: "MicroStrategy's Bitcoin conviction 'strong' as it posts Q1 profit",
@@ -17,7 +17,7 @@ const list = [
     date: '20/05/2023'
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/read articles/3.png",
     title: "Artificial Intelligence",
     subtitle: "7,800 jobs at IBM could be replaced by AI within years, CEO suggests",
@@ -64,7 +64,7 @@ function Blog() {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-stretch lg:justify-center gap-8">
-          {list.map(l => <Card {...l} />)}
+          {list.map(l => <Card key={l.id} {...l} />)}
         </div>
 
         <button className="portfolio-btn active block mx-auto lg:absolute lg:right-0 lg:top-4 lg:mx-0">

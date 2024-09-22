@@ -1,22 +1,22 @@
 const list = [
   {
-    key: "1",
+    id: "1",
     src: "/img/home_new/trust/adobe.png"
   },
   {
-    key: "2",
+    id: "2",
     src: "/img/home_new/trust/gitlab.png"
   },
   {
-    key: "3",
+    id: "3",
     src: "/img/home_new/trust/Google.png"
   },
   {
-    key: "4",
+    id: "4",
     src: "/img/home_new/trust/Hubspot.png"
   },
   {
-    key: "5",
+    id: "5",
     src: "/img/home_new/trust/Doordash.png"
   }
 ]
@@ -48,7 +48,7 @@ function Header() {
             <img
               className="w-[39px] xs:w-49px] sm:w-[64px] md:w-[80px] lg:w-[101px] xl:w-[133px]"
               src={l.src}
-              key={l.key}
+              key={l.id}
             />
           ))}
         </div>

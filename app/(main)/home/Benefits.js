@@ -1,25 +1,25 @@
 
 const list = [
   {
-    key: '1',
+    id: '1',
     src: "/img/home_new/Beneits/1.png",
     title: "Time zones ain't no thing",
     para: "Work seamlessly with our team, no matter your time zone"
   },
   {
-    key: '2',
+    id: '2',
     src: "/img/home_new/Beneits/2.png",
     title: "Impossible? We're on it",
     para: "We tackle the toughest problems with cutting-edge tech "
   },
   {
-    key: '3',
+    id: '3',
     src: "/img/home_new/Beneits/3.png",
     title: "Full spectrum of services",
     para: "Streamline your operations with our comprehensive suite of services "
   },
   {
-    key: '4',
+    id: '4',
     src: "/img/home_new/Beneits/4.png",
     title: "Flexible work terms",
     para: " Find your ideal work-life balance with our flexible working arrangements"
@@ -28,25 +28,25 @@ const list = [
 
 const list2 = [
   {
-    key: "1",
+    id: "1",
     title: '30+',
     sub: "Happy Clients",
     src: "/img/home_new/clients BOX/1.png"
   },
   {
-    key: "2",
+    id: "2",
     title: '120+',
     sub: "Projects Completed",
     src: "/img/home_new/clients BOX/2.png"
   },
   {
-    key: "3",
+    id: "3",
     title: '70',
     sub: "Dedicated Members",
     src: "/img/home_new/clients BOX/3.png"
   },
   {
-    key: "4",
+    id: "4",
     title: '12+',
     sub: "Awards Won",
     src: "/img/home_new/clients BOX/4.png"
@@ -106,11 +106,11 @@ function Benefits() {
 
         <div className="xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 mb-6 sm:mb-8">
-            {list.map(l1 => <Cards {...l1} />)}
+            {list.map(l => <Cards key={l.id} {...l} />)}
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
-            {list2.map(c => <Card2 {...c} />)}
+            {list2.map(c => <Card2 key={c.id} {...c} />)}
             <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
           </div>
         </div>

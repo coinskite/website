@@ -4,7 +4,7 @@ function Final() {
     <div className="pad-main-3 bg-[#00DA7E]">
       <div className="df justify-center max-w-7xl mx-auto relative">
         <button className="df gap-4 text-base xs:text-xl sm:text-3xl md:text-[40px] font-semibold text-[white]">
-          Let’s talk <img className="w-8 sm:w-10" src="/img/portfolio/arroow.png" alt="" />
+          Let's talk <img className="w-8 sm:w-10" src="/img/portfolio/arroow.png" alt="" />
         </button>
 
         <img
