@@ -59,7 +59,7 @@ function Values() {
               <p
                 key={l.id}
                 onClick={() => setSelected(l.id)}
-                className={`pl-2 sm:pl-4 lg:pl-5 py-1.5 sm:py-2 md:py-3 xl:py-4 leading-none border-l-2 cursor-pointer ${l.key === selected ? "border-white" : ' border-transparent'}`}
+                className={`pl-2 sm:pl-4 lg:pl-5 py-1.5 sm:py-2 md:py-3 xl:py-4 leading-none border-l-2 cursor-pointer ${l.id === selected ? "border-white" : ' border-transparent'}`}
               >
                 {l.title}
               </p>
@@ -69,7 +69,7 @@ function Values() {
 
         <div className='col-span-2 text-[6px] xs:text-[8px] sm:text-[13px] md:text-sm lg:text-lg xl:text-xl'>
           {
-            list?.find(l => l.key === selected)?.para
+            list?.find(l => l.id === selected)?.para
           }
         </div>
       </div>

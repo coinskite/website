@@ -4,7 +4,7 @@ function Header() {
       <div className="dfc gap1">
         <h1>Smart Contract Development Services</h1>
         <p className="theme-header-p">Smart contracts is faster and more cost-efficient this makes them a much better alternative to existing systems coinskite implements dapps running on ethereum smart contracts</p>
-        <p><button className="black-bg br5">Let’s discuss you project</button></p>
+        <p><button className="black-bg br5">Let's discuss you project</button></p>
       </div>
     </div>
   )
