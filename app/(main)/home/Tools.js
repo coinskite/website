@@ -1,4 +1,6 @@
-import { useKeenSlider } from "keen-slider/react"
+"use client";
+
+import { useKeenSlider } from "keen-slider/react";
 
 const list1 = [
   {

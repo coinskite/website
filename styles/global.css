@@ -24,8 +24,7 @@
   }
 
   select {
-    @apply w-full pl-4 pr-8 py-2 border appearance-none rounded focus:outline-none
-    bg-no-repeat bg-[url('../public/img/dropdown-arrow.png')] border-gray-300;
+    @apply w-full pl-4 pr-8 py-2 border appearance-none rounded focus:outline-none bg-no-repeat bg-[url('../public/img/dropdown-arrow.png')] border-gray-300;
     background-position: 98%;
     background-size: 24px;
   }
@@ -39,7 +38,8 @@
     width: 0;
   }
 
-  .df, .dfc {
+  .df,
+  .dfc {
     display: flex;
     gap: .5rem;
   }
@@ -115,10 +115,7 @@ svg.hire-details-arrow path {
 .partnership-form input,
 .partnership-form select,
 .partnership-form textarea {
- @apply mb-4 pl-2 md:pl-4
- text-[6px] xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-2xl 
- text-[#C4C4C4] border border-[#C4C4C4] rounded-[5px]
- ;
+  @apply mb-4 pl-2 md:pl-4 text-[6px] xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-2xl text-[#C4C4C4] border border-[#C4C4C4] rounded-[5px];
 }
 
 /* DigiKite */
@@ -180,12 +177,12 @@ svg.hire-details-arrow path {
   padding-bottom: 2.5rem !important;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: #fff !important;
   opacity: .8 !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: #00AC4F !important;
   opacity: 1 !important;
 }
@@ -202,6 +199,7 @@ svg.hire-details-arrow path {
 }
 
 @media (max-width: 768px) {
+
   /* Nav */
   .head-arr {
     display: initial;

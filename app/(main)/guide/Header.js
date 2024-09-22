@@ -1,4 +1,4 @@
-import Search from '../../svg/search.svg';
+import Search from '@/svg/search.svg';
 
 function Header() {
   return (

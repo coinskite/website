@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useMemo, useState } from 'react'
-import Search from '../../svg/search.svg'
-import Switch from '../ui/Switch'
+import Search from '@/svg/search.svg'
+import Switch from './Switch'
 import Card from './Card'
 
 const WorkType = ["Full Time", "Part Time", "Internship"]

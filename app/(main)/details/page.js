@@ -2,7 +2,7 @@
 
 import { Fragment } from 'react'
 import { useRouter } from 'next/navigation'
-import Arrow from '../../svg/arrows/download.svg';
+import Arrow from '@/svg/arrows/download.svg';
 // import Application from '../Application';
 
 function Details({ data }) {

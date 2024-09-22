@@ -1,7 +1,9 @@
+"use client";
+
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/router';
-import Close from '../../svg/cross.svg';
-import Lines from '../../svg/lines.svg';
+import Close from '@/svg/cross.svg';
+import Lines from '@/svg/lines.svg';
 import Link from 'next/link';
 import list from './list';
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from 'next/navigation'
-import Arrow from '../../svg/arrows/white.svg';
+import Arrow from '@/svg/arrows/white.svg';
 
 function Card({ title, roles = [] }) {
   const router = useRouter()

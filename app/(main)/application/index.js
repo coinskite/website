@@ -6,7 +6,7 @@ import axios from 'axios'
 import { successNotify, errorNotify } from '../../helper/tostifyHelp'
 import mainUrl from '../../constants/url'
 
-import Cross from '../../svg/cross.svg'
+import Cross from '@/svg/cross.svg'
 import Star from './astriek.svg'
 
 import InputBox from './InputBox'

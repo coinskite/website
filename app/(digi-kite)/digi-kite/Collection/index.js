@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from "swiper";
 
-import Arrow from '../../../svg/arrows/digi.svg';
+import Arrow from '@/svg/arrows/digi.svg';
 import Card from './Card';
 import list from './list';
 

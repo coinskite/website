@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Arrow from '../../svg/arrows/white.svg';
+import Arrow from '@/svg/arrows/white.svg';
 
 function Comp({ active, name, list, onClk }) {
   return (

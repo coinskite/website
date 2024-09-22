@@ -1,10 +1,7 @@
+import Home from "./(main)/home";
 
 function Page() {
-  return (
-    <div>
-      Page
-    </div>
-  )
+  return <Home />
 }
 
 export default Page

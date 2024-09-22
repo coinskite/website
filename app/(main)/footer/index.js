@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 
 import { Company, Services, Customers, Industries, Partners, Resources } from './list';

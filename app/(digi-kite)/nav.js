@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Search from '../../svg/digi/search.svg';
-import Cross from '../../svg/digi/cross.svg';
-import Arrow from '../../svg/arrows/digi.svg';
+import Search from '@/svg/digi/search.svg';
+import Cross from '@/svg/digi/cross.svg';
+import Arrow from '@/svg/arrows/digi.svg';
 
 function Nav() {
   const [open, setOpen] = useState(false)
