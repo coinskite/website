@@ -34,33 +34,31 @@ const list = [
     src: "/img/home_new/networks/Polkadot.png",
     title: "Ethereum"
   }
-]
+];
 
 function Networks() {
   return (
-    <div className="py-4">
-
-      <h2 className='mb-4 mt-10 mdb:mb-6 text-[10px] xs:text-sm sm:text-lg md:text-[22px] lg:text-[28px] xl:text-[34px] font-[700] uppercase text-center bg-[#FFEF16] w-fit p-2 text-black'>
+    <div className="py-4 px-4 sm:px-6 lg:px-8">
+      <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase text-center bg-[#FFEF16] w-fit mx-auto p-2 text-black'>
         AVAILABLE ON +10 NETWORKS
       </h2>
 
       <div className="py-6 lg:py-8">
-        <div className="df justify-between items-center gap-6 md:gap-20 max-w-7xl mx-auto">
-          {
-            list.map(l => (
-              <div key={l.id}>
-                <img
-                  src={l.src}
-                  alt=""
-                />
-                <span className="font-[500] text-[16px] shrink-0">{l.title}</span>
-              </div>
-            ))
-          }
+        <div className="grid grid-cols-2 md:grid-cols-7 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
+          {list.map(l => (
+            <div key={l.id} className="flex flex-col items-center justify-center">
+              <img
+                src={l.src}
+                alt={l.title}
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain mb-2"
+              />
+              <span className="font-medium text-xs sm:text-sm md:text-base text-center">{l.title}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Networks
+export default Networks;
