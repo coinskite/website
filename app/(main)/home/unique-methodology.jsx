@@ -85,7 +85,7 @@ const ServiceItem = ({ item, isActive }) => {
       <div className="bg-[#0F161B] border-[#22C954] border-[3px] p-8 rounded w-[500px]">
         <img className="my-10 mx-auto" src={item.src} alt={item.title} />
         <h3 className="text-2xl font-bold text-[#E8E00E] mb-4">{item.title}</h3>
-        <p className="text-white">{item.para}</p>
+        <p className="text-white text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">{item.para}</p>
         <button className="text-[8px] mt-4 xs:text-[10px] sm:text-sm md:text-base lg:text-lg  bg-gradient-to-r from-[#22C954]  to-[#116329]">
           Enquire for consultation
         </button>
@@ -153,6 +153,14 @@ const UniqueMethodology = () => {
 
   return (
     <div className="pad-main-3">
+      <div className="flex items-center justify-center lg:justify-end">
+        <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase  bg-[#FFEF16]  p-2 text-black'>
+          Our Unique Methodology
+        </h2>
+      </div>
+      <div className="flex items-center justify-center lg:justify-end">
+        <p className="font-[600] mb-10 lg:mb-0 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl">Learn about our step-by-step <br /> process for delivering results.</p>
+      </div>
       <div className="flex justify-center flex-col items-center">
         {/* Mobile Layout */}
         <div className="lg:hidden w-full">
@@ -160,7 +168,7 @@ const UniqueMethodology = () => {
             <div key={item.id} className="bg-[#0F161B] border-[#22C954] border-[3px] p-8 rounded mb-4">
               <img className="my-10" src={item.src} alt={item.title} />
               <h3 className="text-xs xs:text-lg sm:text-[22px] font-[700] text-[#E8E00E]">{item.title}</h3>
-              <p>{item.para}</p>
+              <p className="text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">{item.para}</p>
             </div>
           ))}
         </div>

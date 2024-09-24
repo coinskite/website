@@ -64,14 +64,25 @@ function Card({ src, title, para, name, role, }) {
 function Clients() {
   return (
     <div className="pad-main-3">
-      <div className="mb-4 sm:mb-8">
-        <h2 className="mb-2 p-2 bg-[#E8E00E] text-sm xs:text-lg sm:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-black w-fit">
+      {/* <div className="mb-4 sm:mb-8"> */}
+
+      <div className="flex items-center justify-center lg:justify-start">
+        <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase  bg-[#FFEF16]  p-2 text-black'>
+          Our Clients Speak
+        </h2>
+      </div>
+      <div className="flex items-center justify-center lg:justify-start">
+        <p className="mb-4 mdb:mb-8 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg">We have been working with clients around the world</p>
+      </div>
+
+
+      {/* <h2 className="mb-2 p-2 bg-[#E8E00E] text-sm xs:text-lg sm:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-black w-fit">
           Our Clients Speak
         </h2>
         <p className="text-[8px] xs:text-xs xl:text-base">
           We have been working with clients around the world
         </p>
-      </div>
+      </div> */}
 
       <div className='grid lg:grid-cols-3 justify-center gap-8 relative'>
         {list.map(l => <Card key={l.id} {...l} />)}

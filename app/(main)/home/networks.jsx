@@ -39,9 +39,12 @@ const list = [
 function Networks() {
   return (
     <div className="py-4 px-4 sm:px-6 lg:px-8">
-      <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase text-center bg-[#FFEF16] w-fit mx-auto p-2 text-black'>
-        AVAILABLE ON +10 NETWORKS
-      </h2>
+
+      <div className="flex items-center justify-center lg:justify-start">
+        <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase  bg-[#FFEF16] p-2 text-black'>
+          AVAILABLE ON +10 NETWORKS
+        </h2>
+      </div>
 
       <div className="py-6 lg:py-8">
         <div className="grid grid-cols-2 md:grid-cols-7 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">

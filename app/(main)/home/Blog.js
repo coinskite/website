@@ -56,18 +56,22 @@ function Blog() {
   return (
     <div className="pad-main-3 2xl:py-14">
       <div className="max-w-7xl mx-auto relative">
-        <h2 className="mb-2 text-sm sm:text-center xs:text-lg sm:text-lg md:text-[34px] xl:text-[40px] bg-[#E8E00E] text-black w-fit p-2 font-bold uppercase">
-          Read Our latest Insights
-        </h2>
-        <div className="mb-4 sm:mb-8 text-[8px] xs:text-xs sm:text-base xl:text-lg">
-          All the latest updates and community happenings
+        <div className="flex items-center justify-center lg:justify-start">
+          <h2 className="mb-2 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl bg-[#E8E00E] text-black w-fit p-2 font-bold uppercase">
+            Read Our latest Insights
+          </h2>
+        </div>
+        <div className="flex items-center justify-center lg:justify-start">
+          <div className="mb-4 mdb:mb-8 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg">
+            All the latest updates and community happenings
+          </div>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-between gap-8">
           {list.map(l => <Card key={l.id} {...l} />)}
         </div>
 
-        <button className="portfolio-btn active block mx-auto sm:my-2 lg:my-0 lg:absolute lg:right-0 lg:top-4 lg:mx-0">
+        <button className="portfolio-btn active block mt-5 lg:mt-0 mx-auto lg:absolute lg:right-0 lg:top-4 lg:mx-0">
           View Blogs
         </button>
       </div>

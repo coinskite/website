@@ -229,12 +229,15 @@ function Slider({ list = [], className = "", rtl = false }) {
 function Tools() {
   return (
     <div className="max-w-7xl mx-auto mb-8 my-4 sm:mb-12 mdb:mb-16 sm:text-center md:text-left">
-      <div className='mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] bg-[#E8E00E] text-black w-fit p-2 uppercase font-bold'>
-        Utilizing cutting-edge tools
+      <div className="flex items-center justify-center">
+        <div className='mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] bg-[#E8E00E] text-black w-fit p-2 uppercase font-bold'>
+          Utilizing cutting-edge tools
+        </div>
       </div>
-
-      <div className='mb-4 mdb:mb-8 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg'>
-        We build for your users, regardless of platform, language, or protocol limitations.
+      <div className="flex items-center justify-center">
+        <div className='mb-6 mdb:mb-10 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg'>
+          We build for your users, regardless of platform, language, or protocol limitations.
+        </div>
       </div>
 
       <div className="home-tools max-w-5xl mx-auto relative">

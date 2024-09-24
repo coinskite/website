@@ -8,37 +8,37 @@ const list = [
     id: "1",
     src: "/img/home_new/Our Services/POC Development.png",
     title: "POC Development",
-    para: "Proof-of-Concept (POC) development is crucial for validating your blockchain ideas. Our expert team can assist you in developing robust POC solutions.",
+    para: "Proof-of-Concept '(POC)'  development is a crucial for validating your blockchain idea's. Our expert team can assist you in developing robust POC  solutions.",
   },
   {
     id: "2",
     src: "/img/home_new/Our Services/Metaverse development.png",
     title: "Metaverse Development",
-    para: "Enter the exciting world of the metaverse with our Metaverse Development services. We help build immersive and interactive experiences in virtual environments.",
+    para: "Enter the exciting world of the metaverse with our Metaverse Development services. We help build immersive and interactive experiences in virtual   environments.",
   },
   {
     id: "3",
     src: "/img/home_new/Our Services/NFT Development.png",
     title: "NFT Development",
-    para: "Unlock the potential of Non-Fungible Tokens (NFTs) with our NFT Development services. We assist in creating and deploying unique and secure digital assets.",
+    para: "Unlock the potential of Non-Fungible Tokens '(NFTs)'  with our NFT Development services. We assist in creating and deploying unique and secure digital assets.",
   },
   {
     id: "4",
     src: "/img/home_new/Our Services/Smart Contract development.png",
     title: "Smart Contract Development",
-    para: "Smart contracts automate processes, enhance security, and eliminate intermediaries. Our team specializes in developing secure and efficient smart contract solutions.",
+    para: "Smart contracts automate processes,and eliminate intermediaries. Our team specializes in developing secure and efficient smart contract solutions.",
   },
   {
     id: "5",
     src: "/img/home_new/Our Services/Token Development.png",
     title: "Token Development",
-    para: "Tokenize your assets or launch your own cryptocurrency with our Token Development services. We ensure compliance, security, and seamless integration of tokens.",
+    para: "Tokenize your assets or launch your own cryptocurrency our Token Development services. We ensure compliance, security, and seamless integration of tokens.",
   },
   {
     id: "6",
     src: "/img/home_new/Our Services/Blockchain Integration.png",
     title: "Blockchain Integration",
-    para: "Seamlessly integrate blockchain technology into your existing systems with our Blockchain Integration services. Enhance transparency, security, and efficiency.",
+    para: "Seamlessly integrate with blockchain technology  into your existing systems with our Blockchain Integration services. Enhance transparency, security, and efficiency .",
   },
 ];
 
@@ -58,7 +58,7 @@ const ServiceItem = ({ item, isActive }) => {
       <div className="bg-[#0F161B] border-[#22C954] border-[3px] p-8 rounded max-w-2xl">
         <img className="my-10 mx-auto" src={item.src} alt={item.title} />
         <h3 className="text-2xl font-bold text-[#E8E00E] mb-4">{item.title}</h3>
-        <p className="text-white">{item.para}</p>
+        <p className="text-white text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">{item.para}</p>
       </div>
     </div>
   );
@@ -123,6 +123,19 @@ const OurServices = () => {
 
   return (
     <div className="pad-main-3">
+
+      <div className="flex items-center justify-center lg:justify-start">
+        <h2 className='mb-4 mt-10 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-bold uppercase  bg-[#FFEF16]  p-2 text-black'>
+          Our Services
+        </h2>
+      </div>
+      <div className="flex items-center justify-center lg:justify-start">
+        <p className="font-[600] mb-10 lg:mb-0 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl">
+          Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
+          journey starts here.
+        </p>
+      </div>
+
       <div className="flex justify-center flex-col items-center">
         {/* Mobile Layout */}
         <div className="lg:hidden w-full">
@@ -130,7 +143,7 @@ const OurServices = () => {
             <div key={item.id} className="bg-[#0F161B] border-[#22C954] border-[3px] p-8 rounded mb-4">
               <img className="my-10" src={item.src} alt={item.title} />
               <h3 className="text-xs xs:text-lg sm:text-[22px] font-[700] text-[#E8E00E]">{item.title}</h3>
-              <p>{item.para}</p>
+              <p className="text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">{item.para}</p>
             </div>
           ))}
         </div>
