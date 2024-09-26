@@ -5,11 +5,11 @@ function Final() {
       <div className='p-4 md:p-6  bg-gradient-to-r from-[#BFFFD3]  to-[#40EA75] rounded-[10px] relative flex justify-between items-center'>
 
         <div>
-          <p className='mb-2 md:mb-6 text-xs xs:text-lg sm:text-[22px] md:text-[26px] lg:text-4xl xl:text-[40px]  font-bold text-[#18191F]'>
+          <p className='mb-2 md:mb-6 text-[12px] md:text-[22px] lg:text-[30px] xl:text-[40px]  font-bold text-[#18191F]'>
             Shape Your Future  <br />
             With Us
           </p>
-          <p className="text-xs xs:text-lg sm:text-[22px] md:text-[26px] lg:text-4xl xl:text-[40px] text-[#18191F] font-[600]">Its a blockchain thing</p>
+          <p className="text-[8px] xs:text-[10px] sm:text-[14px] md:text-[20px] lg:text-[24px] text-[#18191F] font-[600]">Its a blockchain thing</p>
         </div>
 
         <div>

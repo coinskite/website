@@ -57,12 +57,12 @@ function Blog() {
     <div className="pad-main-3 2xl:py-14">
       <div className="max-w-7xl mx-auto relative">
         <div className="flex items-center justify-center lg:justify-start">
-          <h2 className="mb-2 text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl bg-[#E8E00E] text-black w-fit p-2 font-bold uppercase">
+          <h2 className="mb-2 text-[8px] xs:text-[12px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[28px] bg-[#E8E00E] text-black w-fit p-2 font-bold uppercase">
             Read Our latest Insights
           </h2>
         </div>
         <div className="flex items-center justify-center lg:justify-start">
-          <div className="mb-4 mdb:mb-8 text-[7px] xs:text-[10px] sm:text-xs md:text-sm lg:text-lg">
+          <div className="font-normal mb-6 mdb:mb-10 text-[8px] xs:text-[10px] sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[24px]">
             All the latest updates and community happenings
           </div>
         </div>
