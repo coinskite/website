@@ -5,37 +5,37 @@ import React, { useState, useEffect, useRef } from 'react';
 const list = [
   {
     id: "1",
-    src: "/img/home_new/Our Services/POC Development.png",
+    src: "/img/home_new/our_services/POC_Development.png",
     title: "POC Development",
     para: "Proof-of-Concept '(POC)'  development is a crucial for validating your blockchain idea's. Our expert team can assist you in developing robust POC  solutions.",
   },
   {
     id: "2",
-    src: "/img/home_new/Our Services/Metaverse development.png",
+    src: "/img/home_new/our_services/Metaverse_development.png",
     title: "Metaverse Development",
     para: "Enter the exciting world of the metaverse with our Metaverse Development services. We help build immersive and interactive experiences in virtual   environments.",
   },
   {
     id: "3",
-    src: "/img/home_new/Our Services/NFT Development.png",
+    src: "/img/home_new/our_services/NFT_Development.png",
     title: "NFT Development",
     para: "Unlock the potential of Non-Fungible Tokens '(NFTs)'  with our NFT Development services. We assist in creating and deploying unique and secure digital assets.",
   },
   {
     id: "4",
-    src: "/img/home_new/Our Services/Smart Contract development.png",
+    src: "/img/home_new/our_services/Smart_Contract_development.png",
     title: "Smart Contract Development",
     para: "Smart contracts automate processes,and eliminate intermediaries. Our team specializes in developing secure and efficient smart contract solutions.",
   },
   {
     id: "5",
-    src: "/img/home_new/Our Services/Token Development.png",
+    src: "/img/home_new/our_services/Token_Development.png",
     title: "Token Development",
     para: "Tokenize your assets or launch your own cryptocurrency our Token Development services. We ensure compliance, security, and seamless integration of tokens.",
   },
   {
     id: "6",
-    src: "/img/home_new/Our Services/Blockchain Integration.png",
+    src: "/img/home_new/our_services/Blockchain_Integration.png",
     title: "Blockchain Integration",
     para: "Seamlessly integrate with blockchain technology  into your existing systems with our Blockchain Integration services. Enhance transparency, security, and efficiency .",
   },
@@ -154,7 +154,7 @@ const OurServices = () => {
 
       <div className="flex justify-center flex-col items-center">
         {/* Mobile Layout */}
-        <div className="lg:hidden w-full">
+        <div className="grid md:grid-cols-2 gap-x-4 lg:hidden w-full">
           {list.map((item) => (
             <div key={item.id} className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded mb-4">
               <img className="my-5 md:my-10" src={item.src} alt={item.title} />
