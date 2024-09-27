@@ -41,17 +41,17 @@ function Card({ src, title, para, name, role, }) {
             alt=''
           />
           <div className="flex flex-col items-start">
-            <p className="my-1.5 font-bold text-[14px] xs:text-[16px] sm:text-[18px] text-[#22C954]">
+            <p className="my-1.5 font-bold text-sm xs:text-base sm:text-lg text-[#22C954]">
               {name}
             </p>
-            <p className="font-normal text-[10px] xs:text-[12px] sm:text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px]">
+            <p className="font-normal text-[10px] xs:text-xs sm:text-sm md:text-sm lg:text-xs xl:text-sm">
               {role}
             </p>
           </div>
         </div>
 
         <div className="text-left">
-          <p className="text-white font-normal text-[8px] xs:text-[12px] sm:text-[14px]">
+          <p className="text-white font-normal text-[8px] xs:text-xs sm:text-sm">
             {para}
           </p>
         </div>
@@ -67,12 +67,12 @@ function Clients() {
       {/* <div className="mb-4 sm:mb-8"> */}
 
       <div className="flex items-center justify-center lg:justify-start">
-        <h2 className='mb-4 mt-10  text-[8px] xs:text-[12px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[28px] font-bold  uppercase  bg-[#FFEF16]  p-2 text-black'>
+        <h2 className='mb-4 mt-10  text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold  uppercase  bg-[#FFEF16]  p-2 text-black'>
           Our Clients Speak
         </h2>
       </div>
       <div className="flex items-center justify-center lg:justify-start">
-        <p className="mb-4 mdb:mb-8 font-normal text-[8px] xs:text-[10px] sm:text-[14px] md:text-[16px] lg:text-[20px] xl:text-[24px]">We have been working with clients around the world</p>
+        <p className="mb-4 mdb:mb-8 font-normal text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-xl xl:text-2xl">We have been working with clients around the world</p>
       </div>
 
 

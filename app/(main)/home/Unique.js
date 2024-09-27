@@ -48,7 +48,7 @@ function Unique() {
   return (
     <div className="mt-8 max-w-7xl mx-auto relative">
       <div className="text-center">
-        <h2 className="text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-[#E8E00E]">
+        <h2 className="text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-[#E8E00E]">
           Our Unique Methodology
         </h2>
         <p className="text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg">

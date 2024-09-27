@@ -62,7 +62,7 @@ function Cards({ src, title, para }) {
         alt=''
       />
       <div>
-        <p className="text-sm xs:text-base sm:text-[24px] text-[#E8E00E] font-bold">
+        <p className="text-sm xs:text-base sm:text-2xl text-[#E8E00E] font-bold">
           {title}
         </p>
         <p className="text-[8px] xs:text-xs xl:text-base" >
@@ -97,7 +97,7 @@ function Benefits() {
   return (
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto">
-        {/* <h2 className="mb-2 text-sm xs:text-base sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] uppercase text-center">
+        {/* <h2 className="mb-2 text-sm xs:text-base sm:text-2xl md:text-[28px] lg:text-[32px] xl:text-[34px] font-bold text-[#E8E00E] uppercase text-center">
           Benefits of working with us
         </h2>
         <div className='mb-4 sm:mb-8 text-[7px] xs:text-[10px] sm:text-xs lg:text-base xl:text-lg text-center'>

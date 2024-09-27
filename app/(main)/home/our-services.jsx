@@ -50,8 +50,8 @@ const ServiceItem = ({ item, isActive, inView }) => {
     >
       <div className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
         <img className="my-10 mx-auto" src={item.src} alt={item.title} />
-        <h3 className="font-[500] text-[12px] xs:text-[18px] sm:text-[20px] md:text-[20px] xl:text-[24px] text-[#E8E00E] mb-4">{item.title}</h3>
-        <p className="text-white font-[400] text-[8px] xs:text-[10px] sm:text-[12px] xl:text-[14px]">{item.para}</p>
+        <h3 className="font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl text-[#E8E00E] mb-4">{item.title}</h3>
+        <p className="text-white text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
       </div>
     </div>
   );
@@ -141,12 +141,12 @@ const OurServices = () => {
   return (
     <div className="pad-main-3">
       <div className="flex items-center justify-center lg:justify-start">
-        <h2 className='mb-4 mt-10 text-[8px] xs:text-[12px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[28px] font-bold uppercase  bg-[#FFEF16]  p-2 text-black'>
+        <h2 className='mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16]  p-2 text-black'>
           Our Services
         </h2>
       </div>
       <div className="flex items-center justify-center lg:justify-start">
-        <p className="mb-4 lg:mb-0 font-[600] text-[8px] xs:text-[10px] sm:text-[14px] md:text-[18px] lg:text-[24px] xl:text-[30px]">
+        <p className="mb-4 lg:mb-0 font-semibold text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-2xl xl:text-[30px]">
           Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
           journey starts here.
         </p>
@@ -158,8 +158,8 @@ const OurServices = () => {
           {list.map((item) => (
             <div key={item.id} className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded mb-4">
               <img className="my-5 md:my-10" src={item.src} alt={item.title} />
-              <h3 className="font-[500] text-[12px] xs:text-[18px] sm:text-[20px] md:text-[20px] xl:text-[24px]  text-[#E8E00E]">{item.title}</h3>
-              <p className="font-[400] text-[8px] xs:text-[10px] sm:text-[12px] xl:text-[14px]">{item.para}</p>
+              <h3 className="font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl  text-[#E8E00E]">{item.title}</h3>
+              <p className="text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
             </div>
           ))}
         </div>

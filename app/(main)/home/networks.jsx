@@ -41,7 +41,7 @@ function Networks() {
     <div className="py-4 px-4 sm:px-6 lg:px-8">
 
       <div className="flex items-center justify-center lg:justify-start">
-        <h2 className='mb-4 mt-10 text-[8px] xs:text-[12px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[28px] font-bold uppercase  bg-[#FFEF16] p-2 text-black'>
+        <h2 className='mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase  bg-[#FFEF16] p-2 text-black'>
           AVAILABLE ON +10 NETWORKS
         </h2>
       </div>
@@ -55,7 +55,7 @@ function Networks() {
                 alt={l.title}
                 className="w-[30px] h-[27px] xs:w-[38px] xs:h-[35px] sm:w-[40px] sm:h-[38px] md:w-[50px] md:h-[48px] lg:w-[65px] lg:h-[64px]  xl:w-[75px] xl:h-[75px] object-contain mb-2"
               />
-              <span className="h-[10px] font-medium text-[6px] xs:text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] text-center">{l.title}</span>
+              <span className="h-[10px] font-medium text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base text-center">{l.title}</span>
             </div>
           ))}
         </div>
