@@ -17,7 +17,7 @@ import Mission from './mission';
 
 function Home() {
   return (
-    <div className='text-white bg-[#111112] px-10'>
+    <div className='text-white bg-[#111112]'>
       <Header />
       <Networks />
       <Mission />
