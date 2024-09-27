@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
 
 const list = [
   {
@@ -42,18 +41,12 @@ const list = [
   },
 ];
 
-const ServiceItem = ({ item, isActive }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
-
+const ServiceItem = ({ item, isActive, inView }) => {
   return (
     <div
-      ref={ref}
       className={`transition-opacity duration-500 ${inView ? 'opacity-100' : 'opacity-0'
         } ${isActive ? 'z-10' : 'z-0'
-        } absolute top-0 left-0 w-full h-full flex items-center justify-center pl-20`} // Added left padding
+        } absolute top-0 left-0 w-full h-full flex items-center justify-center pl-20`}
     >
       <div className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
         <img className="my-10 mx-auto" src={item.src} alt={item.title} />
@@ -63,7 +56,6 @@ const ServiceItem = ({ item, isActive }) => {
     </div>
   );
 };
-
 
 const ProgressIndicator = ({ activeIndex, total }) => {
   return (
@@ -94,7 +86,9 @@ const ProgressIndicator = ({ activeIndex, total }) => {
 
 const OurServices = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [inViewItems, setInViewItems] = useState({});
   const containerRef = useRef(null);
+  const observerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -121,9 +115,31 @@ const OurServices = () => {
     };
   }, []);
 
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setInViewItems((prev) => ({
+            ...prev,
+            [entry.target.dataset.id]: entry.isIntersecting,
+          }));
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const elements = containerRef.current.querySelectorAll('.service-item');
+    elements.forEach((el) => observerRef.current.observe(el));
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, []);
+
   return (
     <div className="pad-main-3">
-
       <div className="flex items-center justify-center lg:justify-start">
         <h2 className='mb-4 mt-10 text-[8px] xs:text-[12px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[28px] font-bold uppercase  bg-[#FFEF16]  p-2 text-black'>
           Our Services
@@ -152,16 +168,21 @@ const OurServices = () => {
         <div className="hidden lg:block w-full h-screen relative overflow-hidden hide-scrollbar">
           <div
             ref={containerRef}
-            className="absolute top-0 left-0 w-full h-full overflow-y-scroll hide-scrollbar scrollbar-hide"
+            className="absolute top-0 left-0 w-full h-full overflow-y-scroll hide-scrollbar"
             style={{ scrollSnapType: 'y mandatory' }}
           >
             {list.map((item, index) => (
               <div
                 key={item.id}
-                className="h-full w-full flex items-center justify-center sticky top-0"
+                data-id={item.id}
+                className="service-item h-full w-full flex items-center justify-center sticky top-0"
                 style={{ scrollSnapAlign: 'start' }}
               >
-                <ServiceItem item={item} isActive={index === activeIndex} />
+                <ServiceItem
+                  item={item}
+                  isActive={index === activeIndex}
+                  inView={inViewItems[item.id]}
+                />
               </div>
             ))}
           </div>

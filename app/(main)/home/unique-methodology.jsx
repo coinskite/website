@@ -1,46 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
-
-// const list = [
-//   {
-//     id: "1",
-//     src: "/img/home_new/Our Services/POC Development.png",
-//     title: "POC Development",
-//     para: "Proof-of-Concept (POC) development is crucial for validating your blockchain ideas. Our expert team can assist you in developing robust POC solutions.",
-//   },
-//   {
-//     id: "2",
-//     src: "/img/home_new/Our Services/Metaverse development.png",
-//     title: "Metaverse Development",
-//     para: "Enter the exciting world of the metaverse with our Metaverse Development services. We help build immersive and interactive experiences in virtual environments.",
-//   },
-//   {
-//     id: "3",
-//     src: "/img/home_new/Our Services/NFT Development.png",
-//     title: "NFT Development",
-//     para: "Unlock the potential of Non-Fungible Tokens (NFTs) with our NFT Development services. We assist in creating and deploying unique and secure digital assets.",
-//   },
-//   {
-//     id: "4",
-//     src: "/img/home_new/Our Services/Smart Contract development.png",
-//     title: "Smart Contract Development",
-//     para: "Smart contracts automate processes, enhance security, and eliminate intermediaries. Our team specializes in developing secure and efficient smart contract solutions.",
-//   },
-//   {
-//     id: "5",
-//     src: "/img/home_new/Our Services/Token Development.png",
-//     title: "Token Development",
-//     para: "Tokenize your assets or launch your own cryptocurrency with our Token Development services. We ensure compliance, security, and seamless integration of tokens.",
-//   },
-//   {
-//     id: "6",
-//     src: "/img/home_new/Our Services/Blockchain Integration.png",
-//     title: "Blockchain Integration",
-//     para: "Seamlessly integrate blockchain technology into your existing systems with our Blockchain Integration services. Enhance transparency, security, and efficiency.",
-//   },
-// ];
 
 const list = [
   {
@@ -69,15 +29,9 @@ const list = [
   },
 ]
 
-const ServiceItem = ({ item, isActive }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
-
+const ServiceItem = ({ item, isActive, inView }) => {
   return (
     <div
-      ref={ref}
       className={`transition-opacity duration-500 ${inView ? 'opacity-100' : 'opacity-0'
         } ${isActive ? 'z-10' : 'z-0'
         } absolute top-0 left-0 w-full h-full flex items-center justify-center pr-40`}
@@ -124,7 +78,9 @@ const ProgressIndicator = ({ activeIndex, total }) => {
 
 const UniqueMethodology = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [inViewItems, setInViewItems] = useState({});
   const containerRef = useRef(null);
+  const observerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -147,6 +103,29 @@ const UniqueMethodology = () => {
     return () => {
       if (container) {
         container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setInViewItems((prev) => ({
+            ...prev,
+            [entry.target.dataset.id]: entry.isIntersecting,
+          }));
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const elements = containerRef.current.querySelectorAll('.service-item');
+    elements.forEach((el) => observerRef.current.observe(el));
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
       }
     };
   }, []);
@@ -180,16 +159,21 @@ const UniqueMethodology = () => {
         <div className="hidden lg:block w-full h-screen relative overflow-hidden hide-scrollbar">
           <div
             ref={containerRef}
-            className="absolute top-0 left-0 w-full h-full overflow-y-scroll hide-scrollbar scrollbar-hide"
+            className="absolute top-0 left-0 w-full h-full overflow-y-scroll hide-scrollbar"
             style={{ scrollSnapType: 'y mandatory' }}
           >
             {list.map((item, index) => (
               <div
                 key={item.id}
-                className="h-full w-full flex items-center justify-center sticky top-0"
+                data-id={item?.id}
+                className="service-item  h-full w-full flex items-center justify-center sticky top-0"
                 style={{ scrollSnapAlign: 'start' }}
               >
-                <ServiceItem item={item} isActive={index === activeIndex} />
+                <ServiceItem
+                  item={item}
+                  isActive={index === activeIndex}
+                  inView={inViewItems[item.id]}
+                />
               </div>
             ))}
           </div>
