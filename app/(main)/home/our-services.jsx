@@ -51,9 +51,12 @@ function OurServices() {
         <div className='grid md:grid-cols-2 gap-4 relative md:h-[600vh]'>
           <div>
             <div className="md:h-[80vh] mb-4 sticky top-36">
-              <h2 className='w-fit mb-4 mt-10 p-2 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16] text-black'>
+              <a
+                href="/startup"
+                className='block w-fit mb-4 mt-10 p-2 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16] text-black'
+              >
                 Our Services
-              </h2>
+              </a>
 
               <div className='mb-4 text-sm xs:text-xl sm:text-2xl lg:text-3xl xl:text-[32px] font-semibold'>
                 Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
