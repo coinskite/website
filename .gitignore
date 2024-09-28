@@ -37,3 +37,5 @@ yarn-error.log*
 a.txt
 package-lock.json
 pnpm-lock.yaml
+
+/a
