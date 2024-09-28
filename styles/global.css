@@ -44,12 +44,17 @@
     gap: .5rem;
   }
 
-  .df {
+  .df,
+  .dc {
     align-items: center;
   }
 
   .dfc {
     flex-direction: column;
+  }
+
+  .dc {
+    justify-content: center;
   }
 }
 

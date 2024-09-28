@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
+import ProgressBar from './progress-bar';
 
 const list = [
   {
     id: "1",
     src: "/img/home_new/our_services/POC_Development.png",
     title: "POC Development",
-    para: "Proof-of-Concept '(POC)'  development is a crucial for validating your blockchain idea's. Our expert team can assist you in developing robust POC  solutions.",
+    para: "Proof-of-Concept '(POC)' development is a crucial for validating your blockchain idea's. Our expert team can assist you in developing robust POC  solutions.",
   },
   {
     id: "2",
@@ -39,158 +40,53 @@ const list = [
     title: "Blockchain Integration",
     para: "Seamlessly integrate with blockchain technology  into your existing systems with our Blockchain Integration services. Enhance transparency, security, and efficiency .",
   },
-];
+]
 
-const ServiceItem = ({ item, isActive, inView }) => {
-  return (
-    <div
-      className={`transition-opacity duration-500 ${inView ? 'opacity-100' : 'opacity-0'
-        } ${isActive ? 'z-10' : 'z-0'
-        } absolute top-0 left-0 w-full h-full flex items-center justify-center pl-20`}
-    >
-      <div className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
-        <img className="my-10 mx-auto" src={item.src} alt={item.title} />
-        <h3 className="font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl text-[#E8E00E] mb-4">{item.title}</h3>
-        <p className="text-white text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
-      </div>
-    </div>
-  );
-};
-
-const ProgressIndicator = ({ activeIndex, total }) => {
-  return (
-    <div className="absolute left-8 top-1/2 transform -translate-y-1/2 delay-700">
-      <div className="flex flex-col items-center">
-        {Array.from({ length: total }).map((_, index) => (
-          <React.Fragment key={index}>
-            {index > 0 && (
-              <div
-                className={`w-0.5 h-16 transition-all duration-300 ${index <= activeIndex ? 'bg-[#22C954]' : 'bg-gray-600'
-                  }`}
-              />
-            )}
-            <div
-              className={`w-4 h-4 rounded-full border-2 transition-all duration-300 ${index === activeIndex
-                ? 'bg-[#22C954] border-[#22C954]'
-                : index < activeIndex
-                  ? 'bg-[#22C954] border-[#22C954]'
-                  : 'bg-transparent border-gray-600'
-                }`}
-            />
-          </React.Fragment>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const OurServices = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [inViewItems, setInViewItems] = useState({});
-  const containerRef = useRef(null);
-  const observerRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (containerRef.current) {
-        const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
-        const scrollPercentage = scrollTop / (scrollHeight - clientHeight);
-        const newIndex = Math.min(
-          Math.floor(scrollPercentage * list.length),
-          list.length - 1
-        );
-        setActiveIndex(newIndex);
-      }
-    };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('scroll', handleScroll);
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setInViewItems((prev) => ({
-            ...prev,
-            [entry.target.dataset.id]: entry.isIntersecting,
-          }));
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const elements = containerRef.current.querySelectorAll('.service-item');
-    elements.forEach((el) => observerRef.current.observe(el));
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
+function OurServices() {
+  const ref = useRef(null)
 
   return (
     <div className="pad-main-3">
-      <div className="flex items-center justify-center lg:justify-start">
-        <h2 className='mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16]  p-2 text-black'>
-          Our Services
-        </h2>
-      </div>
-      <div className="flex items-center justify-center lg:justify-start">
-        <p className="mb-4 lg:mb-0 font-semibold text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-2xl xl:text-[30px]">
-          Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
-          journey starts here.
-        </p>
-      </div>
+      <div className='grid md:grid-cols-2 gap-4 relative md:h-[600vh]'>
+        <div>
+          <div className="md:h-[80vh] mb-4 lg:mb-0 font-semibold text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-2xl xl:text-[30px] sticky top-32">
+            <h2 className='w-fit mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16]  p-2 text-black'>
+              Our Services
+            </h2>
+            <div className='mb-4'>
+              Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
+              journey starts here.
+            </div>
 
-      <div className="flex justify-center flex-col items-center">
-        {/* Mobile Layout */}
-        <div className="grid md:grid-cols-2 gap-x-4 lg:hidden w-full">
-          {list.map((item) => (
-            <div key={item.id} className="bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded mb-4">
-              <img className="my-5 md:my-10" src={item.src} alt={item.title} />
-              <h3 className="font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl  text-[#E8E00E]">{item.title}</h3>
-              <p className="text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
+            <ProgressBar parentRef={ref} childSelector="scroll-1" num={6} />
+          </div>
+        </div>
+
+        <div ref={ref}>
+          {list.map((item, i) => (
+            <div
+              key={item.id}
+              className="scroll-1 h-[80vh] sticky top-52"
+            >
+              <div className="dfc gap-8 h-[60vh] bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
+                <div className='grid justify-center items-center flex-1 bg-[#2C312D]'>
+                  <img src={item.src} alt={item.title} />
+                </div>
+
+                <div className='flex-1'>
+                  <h3 className="mb-2 font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl text-[#E8E00E]">{item.title}</h3>
+                  <p className="text-white text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
+                  <button className="font-medium text-[10px] mt-4 xs:text-xs sm:text-base xl:text-lg bg-gradient-to-r from-[#22C954]  to-[#116329]">
+                    Enquire for consultation
+                  </button>
+                </div>
+              </div>
             </div>
           ))}
         </div>
-
-        {/* Desktop Layout */}
-        <div className="hidden lg:block w-full h-screen relative overflow-hidden hide-scrollbar">
-          <div
-            ref={containerRef}
-            className="absolute top-0 left-0 w-full h-full overflow-y-scroll hide-scrollbar"
-            style={{ scrollSnapType: 'y mandatory' }}
-          >
-            {list.map((item, index) => (
-              <div
-                key={item.id}
-                data-id={item.id}
-                className="service-item h-full w-full flex items-center justify-center sticky top-0"
-                style={{ scrollSnapAlign: 'start' }}
-              >
-                <ServiceItem
-                  item={item}
-                  isActive={index === activeIndex}
-                  inView={inViewItems[item.id]}
-                />
-              </div>
-            ))}
-          </div>
-          <ProgressIndicator activeIndex={activeIndex} total={list.length} />
-        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurServices;
+export default OurServices
