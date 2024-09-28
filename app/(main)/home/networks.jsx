@@ -53,9 +53,9 @@ function Networks() {
                 <img
                   src={l.src}
                   alt={l.title}
-                  className="w-[30px] h-[27px] xs:w-[38px] xs:h-[35px] sm:w-[40px] sm:h-[38px] md:w-[50px] md:h-[48px] lg:w-[65px] lg:h-[64px]  xl:w-[75px] xl:h-[75px] object-contain mb-2"
+                  className="h-[28px] mb-2 xs:h-[35px] sm:h-[38px] md:h-[48px] lg:h-[64px] xl:h-[75px]"
                 />
-                <span className="h-[10px] font-medium text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base text-center">{l.title}</span>
+                <span className="font-medium text-[6px] xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base text-center">{l.title}</span>
               </div>
             ))}
           </div>

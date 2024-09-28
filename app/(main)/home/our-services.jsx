@@ -47,19 +47,20 @@ function OurServices() {
 
   return (
     <div className="pad-main-3">
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-7xl mx-auto">
         <div className='grid md:grid-cols-2 gap-4 relative md:h-[600vh]'>
           <div>
-            <div className="md:h-[80vh] mb-4 lg:mb-0 font-semibold text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-2xl xl:text-[30px] sticky top-32">
-              <h2 className='w-fit mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16]  p-2 text-black'>
+            <div className="md:h-[80vh] mb-4 sticky top-36">
+              <h2 className='w-fit mb-4 mt-10 p-2 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16] text-black'>
                 Our Services
               </h2>
-              <div className='mb-4'>
+
+              <div className='mb-4 text-sm xs:text-xl sm:text-2xl lg:text-3xl xl:text-[32px] font-semibold'>
                 Your <span className="text-[#22C954]">Start-to-end Web3</span><br />
                 journey starts here.
               </div>
 
-              <ProgressBar parentRef={ref} childSelector="div.div" num={6} />
+              <ProgressBar parentRef={ref} childSelector=".scroll-1" num={6} />
             </div>
           </div>
 
@@ -67,17 +68,17 @@ function OurServices() {
             {list.map((item, i) => (
               <div
                 key={item.id}
-                className="div h-[80vh] sticky top-52"
+                className="scroll-1 md:h-[80vh] sticky top-20 md:top-52"
               >
-                <div className="dfc gap-8 h-[60vh] bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
-                  <div className='grid justify-center items-center flex-1 bg-[#2C312D]'>
+                <div className="dfc gap-8 w-[220px] xs:w-[334px] sm:w-[392px] md:w-[278px] lg:w-[392px] xl:w-[524px] md:h-[55vh] mb-4 p-6 xs:p-8 md:p-6 bg-[#0F161B] border-[#22C954] border-[3px] rounded">
+                  <div className='grid justify-center items-center flex-1 p-6 bg-[#2C312D]'>
                     <img src={item.src} alt={item.title} />
                   </div>
 
                   <div className='flex-1'>
                     <h3 className="mb-2 font-medium text-xs xs:text-lg sm:text-xl md:text-xl xl:text-2xl text-[#E8E00E]">{item.title}</h3>
                     <p className="text-white text-[8px] xs:text-[10px] sm:text-xs xl:text-sm">{item.para}</p>
-                    <button className="font-medium text-[10px] mt-4 xs:text-xs sm:text-base xl:text-lg bg-gradient-to-r from-[#22C954]  to-[#116329]">
+                    <button className="mt-4 px-2 md:px-4 font-medium text-[10px] xs:text-xs sm:text-base xl:text-lg bg-gradient-to-r from-[#22C954] to-[#116329]">
                       Enquire for consultation
                     </button>
                   </div>

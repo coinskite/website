@@ -37,14 +37,28 @@ function UniqueMethodology() {
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto relative">
         <div className='grid md:grid-cols-2 gap-4 relative md:h-[400vh]'>
+          <div className='md:order-2'>
+            <div className="dfc items-end md:h-[80vh] sticky top-24 text-right">
+              <h2 className='w-fit mb-4 mt-10 p-2 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16] text-black'>
+                Our Unique Methodology
+              </h2>
+
+              <div className='mb-4 text-sm xs:text-xl sm:text-2xl lg:text-3xl xl:text-[32px] font-semibold'>
+                Learn about our step-by-step <br /> process for delivering results.
+              </div>
+
+              <ProgressBar parentRef={ref} childSelector=".scroll-2" num={4} />
+            </div>
+          </div>
+
           <div ref={ref}>
             {list.map((item, i) => (
               <div
                 key={item.id}
-                className="div h-[80vh] sticky top-52"
+                className="scroll-2 md:h-[80vh] sticky top-20 md:top-56"
               >
-                <div className="dfc gap-8 h-[60vh] bg-[#0F161B] border-[#22C954] border-[3px] p-4 md:p-8 rounded max-w-2xl">
-                  <div className='grid justify-center items-center flex-1 bg-[#2C312D]'>
+                <div className="dfc gap-8 w-[220px] xs:w-[334px] sm:w-[392px] md:w-[278px] lg:w-[392px] xl:w-[524px] md:h-[50vh] mb-4 ml-auto p-6 xs:p-8 md:p-6 bg-[#0F161B] border-[#22C954] border-[3px] rounded">
+                  <div className='grid justify-center items-center flex-1 p-6 bg-[#2C312D]'>
                     <img src={item.src} alt={item.title} />
                   </div>
 
@@ -58,22 +72,6 @@ function UniqueMethodology() {
                 </div>
               </div>
             ))}
-          </div>
-          <div>
-            <div className="text-right md:h-[80vh] mb-4 lg:mb-0 font-semibold text-[8px] xs:text-[10px] sm:text-sm md:text-lg lg:text-2xl xl:text-[30px] sticky top-32">
-              <div className="flex justify-end">
-                <h2 className='w-fit mb-4 mt-10 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold uppercase bg-[#FFEF16]  p-2 text-black'>
-                  Our Unique Methodology
-                </h2>
-              </div>
-              <div className='mb-4 text-right'>
-                Learn about our step-by-step <br /> process for delivering results.
-              </div>
-              <div className="flex justify-end">
-
-                <ProgressBar parentRef={ref} childSelector="div.div" num={4} />
-              </div>
-            </div>
           </div>
         </div>
       </div>
