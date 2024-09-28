@@ -31,31 +31,26 @@ const list = [
 
 function Card({ src, title, para, name, role, }) {
   return (
-    <div>
-      <div className="bg-[#0F161B] border-[3px] h-[220px] border-[#22C954] rounded p-4">
-
-        <div className="flex items-center justify-start gap-4 mb-4">
-          <img
-            className='w-[56px]'
-            src={src}
-            alt=''
-          />
-          <div className="flex flex-col items-start">
-            <p className="my-1.5 font-bold text-sm xs:text-base sm:text-lg text-[#22C954]">
-              {name}
-            </p>
-            <p className="font-normal text-[10px] xs:text-xs sm:text-sm md:text-sm lg:text-xs xl:text-sm">
-              {role}
-            </p>
-          </div>
-        </div>
-
-        <div className="text-left">
-          <p className="text-white font-normal text-[8px] xs:text-xs sm:text-sm">
-            {para}
+    <div className="bg-[#0F161B] border-[3px] h-[220px] border-[#22C954] rounded p-4">
+      <div className="flex items-center justify-start gap-4 mb-4">
+        <img
+          className='w-[56px]'
+          src={src}
+          alt=''
+        />
+        <div className="flex flex-col items-start">
+          <p className="my-1.5 font-bold text-sm xs:text-base sm:text-lg text-[#22C954]">
+            {name}
+          </p>
+          <p className="font-normal text-[10px] xs:text-xs sm:text-sm md:text-sm lg:text-xs xl:text-sm">
+            {role}
           </p>
         </div>
-
+      </div>
+      <div className="text-left">
+        <p className="text-white font-normal text-[8px] xs:text-xs sm:text-sm">
+          {para}
+        </p>
       </div>
     </div>
   )
@@ -64,32 +59,25 @@ function Card({ src, title, para, name, role, }) {
 function Clients() {
   return (
     <div className="pad-main-3">
-      {/* <div className="mb-4 sm:mb-8"> */}
+      <div className="max-w-7xl mx-auto relative">
+        <div className="flex items-center justify-center lg:justify-start">
+          <h2 className='mb-4 mt-10  text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold  uppercase  bg-[#FFEF16]  p-2 text-black'>
+            Our Clients Speak
+          </h2>
+        </div>
+        <div className="flex items-center justify-center lg:justify-start">
+          <p className="mb-4 mdb:mb-8 font-normal text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-xl xl:text-2xl">We have been working with clients around the world</p>
+        </div>
 
-      <div className="flex items-center justify-center lg:justify-start">
-        <h2 className='mb-4 mt-10  text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] font-bold  uppercase  bg-[#FFEF16]  p-2 text-black'>
-          Our Clients Speak
-        </h2>
+        <div className='grid lg:grid-cols-3 justify-center gap-8 relative'>
+          {list.map(l => <Card key={l.id} {...l} />)}
+
+          {/* <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div> */}
+          {/* <div className="absolute  right-0 w-20 h-20 sm:w-40 sm:h-40 lg:w-60 lg:h-60 bottom-5  blured-bg z-[1] opacity-40 pointer-events-none"></div> */}
+          {/* <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div> */}
+        </div>
       </div>
-      <div className="flex items-center justify-center lg:justify-start">
-        <p className="mb-4 mdb:mb-8 font-normal text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-xl xl:text-2xl">We have been working with clients around the world</p>
-      </div>
 
-
-      {/* <h2 className="mb-2 p-2 bg-[#E8E00E] text-sm xs:text-lg sm:text-[28px] lg:text-[32px] xl:text-[34px] font-bold uppercase text-black w-fit">
-          Our Clients Speak
-        </h2>
-        <p className="text-[8px] xs:text-xs xl:text-base">
-          We have been working with clients around the world
-        </p>
-      </div> */}
-
-      <div className='grid lg:grid-cols-3 justify-center gap-8 relative'>
-        {list.map(l => <Card key={l.id} {...l} />)}
-
-        <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
-        <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>
-      </div>
     </div>
   )
 }

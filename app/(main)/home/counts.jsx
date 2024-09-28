@@ -47,12 +47,12 @@ function Card({ src, title, sub }) {
 
 function Counts() {
   return (
-    <div className="pad-main-3">
+    <div className="pad-main-3 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto">
+        <div className="xs:max-w-xs sm:max-w-sm md:max-w-md mx-auto lg:max-w-full">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-6 border-[3px] border-primary-900 bg-[#152A39] shadow-[0px_10px_20px_0px_#29292A12] rounded-lg relative">
             {list2.map(c => <Card key={c.id} {...c} />)}
-            <div className="absolute w-56 h-32 bottom-0 right-0 blured-bg z-[1]"></div>
+            <div className="absolute w-56 h-32 top-52 right-0 blured-bg z-[1]"></div>
           </div>
         </div>
       </div>

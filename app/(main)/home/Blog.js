@@ -74,6 +74,7 @@ function Blog() {
         <button className="portfolio-btn active block mt-5 lg:mt-0 mx-auto lg:absolute lg:right-0 lg:top-4 lg:mx-0">
           View Blogs
         </button>
+        <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>
       </div>
     </div>
   )

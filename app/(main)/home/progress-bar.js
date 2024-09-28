@@ -58,7 +58,7 @@ function ProgressBar({ parentRef, childSelector }) {
   return (
     <div className="hidden md:flex dfc justify-between w-fit relative isolate" style={{ height: childCount * 50 }}>
       <span
-        className="w-0.5 absolute top-0 left-1/2 -translate-x-1/2 bg-blue-500 transition-all duration-200 ease-out z-[-1]"
+        className="w-0.5 absolute top-0 left-1/2 -translate-x-1/2 bg-green-500 transition-all duration-200 ease-out z-[-1]"
         style={{ height: `${progress}%` }}
       />
       <span
@@ -68,7 +68,7 @@ function ProgressBar({ parentRef, childSelector }) {
       {[...Array(childCount)].map((_, index) => (
         <span
           key={index}
-          className={`size-4 rounded-full ${index <= getHighlightedIndex() ? 'bg-blue-500' : 'bg-gray-300'}`}
+          className={`size-4 rounded-full ${index <= getHighlightedIndex() ? 'bg-green-500' : 'bg-gray-300'}`}
         />
       ))}
     </div>
