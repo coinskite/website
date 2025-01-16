@@ -10,6 +10,9 @@ import Tools from './Tools';
 import Blog from './Blog';
 
 import "keen-slider/keen-slider.min.css"
+import Services from './services';
+import Choose from './choose';
+import Empowering from './empowering';
 
 function Home() {
   return (
@@ -24,6 +27,10 @@ function Home() {
       <Clients />
       <Blog />
       <Final />
+
+      <Services />
+      <Choose />
+      <Empowering />
     </div>
   )
 }
