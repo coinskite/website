@@ -57,13 +57,8 @@ function Blog() {
     <div className="pad-main-3 2xl:py-14">
       <div className="max-w-7xl mx-auto relative">
         <div className="flex items-center justify-center lg:justify-start">
-          <h2 className="mb-2 text-[8px] xs:text-xs sm:text-base md:text-base lg:text-lg xl:text-[28px] bg-[#E8E00E] text-black w-fit p-2 font-bold uppercase">
-            Read Our latest Insights
-          </h2>
-        </div>
-        <div className="flex items-center justify-center lg:justify-start">
-          <div className="font-normal mb-6 mdb:mb-10 text-[8px] xs:text-[10px] sm:text-sm md:text-base lg:text-xl xl:text-2xl">
-            All the latest updates and community happenings
+          <div className="mb-6 mdb:mb-10 text-xs md:text-[22px] lg:text-[36px] font-semibold">
+            Latest Blog
           </div>
         </div>
 
@@ -72,10 +67,10 @@ function Blog() {
         </div>
 
         <a
-          className="portfolio-btn active block w-fit mt-5 lg:mt-0 mx-auto px-2 py-1 xs:px-4 xs:py-1.5 rounded-[5px] xs:rounded-lg lg:absolute lg:right-0 lg:top-4 lg:mx-0"
+          className="portfolio-btn active block w-fit mt-5 lg:mt-0 mx-auto px-2 py-1 xs:px-4 xs:py-1.5 rounded-[5px] xs:rounded-[5px] lg:absolute lg:right-0 lg:top-4 lg:mx-0"
           href="/blog"
         >
-          View Blogs
+          View All
         </a>
 
         <div className="absolute w-56 h-32 top-0 left-0 blured-bg z-[1]"></div>

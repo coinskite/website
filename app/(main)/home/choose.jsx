@@ -1,9 +1,22 @@
-import { Check } from "lucide-react"
+
+const list = [
+  {
+    id: "1",
+    src: "/img/home/pro1.png",
+    para: "Olivia's extensive experience in the blockchain industry and her strategic mindset have been instrumental in helping our clients navigate the complexities of this rapidly evolving landscape."
+  },
+  {
+    id: "2",
+    src: "/img/home/pro2.png",
+    para: "Olivia's extensive experience in the blockchain industry and her strategic mindset have been instrumental in helping our clients navigate the complexities of this rapidly evolving landscape."
+  }
+]
 
 function Choose() {
+
   return (
     <div className="pad-main-3">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-4">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-4 bg-[#1F232D] p-6 rounded-[5px]">
         <div className="space-y-4">
           <h3 className="text-gray-400">Why choose us?</h3>
           <h2 className="text-4xl font-semibold">Revolutionizing<br />Blockchain Solutions</h2>
@@ -21,31 +34,31 @@ function Choose() {
               "Adaptive Infrastructure"
             ].map((feature) => (
               <div key={feature} className="flex items-center gap-2">
-                <div className="bg-[#31D64D]/20 p-1 rounded-full">
-                  <Check className="h-4 w-4 text-[#31D64D]" />
-                </div>
+                <img
+                  src="img/home/check.png"
+                  className="h-4 w-4"
+                />
                 <span className="text-gray-300">{feature}</span>
               </div>
             ))}
           </div>
 
-          <button className="bg-[#31D64D] text-white hover:bg-[#31D64D]/90">
+          <button className="bg-[#31D64D] text-white hover:bg-[#31D64D]/90 rounded-[5px]">
             Get Started
           </button>
         </div>
 
-        <div className="grid gap-4">
-          {[1, 2].map((index) => (
-            <div key={index} className="bg-white text-black p-6">
-              <div className="flex gap-4">
+        <div className="flex flex-col justify-center items-center gap-4">
+          {list?.map((item) => (
+            <div key={item?.id} className="bg-white text-black p-6 flex items-center h-fit rounded-[10px]">
+              <div className="flex items-center gap-4">
                 <img
-                  src={`/placeholder.svg?height=48&width=48`}
+                  src={item?.src}
                   alt="Profile"
-                  className="rounded-full w-12 h-12 object-cover"
+                  className="rounded-full w-16 h-16 object-cover"
                 />
                 <p className="text-sm">
-                  Olivia's extensive experience in the blockchain industry and her strategic mindset have been instrumental in
-                  helping our clients navigate the complexities of this rapidly evolving landscape.
+                  {item?.para}
                 </p>
               </div>
             </div>

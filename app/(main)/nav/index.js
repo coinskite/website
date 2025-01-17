@@ -20,7 +20,8 @@ function Nav() {
   }
 
   return (
-    <nav className='py-4 px-4 xl:px-8 2xl:px-12 sticky top-0 z-[2] bg-[#13111B]'>
+    <nav className='py-4 px-4 xl:px-8 2xl:px-12 sticky top-0 z-[2] bg-black'>
+      {/* [#13111B] */}
       <div className="df gap-4 max-w-7xl mx-auto">
         <div className="nav-logo">
           <Link href="/">
