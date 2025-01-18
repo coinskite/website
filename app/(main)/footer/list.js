@@ -13,50 +13,15 @@ export const Company = [
   },
   {
     link: '/',
-    title: 'Insights'
+    title: 'Work'
   },
   {
     link: '/',
-    title: 'Work'
+    title: 'Insights'
   },
 ]
 
 export const Services = [
-  {
-    link: '/services',
-    title: 'Blockchain development'
-  },
-  {
-    link: '/services',
-    title: 'Blockchain consultancy'
-  },
-  {
-    link: '/services',
-    title: 'Smart contract development'
-  },
-  {
-    link: '/services',
-    title: 'Smart contract audit'
-  },
-  {
-    link: '/services',
-    title: 'Defi'
-  },
-  {
-    link: '/services',
-    title: 'NFT'
-  },
-  {
-    link: '/services',
-    title: 'Tokenization'
-  },
-  {
-    link: '/services',
-    title: 'ICO | STO | IDO'
-  },
-]
-
-export const Customers = [
   {
     link: '/startup',
     title: 'Startup'
@@ -64,6 +29,13 @@ export const Customers = [
   {
     link: '/',
     title: 'Enterprise'
+  },
+]
+
+export const Product = [
+  {
+    link: '/',
+    title: 'Kiteagro'
   },
 ]
 
@@ -125,10 +97,6 @@ export const Partners = [
   },
   {
     link: '/',
-    title: 'Partner portal'
-  },
-  {
-    link: '/',
     title: 'Become a Partner'
   },
   {
@@ -156,14 +124,10 @@ export const Resources = [
   },
   {
     link: '/',
-    title: 'help & Support'
+    title: 'Help & Support'
   },
   {
     link: '/',
     title: 'API & Docs'
-  },
-  {
-    link: '/press',
-    title: 'Press'
   },
 ]

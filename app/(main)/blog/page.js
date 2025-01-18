@@ -4,7 +4,7 @@ import Main from './Main';
 
 function Blog() {
   return (
-    <div className='text-white bg-[#222531]'>
+    <div className='text-white bg-[#13111B]'>
       <Header />
       <Main />
       <Final />

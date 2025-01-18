@@ -155,7 +155,7 @@ const list = [
       {
         img: '/img/nav/Resources/Resource Librar.png',
         name: 'Resource Library',
-        to: "/"
+        to: "/resource"
       },
       {
         img: '/img/nav/Resources/Events.png',
