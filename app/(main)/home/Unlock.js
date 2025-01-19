@@ -1,6 +1,5 @@
-import React from 'react';
 
-const Unlock = () => {
+function Unlock() {
   return (
     <div className="pad-main-3">
       <div className="max-w-7xl mx-auto mt-10">

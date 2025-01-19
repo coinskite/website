@@ -1,24 +1,24 @@
-import React from 'react';
+
+const data = [
+  {
+    id: "1",
+    img: "img/home/solana.png",
+  },
+  {
+    id: "2",
+    img: "img/home/etherium.png",
+  },
+  {
+    id: "3",
+    img: "img/home/polygon.png",
+  },
+  {
+    id: "4",
+    img: "img/home/Polkadot.png",
+  },
+];
 
 function PoweringTools() {
-  const data = [
-    {
-      id: "1",
-      img: "img/home/solana.png",
-    },
-    {
-      id: "2",
-      img: "img/home/etherium.png",
-    },
-    {
-      id: "3",
-      img: "img/home/polygon.png",
-    },
-    {
-      id: "4",
-      img: "img/home/Polkadot.png",
-    },
-  ];
   return (
     <div className="bg-[#0D0D0F] py-10">
       <div className="container mx-auto px-4">

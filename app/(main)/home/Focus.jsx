@@ -1,4 +1,3 @@
-import React from 'react';
 
 const services = [
   {
@@ -20,7 +19,7 @@ const services = [
 ];
 
 const ServiceCard = ({ title, description, type, img }) => (
-  <div className="bg-[#1F232D] p-8 h-full">
+  <div className="bg-[#1F232D] p-8 h-full rounded-[10px]">
     <div className="flex flex-col space-y-4">
       <span className="inline-block px-3 py-1 bg-[#22C954] text-white text-xs sm:text-sm md:text-lg lg:text-xl font-medium rounded-[5px] w-fit">
         {type}
@@ -68,6 +67,7 @@ const Focus = () => {
               />
             ))}
           </div>
+
           <div className="h-full">
             {services.slice(2, 3).map((service, index) => (
               <ServiceCard
