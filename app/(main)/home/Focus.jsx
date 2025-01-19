@@ -22,12 +22,12 @@ const services = [
 const ServiceCard = ({ title, description, type, img }) => (
   <div className="bg-[#1F232D] p-8 h-full">
     <div className="flex flex-col space-y-4">
-      <span className="inline-block px-3 py-1 bg-[#22C954] text-white text-sm rounded-[5px] w-fit">
+      <span className="inline-block px-3 py-1 bg-[#22C954] text-white text-xs sm:text-sm md:text-lg lg:text-xl font-medium rounded-[5px] w-fit">
         {type}
       </span>
 
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-white">{title}</h2>
+        <h2 className="text-base xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">{title}</h2>
         <div className="w-10 h-10 flex items-center justify-center">
           <img
             src="/img/home/arrow.png"
@@ -36,7 +36,7 @@ const ServiceCard = ({ title, description, type, img }) => (
         </div>
       </div>
 
-      <p className="text-gray-300 text-base leading-relaxed">
+      <p className="text-gray-300 text-[8px] sm:text-[10px] md:text-xs lg:text-sm font-medium leading-relaxed">
         {description}
       </p>
 

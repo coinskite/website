@@ -15,7 +15,7 @@ const list = [
     id: "4",
     src: "/img/home/bot4.png",
   }
-]
+];
 
 function Card({ src, para, role, }) {
   return (
@@ -36,13 +36,13 @@ function Card({ src, para, role, }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Customer() {
   return (
     <div className="pad-main-3">
-      <div className="max-w-6xl mx-auto relative bg-black border-[2px] border-[#22C954] p-10">
+      <div className="max-w-5xl mx-auto relative bg-black border-[2px] border-[#22C954] p-10">
         <div className='grid lg:grid-cols-4 justify-center items-center gap-8 relative'>
           {list.map(l => (
             <div className="flex justify-center">
@@ -57,7 +57,7 @@ function Customer() {
       </div>
 
     </div>
-  )
+  );
 }
 
-export default Customer
+export default Customer;
