@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Services() {
 
@@ -18,7 +18,7 @@ function Services() {
       title: "Scalable Solutions",
       desc: "Adaptive Infrastructure"
     }
-  ]
+  ];
   return (
     <div className='grid md:grid-cols-3 gap-6 max-w-2xl mx-auto justify-center mb-6'>
       {data?.map((item) => {
@@ -33,14 +33,14 @@ function Services() {
               </div>
               <div className='text-center'>
                 <p className='text-[8px] md:text-xs font-medium'>{item?.title}</p>
-                <p className='text-[8px] font-medium'>{item?.desc}</p>
+                <p className='text-[6px] md:text-[8px] font-medium'>{item?.desc}</p>
               </div>
             </div>
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;

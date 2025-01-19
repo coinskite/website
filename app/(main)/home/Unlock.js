@@ -13,11 +13,11 @@ const Unlock = () => {
                 className="w-full h-full"
               />
             </div>
-            <p className="text-black text-xs text-center">Discover Our Services</p>
+            <p className="text-black text-sm font-bold text-center">Discover Our Services</p>
           </div>
 
           <div className="md:col-span-2 flex items-center p-4">
-            <h2 className="text-white md:text-2xl text-xl font-semibold">
+            <h2 className="text-white text-[26px] lg:text-3xl font-semibold">
               Unlock the Potential of<br />Blockchain
             </h2>
           </div>
@@ -28,7 +28,7 @@ const Unlock = () => {
               alt="Industry Icon"
               className=" h-10 mb-2 object-cover"
             />
-            <p className="text-gray-400 text-xs text-center">
+            <p className="text-gray-400 text-xs font-normal text-center">
               Revolutionize Your<br />Industry
             </p>
           </div>

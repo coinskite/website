@@ -18,11 +18,11 @@ function PoweringTools() {
       id: "4",
       img: "img/home/Polkadot.png",
     },
-  ]
+  ];
   return (
     <div className="bg-[#0D0D0F] py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-white text-center text-sm md:text-lg mb-8">
+        <h2 className="text-white text-center text-[8px] sm:text-xs md:text-sm lg:text-lg font-medium mb-8">
           Powering Tools and Integrations from blockchains all around the world
         </h2>
 
@@ -41,7 +41,7 @@ function PoweringTools() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default PoweringTools;
